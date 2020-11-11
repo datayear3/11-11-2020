@@ -38,5 +38,10 @@ namespace QLBH_LinhKienPC.GUI
         {
 
         }
+
+        private void trangchu1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

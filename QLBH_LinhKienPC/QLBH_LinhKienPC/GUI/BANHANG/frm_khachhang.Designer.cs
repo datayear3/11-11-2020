@@ -30,6 +30,8 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -67,7 +69,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1233, 65);
+            this.panel1.Size = new System.Drawing.Size(1364, 65);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -86,14 +88,15 @@
             // 
             this.panel2.Controls.Add(this.dtv_khachhang);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(566, 65);
+            this.panel2.Location = new System.Drawing.Point(546, 65);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(667, 627);
+            this.panel2.Size = new System.Drawing.Size(818, 627);
             this.panel2.TabIndex = 1;
             // 
             // dtv_khachhang
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtv_khachhang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtv_khachhang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtv_khachhang.BackgroundColor = System.Drawing.Color.White;
@@ -102,8 +105,8 @@
             this.dtv_khachhang.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Red;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -115,16 +118,33 @@
             this.DiaChiKH,
             this.SDTKH,
             this.GioiTinh});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtv_khachhang.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtv_khachhang.DoubleBuffered = true;
             this.dtv_khachhang.EnableHeadersVisualStyles = false;
             this.dtv_khachhang.HeaderBgColor = System.Drawing.Color.CornflowerBlue;
-            this.dtv_khachhang.HeaderForeColor = System.Drawing.Color.White;
+            this.dtv_khachhang.HeaderForeColor = System.Drawing.Color.Red;
             this.dtv_khachhang.Location = new System.Drawing.Point(0, 0);
             this.dtv_khachhang.Name = "dtv_khachhang";
             this.dtv_khachhang.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtv_khachhang.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtv_khachhang.RowHeadersVisible = false;
-            this.dtv_khachhang.Size = new System.Drawing.Size(717, 627);
+            this.dtv_khachhang.Size = new System.Drawing.Size(818, 627);
             this.dtv_khachhang.TabIndex = 1;
+            this.dtv_khachhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_khachhang_CellContentClick_1);
             // 
             // label2
             // 
@@ -309,6 +329,7 @@
             // MaKH
             // 
             this.MaKH.DataPropertyName = "MaKH";
+            this.MaKH.FillWeight = 15F;
             this.MaKH.HeaderText = "Mã Khách Hàng";
             this.MaKH.Name = "MaKH";
             this.MaKH.ReadOnly = true;
@@ -316,6 +337,7 @@
             // TenHK
             // 
             this.TenHK.DataPropertyName = "TenKH";
+            this.TenHK.FillWeight = 20F;
             this.TenHK.HeaderText = "Tên Khách Hàng";
             this.TenHK.Name = "TenHK";
             this.TenHK.ReadOnly = true;
@@ -323,6 +345,7 @@
             // DiaChiKH
             // 
             this.DiaChiKH.DataPropertyName = "DiaChiKH";
+            this.DiaChiKH.FillWeight = 20F;
             this.DiaChiKH.HeaderText = "Địa Chỉ";
             this.DiaChiKH.Name = "DiaChiKH";
             this.DiaChiKH.ReadOnly = true;
@@ -330,6 +353,7 @@
             // SDTKH
             // 
             this.SDTKH.DataPropertyName = "SDTKH";
+            this.SDTKH.FillWeight = 15F;
             this.SDTKH.HeaderText = "Số Điện Thoại";
             this.SDTKH.Name = "SDTKH";
             this.SDTKH.ReadOnly = true;
@@ -337,6 +361,7 @@
             // GioiTinh
             // 
             this.GioiTinh.DataPropertyName = "GioiTinh";
+            this.GioiTinh.FillWeight = 10F;
             this.GioiTinh.HeaderText = "Giới Tính";
             this.GioiTinh.Name = "GioiTinh";
             this.GioiTinh.ReadOnly = true;
@@ -346,7 +371,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(221)))), ((int)(((byte)(114)))));
-            this.ClientSize = new System.Drawing.Size(1233, 692);
+            this.ClientSize = new System.Drawing.Size(1364, 692);
             this.Controls.Add(this.rbt_nu);
             this.Controls.Add(this.rbt_nam);
             this.Controls.Add(this.button2);

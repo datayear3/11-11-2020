@@ -38,8 +38,8 @@
             this.bt_trangchu = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bt_close = new System.Windows.Forms.Button();
-            this.banhang1 = new QLBH_LinhKienPC.GUI.BANHANG.banhang();
             this.trangchu1 = new QLBH_LinhKienPC.GUI.TRANGCHU.trangchu();
+            this.banhang1 = new QLBH_LinhKienPC.GUI.BANHANG.banhang();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -182,14 +182,6 @@
             this.bt_close.UseVisualStyleBackColor = true;
             this.bt_close.Click += new System.EventHandler(this.button7_Click);
             // 
-            // banhang1
-            // 
-            this.banhang1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(165)))), ((int)(((byte)(149)))));
-            this.banhang1.Location = new System.Drawing.Point(300, 100);
-            this.banhang1.Name = "banhang1";
-            this.banhang1.Size = new System.Drawing.Size(1620, 980);
-            this.banhang1.TabIndex = 4;
-            // 
             // trangchu1
             // 
             this.trangchu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(240)))), ((int)(((byte)(225)))));
@@ -197,6 +189,15 @@
             this.trangchu1.Name = "trangchu1";
             this.trangchu1.Size = new System.Drawing.Size(1620, 980);
             this.trangchu1.TabIndex = 5;
+            this.trangchu1.Load += new System.EventHandler(this.trangchu1_Load);
+            // 
+            // banhang1
+            // 
+            this.banhang1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(165)))), ((int)(((byte)(149)))));
+            this.banhang1.Location = new System.Drawing.Point(300, 100);
+            this.banhang1.Name = "banhang1";
+            this.banhang1.Size = new System.Drawing.Size(1620, 980);
+            this.banhang1.TabIndex = 4;
             // 
             // Main
             // 

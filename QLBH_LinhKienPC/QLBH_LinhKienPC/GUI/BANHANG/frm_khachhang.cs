@@ -12,6 +12,7 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
 {
     public partial class frm_khachhang : Form
     {
+
         BLL.BLL_khachhang bllkh;
         public frm_khachhang()
         {
@@ -65,6 +66,22 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
 
         private void dtv_khachhang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog;
+            dialog = MessageBox.Show(" Bạn có muốn xóa hay không", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                bllkh.xoakh();
+                bllkh.loadkh();
+            }
+        }
+
+        private void dtv_khachhang_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
             int numrow;
             numrow = e.RowIndex;
             txt_makh.Text = dtv_khachhang.Rows[numrow].Cells[0].Value.ToString();
@@ -80,17 +97,6 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
             {
                 rbt_nam.Checked = false;
                 rbt_nu.Checked = true;
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            DialogResult dialog;
-            dialog = MessageBox.Show(" Bạn có muốn xóa hay không", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dialog == DialogResult.Yes)
-            {
-                bllkh.xoakh();
-                bllkh.loadkh();
             }
         }
     }

@@ -21,8 +21,8 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
         private void bt_them_khachhang_Click(object sender, EventArgs e)
         {
             frm_khachhang kh = new frm_khachhang();
-            //kh.MdiParent = this;
             kh.ShowDialog();
+           
         }
     }
 }

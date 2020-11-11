@@ -80,7 +80,7 @@
             this.bt_dn.FlatAppearance.BorderSize = 0;
             this.bt_dn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_dn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_dn.Location = new System.Drawing.Point(522, 311);
+            this.bt_dn.Location = new System.Drawing.Point(507, 325);
             this.bt_dn.Name = "bt_dn";
             this.bt_dn.Size = new System.Drawing.Size(233, 85);
             this.bt_dn.TabIndex = 2;
@@ -103,7 +103,7 @@
             this.exit.FlatAppearance.BorderSize = 0;
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit.Location = new System.Drawing.Point(785, 311);
+            this.exit.Location = new System.Drawing.Point(767, 325);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(233, 85);
             this.exit.TabIndex = 2;
