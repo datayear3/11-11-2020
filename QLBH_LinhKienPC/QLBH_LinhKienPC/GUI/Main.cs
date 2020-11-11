@@ -16,5 +16,24 @@ namespace QLBH_LinhKienPC.GUI
         {
             InitializeComponent();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void bt_trangchu_Click(object sender, EventArgs e)
+        {
+            trangchu1.Visible = true;
+            banhang1.Visible = false;
+        }
+
+        private void bt_banhang_Click(object sender, EventArgs e)
+        {
+            trangchu1.Visible = false;
+            banhang1.Visible = true;
+        }
+
+        
     }
 }
