@@ -44,11 +44,54 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
         private void frm_khachhang_Load(object sender, EventArgs e)
         {
             bllkh.loadkh();
+            rbt_nam.Checked = true;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog;
+            dialog = MessageBox.Show(" Thông tin sẽ bị thay đổi. Bạn có muốn tiếp tục", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                bllkh.suakh();
+                bllkh.loadkh();
+            }
+        }
+
+        private void dtv_khachhang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            txt_makh.Text = dtv_khachhang.Rows[numrow].Cells[0].Value.ToString();
+            txt_tenkh.Text = dtv_khachhang.Rows[numrow].Cells[1].Value.ToString();
+            txt_diachi.Text = dtv_khachhang.Rows[numrow].Cells[2].Value.ToString();
+            txt_sdt.Text = dtv_khachhang.Rows[numrow].Cells[3].Value.ToString();
+            if (dtv_khachhang.Rows[numrow].Cells[4].Value.ToString() == "Nam")
+            {
+                rbt_nam.Checked = true;
+                rbt_nu.Checked = false;
+            }
+            else
+            {
+                rbt_nam.Checked = false;
+                rbt_nu.Checked = true;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog;
+            dialog = MessageBox.Show(" Bạn có muốn xóa hay không", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                bllkh.xoakh();
+                bllkh.loadkh();
+            }
         }
     }
 }

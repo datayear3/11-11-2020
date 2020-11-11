@@ -21,21 +21,39 @@ namespace QLBH_LinhKienPC.BLL
         public void Luukh()
         {
             //frm_khachhang
-            int ketqua = dal_khachhang.ThemKH(frm_khachhang.txt_makh.Text.ToString(), frm_khachhang.txt_tenkh.Text.ToString(), frm_khachhang.txt_diachi.Text.ToString(), frm_khachhang.txt_sdt.Text.ToString());
+            string gt = "";
+            if(frm_khachhang.rbt_nam.Checked == true)
+            {
+                gt = "Nam";
+            }
+            if (frm_khachhang.rbt_nu.Checked == true)
+            {
+                gt = "Nu";
+            }
+            int ketqua = dal_khachhang.ThemKH(frm_khachhang.txt_makh.Text.ToString(), frm_khachhang.txt_tenkh.Text.ToString(), frm_khachhang.txt_diachi.Text.ToString(), frm_khachhang.txt_sdt.Text.ToString(),gt);
             if (ketqua >= 1)
                 MessageBox.Show("Thêm thành công");
             else
                 MessageBox.Show("Thêm thất bai");
         }
-        /*
         public void suakh()
         {
-            int ketqua = dal_khachhang.Suakh(frm_khachhang.txt_makh.Text, frm_khachhang.txt_tenkh.Text, frm_khachhang.dt_namsinh.Value, frm_khachhang.cb_gioitinh.Text, frm_khachhang.txt_diachi.Text, frm_khachhang.txt_sdt.Text);
+            string gt = "";
+            if (frm_khachhang.rbt_nam.Checked == true)
+            {
+                gt = "Nam";
+            }
+            if (frm_khachhang.rbt_nu.Checked == true)
+            {
+                gt = "Nu";
+            }
+            int ketqua = dal_khachhang.Suakh(frm_khachhang.txt_makh.Text, frm_khachhang.txt_tenkh.Text,frm_khachhang.txt_diachi.Text, frm_khachhang.txt_sdt.Text,gt);
             if (ketqua >= 1)
                 MessageBox.Show("Sửa thành công");
             else
                 MessageBox.Show("Sửa thất bai");
         }
+        
         public void xoakh()
         {
             int ketqua = dal_khachhang.Xoakh(frm_khachhang.txt_makh.Text);
@@ -44,7 +62,7 @@ namespace QLBH_LinhKienPC.BLL
             else
                 MessageBox.Show("Xóa thất bai");
         }
-        */
+        
         public void loadkh()
         {
             frm_khachhang.dtv_khachhang.DataSource = dal_khachhang.Loadkh();

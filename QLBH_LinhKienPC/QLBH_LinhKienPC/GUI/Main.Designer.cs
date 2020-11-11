@@ -29,23 +29,26 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.bt_close = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.bt_banhang = new System.Windows.Forms.Button();
             this.bt_trangchu = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.bt_close = new System.Windows.Forms.Button();
             this.banhang1 = new QLBH_LinhKienPC.GUI.BANHANG.banhang();
             this.trangchu1 = new QLBH_LinhKienPC.GUI.TRANGCHU.trangchu();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
-            this.panel1.Controls.Add(this.bt_close);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
@@ -59,27 +62,16 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel2
+            // pictureBox1
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(64)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(300, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1604, 100);
-            this.panel2.TabIndex = 1;
-            // 
-            // bt_close
-            // 
-            this.bt_close.FlatAppearance.BorderSize = 0;
-            this.bt_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_close.Image = global::QLBH_LinhKienPC.Properties.Resources.icons8_logout_rounded_down_64;
-            this.bt_close.Location = new System.Drawing.Point(200, 0);
-            this.bt_close.Name = "bt_close";
-            this.bt_close.Size = new System.Drawing.Size(100, 100);
-            this.bt_close.TabIndex = 0;
-            this.bt_close.UseVisualStyleBackColor = true;
-            this.bt_close.Click += new System.EventHandler(this.button7_Click);
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkGray;
+            this.pictureBox1.Image = global::QLBH_LinhKienPC.Properties.Resources.logo_sell;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // button6
             // 
@@ -167,6 +159,29 @@
             this.bt_trangchu.UseVisualStyleBackColor = true;
             this.bt_trangchu.Click += new System.EventHandler(this.bt_trangchu_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.bt_close);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(300, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1604, 100);
+            this.panel2.TabIndex = 1;
+            // 
+            // bt_close
+            // 
+            this.bt_close.FlatAppearance.BorderSize = 0;
+            this.bt_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_close.Image = global::QLBH_LinhKienPC.Properties.Resources.icons8_logout_rounded_down_64;
+            this.bt_close.Location = new System.Drawing.Point(0, 0);
+            this.bt_close.Name = "bt_close";
+            this.bt_close.Size = new System.Drawing.Size(100, 100);
+            this.bt_close.TabIndex = 0;
+            this.bt_close.UseVisualStyleBackColor = true;
+            this.bt_close.Click += new System.EventHandler(this.button7_Click);
+            // 
             // banhang1
             // 
             this.banhang1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(165)))), ((int)(((byte)(149)))));
@@ -197,6 +212,8 @@
             this.Text = "Main";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -214,5 +231,6 @@
         private System.Windows.Forms.Button bt_banhang;
         private BANHANG.banhang banhang1;
         private TRANGCHU.trangchu trangchu1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
