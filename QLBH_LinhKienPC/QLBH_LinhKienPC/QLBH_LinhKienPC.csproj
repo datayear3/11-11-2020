@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\BLL_khachhang.cs" />
+    <Compile Include="DAL\DAL_khachhang.cs" />
     <Compile Include="DAL\Lopdungchung.cs" />
     <Compile Include="dangnhap.cs">
       <SubType>Form</SubType>
@@ -123,9 +125,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BLL\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\icons8-home-page-50.png" />
   </ItemGroup>

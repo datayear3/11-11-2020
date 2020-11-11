@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.bt_close = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -36,9 +37,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.bt_banhang = new System.Windows.Forms.Button();
             this.bt_trangchu = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.trangchu1 = new QLBH_LinhKienPC.GUI.TRANGCHU.trangchu();
             this.banhang1 = new QLBH_LinhKienPC.GUI.BANHANG.banhang();
+            this.trangchu1 = new QLBH_LinhKienPC.GUI.TRANGCHU.trangchu();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +57,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 1041);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(64)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(300, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1604, 100);
+            this.panel2.TabIndex = 1;
             // 
             // bt_close
             // 
@@ -157,14 +167,13 @@
             this.bt_trangchu.UseVisualStyleBackColor = true;
             this.bt_trangchu.Click += new System.EventHandler(this.bt_trangchu_Click);
             // 
-            // panel2
+            // banhang1
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(64)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(300, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1604, 100);
-            this.panel2.TabIndex = 1;
+            this.banhang1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(165)))), ((int)(((byte)(149)))));
+            this.banhang1.Location = new System.Drawing.Point(300, 100);
+            this.banhang1.Name = "banhang1";
+            this.banhang1.Size = new System.Drawing.Size(1620, 980);
+            this.banhang1.TabIndex = 4;
             // 
             // trangchu1
             // 
@@ -172,15 +181,7 @@
             this.trangchu1.Location = new System.Drawing.Point(300, 100);
             this.trangchu1.Name = "trangchu1";
             this.trangchu1.Size = new System.Drawing.Size(1620, 980);
-            this.trangchu1.TabIndex = 3;
-            // 
-            // banhang1
-            // 
-            this.banhang1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(59)))));
-            this.banhang1.Location = new System.Drawing.Point(300, 100);
-            this.banhang1.Name = "banhang1";
-            this.banhang1.Size = new System.Drawing.Size(1620, 980);
-            this.banhang1.TabIndex = 2;
+            this.trangchu1.TabIndex = 5;
             // 
             // Main
             // 

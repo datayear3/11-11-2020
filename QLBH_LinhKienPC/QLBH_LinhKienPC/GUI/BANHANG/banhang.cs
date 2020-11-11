@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace QLBH_LinhKienPC.GUI.BANHANG
 {
     public partial class banhang : UserControl
@@ -19,8 +20,9 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
 
         private void bt_them_khachhang_Click(object sender, EventArgs e)
         {
-            frm_khachhang kn = new frm_khachhang();
-            kn.ShowDialog();
+            frm_khachhang kh = new frm_khachhang();
+            //kh.MdiParent = this;
+            kh.ShowDialog();
         }
     }
 }
