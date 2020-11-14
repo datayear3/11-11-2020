@@ -42,12 +42,12 @@
             this.banhang1 = new QLBH_LinhKienPC.GUI.BANHANG.banhang();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
+            this.panel1.Controls.Add(this.bt_close);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
@@ -162,7 +162,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.bt_close);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(300, 0);
             this.panel2.Name = "panel2";
@@ -175,7 +174,7 @@
             this.bt_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_close.Image = global::QLBH_LinhKienPC.Properties.Resources.icons8_logout_rounded_down_64;
-            this.bt_close.Location = new System.Drawing.Point(0, 0);
+            this.bt_close.Location = new System.Drawing.Point(82, 573);
             this.bt_close.Name = "bt_close";
             this.bt_close.Size = new System.Drawing.Size(100, 100);
             this.bt_close.TabIndex = 0;
@@ -214,7 +213,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
