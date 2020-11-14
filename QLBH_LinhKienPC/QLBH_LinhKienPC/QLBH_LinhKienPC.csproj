@@ -51,7 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\BLL_khachhang.cs" />
+    <Compile Include="BLL\BLL_nhomsanpham.cs" />
     <Compile Include="DAL\DAL_khachhang.cs" />
+    <Compile Include="DAL\DAL_nhomsanpham.cs" />
     <Compile Include="DAL\Lopdungchung.cs" />
     <Compile Include="dangnhap.cs">
       <SubType>Form</SubType>
@@ -76,6 +78,12 @@
     </Compile>
     <Compile Include="GUI\frm_hoadon.Designer.cs">
       <DependentUpon>frm_hoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\KHOHANG\frm_themsanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\KHOHANG\frm_themsanpham.Designer.cs">
+      <DependentUpon>frm_themsanpham.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\KHOHANG\khohang.cs">
       <SubType>UserControl</SubType>
@@ -105,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\BANHANG\frm_khachhang.resx">
       <DependentUpon>frm_khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KHOHANG\frm_themsanpham.resx">
+      <DependentUpon>frm_themsanpham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\KHOHANG\khohang.resx">
       <DependentUpon>khohang.cs</DependentUpon>

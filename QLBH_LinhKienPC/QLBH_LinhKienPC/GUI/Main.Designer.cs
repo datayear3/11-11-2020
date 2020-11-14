@@ -241,8 +241,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button bt_khohang;
         private System.Windows.Forms.Button bt_banhang;
-        private BANHANG.banhang banhang1;
-        private TRANGCHU.trangchu trangchu1;
+        //private BANHANG.banhang banhang1;
+        //private TRANGCHU.trangchu trangchu1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private BANHANG.banhang us_banhang;
         private TRANGCHU.trangchu us_trangchu;

@@ -10,17 +10,19 @@ using System.Windows.Forms;
 
 namespace QLBH_LinhKienPC.GUI.KHOHANG
 {
-    public partial class khohang : UserControl
+    public partial class frm_themsanpham : Form
     {
-        public khohang()
+        BLL.BLL_nhomsanpham nsp;
+        public frm_themsanpham()
         {
             InitializeComponent();
+            nsp = new BLL.BLL_nhomsanpham(this);
         }
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
-            frm_themsanpham nsp = new frm_themsanpham();
-            nsp.ShowDialog();
+            nsp.Luukh();
+            
         }
     }
 }
