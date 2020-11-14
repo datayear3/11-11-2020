@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,7 +50,15 @@
             this.rbt_nam = new System.Windows.Forms.RadioButton();
             this.rbt_nu = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dtv_khachhang = new System.Windows.Forms.DataGridView();
+            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChiKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDTKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_khachhang)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -254,11 +265,83 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.dtv_khachhang);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 650);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1018, 350);
             this.panel2.TabIndex = 1;
+            // 
+            // dtv_khachhang
+            // 
+            this.dtv_khachhang.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dtv_khachhang.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtv_khachhang.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dtv_khachhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtv_khachhang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaKH,
+            this.TenKH,
+            this.DiaChiKH,
+            this.SDTKH,
+            this.GioiTinh});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtv_khachhang.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dtv_khachhang.Location = new System.Drawing.Point(0, 3);
+            this.dtv_khachhang.Name = "dtv_khachhang";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtv_khachhang.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtv_khachhang.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtv_khachhang.Size = new System.Drawing.Size(1018, 350);
+            this.dtv_khachhang.TabIndex = 0;
+            this.dtv_khachhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_khachhang_CellContentClick_2);
+            // 
+            // MaKH
+            // 
+            this.MaKH.DataPropertyName = "MaKH";
+            this.MaKH.HeaderText = "MÃ KHÁCH HÀNG";
+            this.MaKH.Name = "MaKH";
+            this.MaKH.Width = 150;
+            // 
+            // TenKH
+            // 
+            this.TenKH.DataPropertyName = "TenKH";
+            this.TenKH.HeaderText = "TÊN KHÁCH HÀNG";
+            this.TenKH.Name = "TenKH";
+            this.TenKH.Width = 200;
+            // 
+            // DiaChiKH
+            // 
+            this.DiaChiKH.DataPropertyName = "DiaChiKH";
+            this.DiaChiKH.HeaderText = "ĐỊA CHỈ KHÁCH HÀNG";
+            this.DiaChiKH.Name = "DiaChiKH";
+            this.DiaChiKH.Width = 200;
+            // 
+            // SDTKH
+            // 
+            this.SDTKH.DataPropertyName = "SDTKH";
+            this.SDTKH.HeaderText = "SDT KHÁCH HÀNG";
+            this.SDTKH.Name = "SDTKH";
+            this.SDTKH.Width = 150;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "GioiTinh";
+            this.GioiTinh.HeaderText = "GIỚI TÍNH";
+            this.GioiTinh.Name = "GioiTinh";
             // 
             // frm_khachhang
             // 
@@ -291,6 +374,8 @@
             this.Load += new System.EventHandler(this.frm_khachhang_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_khachhang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,5 +402,11 @@
         public System.Windows.Forms.RadioButton rbt_nam;
         public System.Windows.Forms.RadioButton rbt_nu;
         private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.DataGridView dtv_khachhang;
+        public System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
+        public System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
+        public System.Windows.Forms.DataGridViewTextBoxColumn DiaChiKH;
+        public System.Windows.Forms.DataGridViewTextBoxColumn SDTKH;
+        public System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
     }
 }

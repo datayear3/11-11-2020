@@ -101,5 +101,27 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
             }
             */
         }
+
+        private void dtv_khachhang_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            int numrow;
+            numrow = e.RowIndex;
+            txt_makh.Text = dtv_khachhang.Rows[numrow].Cells[0].Value.ToString();
+            txt_tenkh.Text = dtv_khachhang.Rows[numrow].Cells[1].Value.ToString();
+            txt_diachi.Text = dtv_khachhang.Rows[numrow].Cells[2].Value.ToString();
+            txt_sdt.Text = dtv_khachhang.Rows[numrow].Cells[3].Value.ToString();
+            if (dtv_khachhang.Rows[numrow].Cells[4].Value.ToString() == "Nam")
+            {
+                rbt_nam.Checked = true;
+                rbt_nu.Checked = false;
+            }
+            else
+            {
+                rbt_nam.Checked = false;
+                rbt_nu.Checked = true;
+            }
+            
+        }
     }
 }
