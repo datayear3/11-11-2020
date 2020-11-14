@@ -77,6 +77,12 @@
     <Compile Include="GUI\frm_hoadon.Designer.cs">
       <DependentUpon>frm_hoadon.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\KHOHANG\khohang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\KHOHANG\khohang.Designer.cs">
+      <DependentUpon>khohang.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\BANHANG\frm_khachhang.resx">
       <DependentUpon>frm_khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KHOHANG\khohang.resx">
+      <DependentUpon>khohang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

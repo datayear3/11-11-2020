@@ -24,14 +24,16 @@ namespace QLBH_LinhKienPC.GUI
 
         private void bt_trangchu_Click(object sender, EventArgs e)
         {
-            trangchu1.Visible = true;
-            banhang1.Visible = false;
+            us_trangchu.Visible = true;
+            us_banhang.Visible = false;
+            us_khohang.Visible = false;
         }
 
         private void bt_banhang_Click(object sender, EventArgs e)
         {
-            trangchu1.Visible = false;
-            banhang1.Visible = true;
+            us_trangchu.Visible = false;
+            us_banhang.Visible = true;
+            us_khohang.Visible = false;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -41,6 +43,24 @@ namespace QLBH_LinhKienPC.GUI
 
         private void trangchu1_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_khohang_Click(object sender, EventArgs e)
+        {
+            us_trangchu.Visible = false;
+            us_banhang.Visible = false;
+            us_khohang.Visible = true;
 
         }
     }
