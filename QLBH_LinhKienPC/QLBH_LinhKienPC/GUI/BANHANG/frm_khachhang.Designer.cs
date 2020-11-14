@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,16 +46,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.rbt_nam = new System.Windows.Forms.RadioButton();
             this.rbt_nu = new System.Windows.Forms.RadioButton();
-            this.dtv_khachhang = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDTKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChiKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenHK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtv_khachhang)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -264,102 +252,8 @@
             this.rbt_nu.Text = "Nữ";
             this.rbt_nu.UseVisualStyleBackColor = true;
             // 
-            // dtv_khachhang
-            // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtv_khachhang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dtv_khachhang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtv_khachhang.BackgroundColor = System.Drawing.Color.White;
-            this.dtv_khachhang.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtv_khachhang.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dtv_khachhang.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtv_khachhang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dtv_khachhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtv_khachhang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaKH,
-            this.TenHK,
-            this.DiaChiKH,
-            this.SDTKH,
-            this.GioiTinh});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtv_khachhang.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dtv_khachhang.DoubleBuffered = true;
-            this.dtv_khachhang.EnableHeadersVisualStyles = false;
-            this.dtv_khachhang.HeaderBgColor = System.Drawing.Color.CornflowerBlue;
-            this.dtv_khachhang.HeaderForeColor = System.Drawing.Color.Red;
-            this.dtv_khachhang.Location = new System.Drawing.Point(0, 0);
-            this.dtv_khachhang.Name = "dtv_khachhang";
-            this.dtv_khachhang.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtv_khachhang.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dtv_khachhang.RowHeadersVisible = false;
-            this.dtv_khachhang.Size = new System.Drawing.Size(1015, 500);
-            this.dtv_khachhang.TabIndex = 1;
-            this.dtv_khachhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_khachhang_CellContentClick_1);
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.DataPropertyName = "GioiTinh";
-            this.GioiTinh.FillWeight = 10F;
-            this.GioiTinh.HeaderText = "Giới Tính";
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.ReadOnly = true;
-            // 
-            // SDTKH
-            // 
-            this.SDTKH.DataPropertyName = "SDTKH";
-            this.SDTKH.FillWeight = 15F;
-            this.SDTKH.HeaderText = "Số Điện Thoại";
-            this.SDTKH.Name = "SDTKH";
-            this.SDTKH.ReadOnly = true;
-            // 
-            // DiaChiKH
-            // 
-            this.DiaChiKH.DataPropertyName = "DiaChiKH";
-            this.DiaChiKH.FillWeight = 20F;
-            this.DiaChiKH.HeaderText = "Địa Chỉ";
-            this.DiaChiKH.Name = "DiaChiKH";
-            this.DiaChiKH.ReadOnly = true;
-            // 
-            // TenHK
-            // 
-            this.TenHK.DataPropertyName = "TenKH";
-            this.TenHK.FillWeight = 20F;
-            this.TenHK.HeaderText = "Tên Khách Hàng";
-            this.TenHK.Name = "TenHK";
-            this.TenHK.ReadOnly = true;
-            // 
-            // MaKH
-            // 
-            this.MaKH.DataPropertyName = "MaKH";
-            this.MaKH.FillWeight = 15F;
-            this.MaKH.HeaderText = "Mã Khách Hàng";
-            this.MaKH.Name = "MaKH";
-            this.MaKH.ReadOnly = true;
-            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dtv_khachhang);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 584);
             this.panel2.Name = "panel2";
@@ -397,8 +291,6 @@
             this.Load += new System.EventHandler(this.frm_khachhang_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtv_khachhang)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,12 +316,6 @@
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.RadioButton rbt_nam;
         public System.Windows.Forms.RadioButton rbt_nu;
-        public Bunifu.Framework.UI.BunifuCustomDataGrid dtv_khachhang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenHK;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChiKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SDTKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
         private System.Windows.Forms.Panel panel2;
     }
 }
