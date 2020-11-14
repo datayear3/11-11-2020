@@ -152,7 +152,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Azure;
-            this.button1.Location = new System.Drawing.Point(118, 398);
+            this.button1.Location = new System.Drawing.Point(189, 389);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(172, 51);
             this.button1.TabIndex = 4;
@@ -167,7 +167,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Azure;
-            this.button2.Location = new System.Drawing.Point(406, 398);
+            this.button2.Location = new System.Drawing.Point(477, 389);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(172, 51);
             this.button2.TabIndex = 4;
@@ -182,7 +182,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Azure;
-            this.button3.Location = new System.Drawing.Point(118, 472);
+            this.button3.Location = new System.Drawing.Point(189, 463);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(172, 51);
             this.button3.TabIndex = 4;
@@ -196,7 +196,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(406, 472);
+            this.button4.Location = new System.Drawing.Point(477, 463);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(172, 51);
             this.button4.TabIndex = 4;
@@ -210,7 +210,7 @@
             this.bt_thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_thoat.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_thoat.ForeColor = System.Drawing.Color.Azure;
-            this.bt_thoat.Location = new System.Drawing.Point(406, 472);
+            this.bt_thoat.Location = new System.Drawing.Point(477, 463);
             this.bt_thoat.Name = "bt_thoat";
             this.bt_thoat.Size = new System.Drawing.Size(172, 51);
             this.bt_thoat.TabIndex = 4;
@@ -255,9 +255,9 @@
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 584);
+            this.panel2.Location = new System.Drawing.Point(0, 650);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1018, 416);
+            this.panel2.Size = new System.Drawing.Size(1018, 350);
             this.panel2.TabIndex = 1;
             // 
             // frm_khachhang

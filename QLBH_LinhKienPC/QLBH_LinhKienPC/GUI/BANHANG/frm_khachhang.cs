@@ -82,6 +82,7 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
 
         private void dtv_khachhang_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
+            /*
             int numrow;
             numrow = e.RowIndex;
             txt_makh.Text = dtv_khachhang.Rows[numrow].Cells[0].Value.ToString();
@@ -98,6 +99,7 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
                 rbt_nam.Checked = false;
                 rbt_nu.Checked = true;
             }
+            */
         }
     }
 }

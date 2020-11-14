@@ -65,7 +65,7 @@ namespace QLBH_LinhKienPC.BLL
         
         public void loadkh()
         {
-            frm_khachhang.dtv_khachhang.DataSource = dal_khachhang.Loadkh();
+            //frm_khachhang.dtv_khachhang.DataSource = dal_khachhang.Loadkh();
         }
 
         /*
