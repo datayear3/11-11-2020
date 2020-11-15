@@ -170,5 +170,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-exit-64.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-simple-wood-plank-texture-desk-top-view-background-poster-image_260246.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z2171722687729_32a7bf203d52597a79ab3092bf6d42c3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\512.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
