@@ -146,7 +146,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = global::QLBH_LinhKienPC.Properties.Resources.pngtree_simple_wood_plank_texture_desk_top_view_background_poster_image_2602461;
-            this.ClientSize = new System.Drawing.Size(963, 468);
+            this.ClientSize = new System.Drawing.Size(958, 468);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
