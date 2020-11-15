@@ -63,6 +63,16 @@ namespace QLBH_LinhKienPC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _512 {
+            get {
+                object obj = ResourceManager.GetObject("512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_exit_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-exit-64", resourceCulture);
@@ -123,9 +133,49 @@ namespace QLBH_LinhKienPC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap img_398183 {
+            get {
+                object obj = ResourceManager.GetObject("img_398183", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_sell {
             get {
                 object obj = ResourceManager.GetObject("logo_sell", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_simple_wood_plank_texture_desk_top_view_background_poster_image_260246 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-simple-wood-plank-texture-desk-top-view-background-poster-image_260246", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_simple_wood_plank_texture_desk_top_view_background_poster_image_2602461 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-simple-wood-plank-texture-desk-top-view-background-poster-image_2602461", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z2171722687729_32a7bf203d52597a79ab3092bf6d42c3 {
+            get {
+                object obj = ResourceManager.GetObject("z2171722687729_32a7bf203d52597a79ab3092bf6d42c3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
