@@ -59,16 +59,16 @@ namespace QLBH_LinhKienPC.BLL
             else
                 MessageBox.Show("Sửa thất bai");
         }
-
+        */
         public void xoaNV()
         {
-            int ketqua = dal_khachhang.Xoakh(frm_khachhang.txt_makh.Text);
+            int ketqua = dal_nv.XoaNV(frm_nv.txt_manv.Text);
             if (ketqua >= 1)
                 MessageBox.Show("Xóa thành công");
             else
                 MessageBox.Show("Xóa thất bai");
         }
-        */
+        
         public void loadNV()
         {
             frm_nv.dtv_nhanvien.DataSource = dal_nv.LoadNV();

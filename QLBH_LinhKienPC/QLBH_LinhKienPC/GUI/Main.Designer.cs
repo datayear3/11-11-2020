@@ -30,9 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.us_banhang = new QLBH_LinhKienPC.GUI.BANHANG.banhang();
-            this.us_trangchu = new QLBH_LinhKienPC.GUI.TRANGCHU.trangchu();
-            this.us_khohang = new QLBH_LinhKienPC.GUI.KHOHANG.khohang();
             this.bt_close = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -41,13 +38,16 @@
             this.bt_banhang = new System.Windows.Forms.Button();
             this.bt_trangchu = new System.Windows.Forms.Button();
             this.us_quantrivien = new QLBH_LinhKienPC.GUI.QUANTRIVIEN.quantrivien();
+            this.us_khohang = new QLBH_LinhKienPC.GUI.KHOHANG.khohang();
+            this.us_trangchu = new QLBH_LinhKienPC.GUI.TRANGCHU.trangchu();
+            this.us_banhang = new QLBH_LinhKienPC.GUI.BANHANG.banhang();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(61)))), ((int)(((byte)(89)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(123)))), ((int)(((byte)(138)))));
             this.panel1.Controls.Add(this.bt_close);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button5);
@@ -70,31 +70,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1155, 100);
             this.panel2.TabIndex = 1;
-            // 
-            // us_banhang
-            // 
-            this.us_banhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(165)))), ((int)(((byte)(149)))));
-            this.us_banhang.Location = new System.Drawing.Point(300, 100);
-            this.us_banhang.Name = "us_banhang";
-            this.us_banhang.Size = new System.Drawing.Size(1620, 980);
-            this.us_banhang.TabIndex = 2;
-            // 
-            // us_trangchu
-            // 
-            this.us_trangchu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(240)))), ((int)(((byte)(225)))));
-            this.us_trangchu.Location = new System.Drawing.Point(300, 100);
-            this.us_trangchu.Name = "us_trangchu";
-            this.us_trangchu.Size = new System.Drawing.Size(1620, 980);
-            this.us_trangchu.TabIndex = 3;
-            // 
-            // us_khohang
-            // 
-            this.us_khohang.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.us_khohang.Location = new System.Drawing.Point(300, 100);
-            this.us_khohang.Margin = new System.Windows.Forms.Padding(2);
-            this.us_khohang.Name = "us_khohang";
-            this.us_khohang.Size = new System.Drawing.Size(1620, 980);
-            this.us_khohang.TabIndex = 4;
             // 
             // bt_close
             // 
@@ -204,6 +179,31 @@
             this.us_quantrivien.Name = "us_quantrivien";
             this.us_quantrivien.Size = new System.Drawing.Size(1620, 980);
             this.us_quantrivien.TabIndex = 5;
+            // 
+            // us_khohang
+            // 
+            this.us_khohang.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.us_khohang.Location = new System.Drawing.Point(300, 100);
+            this.us_khohang.Margin = new System.Windows.Forms.Padding(2);
+            this.us_khohang.Name = "us_khohang";
+            this.us_khohang.Size = new System.Drawing.Size(1620, 980);
+            this.us_khohang.TabIndex = 4;
+            // 
+            // us_trangchu
+            // 
+            this.us_trangchu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(240)))), ((int)(((byte)(225)))));
+            this.us_trangchu.Location = new System.Drawing.Point(300, 100);
+            this.us_trangchu.Name = "us_trangchu";
+            this.us_trangchu.Size = new System.Drawing.Size(1620, 980);
+            this.us_trangchu.TabIndex = 3;
+            // 
+            // us_banhang
+            // 
+            this.us_banhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(165)))), ((int)(((byte)(149)))));
+            this.us_banhang.Location = new System.Drawing.Point(300, 100);
+            this.us_banhang.Name = "us_banhang";
+            this.us_banhang.Size = new System.Drawing.Size(1620, 980);
+            this.us_banhang.TabIndex = 2;
             // 
             // Main
             // 

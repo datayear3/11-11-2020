@@ -306,7 +306,7 @@
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtv_khachhang.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtv_khachhang.Size = new System.Drawing.Size(1018, 350);
+            this.dtv_khachhang.Size = new System.Drawing.Size(844, 350);
             this.dtv_khachhang.TabIndex = 0;
             this.dtv_khachhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_khachhang_CellContentClick_2);
             // 
