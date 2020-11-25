@@ -73,6 +73,36 @@ namespace QLBH_LinhKienPC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_admin_settings_male_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-admin-settings-male-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_data_provider_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-data-provider-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_data_provider_501 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-data-provider-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_exit_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-exit-64", resourceCulture);
@@ -113,9 +143,29 @@ namespace QLBH_LinhKienPC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_profit_report_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-profit-report-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_sell_stock_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-sell-stock-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_system_report_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-system-report-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -157,7 +157,9 @@
             this.Controls.Add(this.dn_tk);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "dangnhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ĐĂNG NHẬP";
+            this.Load += new System.EventHandler(this.dangnhap_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

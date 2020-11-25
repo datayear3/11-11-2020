@@ -52,5 +52,10 @@ namespace QLBH_LinhKienPC
         {
             Application.Exit();
         }
+
+        private void dangnhap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

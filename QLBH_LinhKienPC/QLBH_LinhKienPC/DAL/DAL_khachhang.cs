@@ -24,14 +24,6 @@ namespace QLBH_LinhKienPC.DAL
             return lopchung.ThemSuaXoa(sql);
         }
 
-
-        /*
-        internal int ThemKH(object text1, object text2, object text3, object text4)
-        {
-            throw new NotImplementedException();
-        }
-        */
-
         public int Xoakh(string makh)
         {
             string sql = "Delete KHACH_HANG where MaKH = N'" + makh + "'";

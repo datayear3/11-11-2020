@@ -27,6 +27,8 @@ namespace QLBH_LinhKienPC.GUI
             us_trangchu.Visible = true;
             us_banhang.Visible = false;
             us_khohang.Visible = false;
+            us_quantrivien.Visible = false;
+
         }
 
         private void bt_banhang_Click(object sender, EventArgs e)
@@ -34,6 +36,8 @@ namespace QLBH_LinhKienPC.GUI
             us_trangchu.Visible = false;
             us_banhang.Visible = true;
             us_khohang.Visible = false;
+            us_quantrivien.Visible = false;
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -61,6 +65,16 @@ namespace QLBH_LinhKienPC.GUI
             us_trangchu.Visible = false;
             us_banhang.Visible = false;
             us_khohang.Visible = true;
+            us_quantrivien.Visible = false;
+
+        }
+
+        private void bt_quantrivien_Click(object sender, EventArgs e)
+        {
+            us_trangchu.Visible = false;
+            us_banhang.Visible = false;
+            us_khohang.Visible = false;
+            us_quantrivien.Visible = true;
 
         }
     }

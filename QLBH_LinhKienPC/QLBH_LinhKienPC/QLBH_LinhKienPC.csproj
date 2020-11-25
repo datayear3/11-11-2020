@@ -50,9 +50,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\BLL_chucvu.cs" />
     <Compile Include="BLL\BLL_khachhang.cs" />
+    <Compile Include="BLL\BLL_nhanvien.cs" />
     <Compile Include="BLL\BLL_nhomsanpham.cs" />
+    <Compile Include="DAL\DAL_chucvu.cs" />
     <Compile Include="DAL\DAL_khachhang.cs" />
+    <Compile Include="DAL\DAL_nhanvien.cs" />
     <Compile Include="DAL\DAL_nhomsanpham.cs" />
     <Compile Include="DAL\Lopdungchung.cs" />
     <Compile Include="dangnhap.cs">
@@ -97,6 +101,24 @@
     <Compile Include="GUI\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QUANTRIVIEN\frm_chucvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QUANTRIVIEN\frm_chucvu.Designer.cs">
+      <DependentUpon>frm_chucvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QUANTRIVIEN\frm_nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QUANTRIVIEN\frm_nhanvien.Designer.cs">
+      <DependentUpon>frm_nhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QUANTRIVIEN\quantrivien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\QUANTRIVIEN\quantrivien.Designer.cs">
+      <DependentUpon>quantrivien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\TRANGCHU\trangchu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -122,6 +144,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QUANTRIVIEN\frm_chucvu.resx">
+      <DependentUpon>frm_chucvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QUANTRIVIEN\frm_nhanvien.resx">
+      <DependentUpon>frm_nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QUANTRIVIEN\quantrivien.resx">
+      <DependentUpon>quantrivien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\TRANGCHU\trangchu.resx">
       <DependentUpon>trangchu.cs</DependentUpon>
@@ -184,6 +215,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\img_398183.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-settings-male-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-data-provider-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-data-provider-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profit-report-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-system-report-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
