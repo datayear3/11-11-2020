@@ -11,13 +11,13 @@ namespace QLBH_LinhKienPC.DAL
     {
         Lopdungchung lopchung = new Lopdungchung();
 
-        public int ThemKH(string man, string tenn)
+        public int ThemSP(string man, string tenn)
         {
 
             string sql = "Insert into NHOM_SAN_PHAM values(N'" + man + "',N'" + tenn + "')";
             return lopchung.ThemSuaXoa(sql);
         }
-        public DataTable Loadkh()
+        public DataTable LoadSP()
         {
             string sql = "Select * from NHOM_SAN_PHAM";
             return lopchung.LoadDuLieu(sql);

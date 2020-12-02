@@ -10,19 +10,26 @@ using System.Windows.Forms;
 
 namespace QLBH_LinhKienPC.GUI.KHOHANG
 {
-    public partial class frm_themsanpham : Form
+    public partial class frm_sanpham : Form
     {
-        BLL.BLL_nhomsanpham nsp;
-        public frm_themsanpham()
+        public frm_sanpham()
         {
             InitializeComponent();
-            nsp = new BLL.BLL_nhomsanpham(this);
         }
-       
-        private void button1_Click(object sender, EventArgs e)
+
+        private void frm_sanpham_Load(object sender, EventArgs e)
         {
-            nsp.Luukh();
-            
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
