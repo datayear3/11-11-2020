@@ -24,5 +24,11 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
             kh.ShowDialog();
            
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frm_hoadonban hdb = new frm_hoadonban();
+            hdb.ShowDialog();
+        }
     }
 }
