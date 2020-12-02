@@ -83,11 +83,17 @@
     <Compile Include="GUI\frm_hoadon.Designer.cs">
       <DependentUpon>frm_hoadon.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\KHOHANG\frm_themsanpham.cs">
+    <Compile Include="GUI\KHOHANG\frm_nhomsanpham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\KHOHANG\frm_themsanpham.Designer.cs">
-      <DependentUpon>frm_themsanpham.cs</DependentUpon>
+    <Compile Include="GUI\KHOHANG\frm_nhomsanpham.Designer.cs">
+      <DependentUpon>frm_nhomsanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\KHOHANG\frm_sanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\KHOHANG\frm_sanpham.Designer.cs">
+      <DependentUpon>frm_sanpham.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\KHOHANG\khohang.cs">
       <SubType>UserControl</SubType>
@@ -136,8 +142,11 @@
     <EmbeddedResource Include="GUI\BANHANG\frm_khachhang.resx">
       <DependentUpon>frm_khachhang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\KHOHANG\frm_themsanpham.resx">
-      <DependentUpon>frm_themsanpham.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\KHOHANG\frm_nhomsanpham.resx">
+      <DependentUpon>frm_nhomsanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KHOHANG\frm_sanpham.resx">
+      <DependentUpon>frm_sanpham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\KHOHANG\khohang.resx">
       <DependentUpon>khohang.cs</DependentUpon>
