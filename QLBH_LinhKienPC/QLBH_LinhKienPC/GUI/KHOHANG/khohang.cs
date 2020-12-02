@@ -19,7 +19,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frm_themsanpham nsp = new frm_themsanpham();
+            frm_nhomsanpham nsp = new frm_nhomsanpham();
             nsp.ShowDialog();
         }
     }
