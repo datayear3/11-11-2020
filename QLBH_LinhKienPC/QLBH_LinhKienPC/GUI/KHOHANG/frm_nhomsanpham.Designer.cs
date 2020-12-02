@@ -91,7 +91,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // dtv_nsp
             // 
             this.dtv_nsp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtv_nsp.Location = new System.Drawing.Point(99, 306);
+            this.dtv_nsp.Location = new System.Drawing.Point(59, 268);
             this.dtv_nsp.Name = "dtv_nsp";
             this.dtv_nsp.Size = new System.Drawing.Size(651, 190);
             this.dtv_nsp.TabIndex = 3;
