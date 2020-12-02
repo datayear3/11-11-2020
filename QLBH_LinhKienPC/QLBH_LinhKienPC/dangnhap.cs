@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 
 namespace QLBH_LinhKienPC
@@ -14,6 +15,9 @@ namespace QLBH_LinhKienPC
     public partial class dangnhap : Form
     {
         int dem = 0;
+        public string data_macv="";
+        public string ten_nv = "";
+        public string loai_quyen = "";
         DAL.Lopdungchung lopchung = new DAL.Lopdungchung();
         public dangnhap()
         {
@@ -23,10 +27,39 @@ namespace QLBH_LinhKienPC
         private void bt_dn_Click(object sender, EventArgs e)
         {
             string sql = "select count(*) from NHAN_VIEN where MaNV = '" + dn_tk.Text.ToUpper() + "'and MatKhau = '" + dn_mk.Text.ToUpper() + "'";
+            string mcv = "select * from NHAN_VIEN where MaNV = '" + dn_tk.Text.ToUpper() + "'";
+            
+
+            DataTable data_tb_nv = lopchung.LoadDuLieu(mcv);
+            if (data_tb_nv != null)
+            {
+                foreach (DataRow dr in data_tb_nv.Rows)
+                {
+                    data_macv = dr["MaCV"].ToString();
+                    ten_nv = dr["TenNV"].ToString();
+
+                }
+            }
+            
+            string quyen = "select * from CHUC_VU where MaCV = '" + data_macv +"'";
+            DataTable data_tb_cv = lopchung.LoadDuLieu(quyen);
+            if (data_tb_cv != null)
+            {
+                foreach (DataRow dr in data_tb_cv.Rows)
+                {
+                    loai_quyen = dr["Quyen"].ToString();
+                }
+            }
+            
             int kq = (int)lopchung.ExcuteScalar(sql);
             if (kq >= 1)
             {
                 GUI.Main main = new GUI.Main();
+                main.bt_close.Text = "Xin chao, " + ten_nv;
+                if (loai_quyen != "ADMIN")
+                {
+                    main.bt_quantrivien.Visible = false;
+                }
                 this.Hide();
                 main.ShowDialog();
                 this.Show();

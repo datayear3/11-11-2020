@@ -11,16 +11,16 @@ namespace QLBH_LinhKienPC.DAL
     {
         Lopdungchung lopchung = new Lopdungchung();
 
-        public int ThemCV(string macv, string tencv)
+        public int ThemCV(string macv, string tencv,string q)
         {
-
-            string sql = "Insert into CHUC_VU(MaCV,TenCV) values(N'" + macv + "',N'" + tencv + "')";
+         
+            string sql = "Insert into CHUC_VU(MaCV,TenCV,Quyen) values(N'" + macv + "',N'" + tencv + "',N'" + q + "')";
             return lopchung.ThemSuaXoa(sql);
         }
 
-        public int SuaCV(string macv, string tencv)
+        public int SuaCV(string macv, string tencv,string q)
         {
-            string sql = "Update CHUC_VU set TenCV =N'" + tencv +  "'where MaCV = '" + macv + "'";
+            string sql = "Update CHUC_VU set TenCV =N'" + tencv + "' ,TenCV =N'"+ q + "' where MaCV = '" + macv + "'";
             return lopchung.ThemSuaXoa(sql);
         }
 
@@ -34,6 +34,12 @@ namespace QLBH_LinhKienPC.DAL
         public DataTable LoadCV()
         {
             string sql = "Select * from CHUC_VU";
+            return lopchung.LoadDuLieu(sql);
+
+        }
+        public DataTable LoadCV_cb()
+        {
+            string sql = "Select DISTINCT(Quyen) from CHUC_VU";
             return lopchung.LoadDuLieu(sql);
 
         }

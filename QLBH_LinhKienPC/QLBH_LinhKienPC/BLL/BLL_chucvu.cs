@@ -6,6 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data;
+using System.Configuration;
 
 namespace QLBH_LinhKienPC.BLL
 {
@@ -14,6 +17,8 @@ namespace QLBH_LinhKienPC.BLL
         DAL.DAL_chucvu dal_chucvu = new DAL.DAL_chucvu();
         GUI.QUANTRIVIEN.frm_chucvu frm_chucvu;
         GUI.QUANTRIVIEN.frm_nhanvien frm_nv;
+
+        
         public BLL_chucvu(GUI.QUANTRIVIEN.frm_chucvu f)
         {
             frm_chucvu = f;
@@ -24,7 +29,21 @@ namespace QLBH_LinhKienPC.BLL
         }
         public void LuuCV()
         {
-            int ketqua = dal_chucvu.ThemCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString());
+            string q = "";
+            int tamp = frm_chucvu.cb_cv.SelectedIndex;
+            if(tamp == 0)
+            {
+                q = "ADMIN";
+            }
+            else if(tamp == 1)
+            {
+                q = "KHO";
+            }
+            else
+            {
+                q = "NV";
+            }
+            int ketqua = dal_chucvu.ThemCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(),q);
             if (ketqua >= 1)
                 MessageBox.Show("Thêm thành công");
             else
@@ -33,8 +52,22 @@ namespace QLBH_LinhKienPC.BLL
         
         public void suaCV()
         {
-           
-            int ketqua = dal_chucvu.SuaCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString());
+            string q = "";
+            int tamp = frm_chucvu.cb_cv.SelectedIndex;
+            if (tamp == 0)
+            {
+                q = "ADMIN";
+            }
+            else if (tamp == 1)
+            {
+                q = "KHO";
+            }
+            else
+            {
+                q = "NV";
+            }
+
+            int ketqua = dal_chucvu.SuaCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(), q);
             if (ketqua >= 1)
                 MessageBox.Show("Sửa thành công");
             else
@@ -53,6 +86,18 @@ namespace QLBH_LinhKienPC.BLL
         public void loadCV()
         {
             frm_chucvu.dtv_chucvu.DataSource = dal_chucvu.LoadCV();
+            DataTable cb_quyen = dal_chucvu.LoadCV_cb();
+            frm_chucvu.cb_cv.Items.Clear();
+            if (cb_quyen != null)
+            {
+                foreach (DataRow dr in cb_quyen.Rows)
+                {
+                    
+                    frm_chucvu.cb_cv.Items.Add(dr["Quyen"].ToString());
+
+                }
+            }
+            frm_chucvu.cb_cv.SelectedIndex = 0;
         }
 
         

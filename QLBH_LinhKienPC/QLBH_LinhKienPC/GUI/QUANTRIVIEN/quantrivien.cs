@@ -28,5 +28,10 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
             frm_nhanvien nhanvien = new frm_nhanvien();
             nhanvien.ShowDialog();
         }
+
+        private void quantrivien_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

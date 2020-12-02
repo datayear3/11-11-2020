@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
             this.bt_close = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -50,7 +51,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(123)))), ((int)(((byte)(138)))));
-            this.panel1.Controls.Add(this.bt_close);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.bt_quantrivien);
@@ -66,17 +66,19 @@
             // 
             // bt_close
             // 
+            this.bt_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(60)))), ((int)(((byte)(146)))));
             this.bt_close.FlatAppearance.BorderSize = 0;
             this.bt_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_close.Image = global::QLBH_LinhKienPC.Properties.Resources.icons8_logout_rounded_down_64;
-            this.bt_close.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_close.Location = new System.Drawing.Point(3, 480);
+            this.bt_close.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bt_close.Location = new System.Drawing.Point(0, 0);
             this.bt_close.Name = "bt_close";
-            this.bt_close.Size = new System.Drawing.Size(297, 82);
+            this.bt_close.Size = new System.Drawing.Size(233, 100);
             this.bt_close.TabIndex = 0;
             this.bt_close.Text = "THOÁT";
-            this.bt_close.UseVisualStyleBackColor = true;
+            this.bt_close.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_close.UseVisualStyleBackColor = false;
             this.bt_close.Click += new System.EventHandler(this.button7_Click);
             // 
             // pictureBox1
@@ -168,6 +170,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.bt_close);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(300, 0);
@@ -190,10 +193,12 @@
             // us_quantrivien
             // 
             this.us_quantrivien.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.us_quantrivien.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("us_quantrivien.BackgroundImage")));
             this.us_quantrivien.Location = new System.Drawing.Point(300, 100);
             this.us_quantrivien.Name = "us_quantrivien";
             this.us_quantrivien.Size = new System.Drawing.Size(1620, 980);
             this.us_quantrivien.TabIndex = 5;
+            this.us_quantrivien.Load += new System.EventHandler(this.us_quantrivien_Load);
             // 
             // us_khohang
             // 
@@ -249,9 +254,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button bt_trangchu;
-        private System.Windows.Forms.Button bt_close;
+        public System.Windows.Forms.Button bt_close;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button bt_quantrivien;
+        public System.Windows.Forms.Button bt_quantrivien;
         private System.Windows.Forms.Button bt_khohang;
         private System.Windows.Forms.Button bt_banhang;
         //private BANHANG.banhang banhang1;

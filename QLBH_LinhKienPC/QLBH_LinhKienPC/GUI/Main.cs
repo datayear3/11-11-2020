@@ -77,5 +77,10 @@ namespace QLBH_LinhKienPC.GUI
             us_quantrivien.Visible = true;
 
         }
+
+        private void us_quantrivien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

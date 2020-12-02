@@ -87,5 +87,10 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
             bllnv.xoaNV();
             bllnv.loadNV();
         }
+
+        private void cb_chucvu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
