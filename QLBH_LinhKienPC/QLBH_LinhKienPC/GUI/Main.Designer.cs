@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.bt_close = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -37,12 +36,15 @@
             this.bt_khohang = new System.Windows.Forms.Button();
             this.bt_banhang = new System.Windows.Forms.Button();
             this.bt_trangchu = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.us_quantrivien = new QLBH_LinhKienPC.GUI.QUANTRIVIEN.quantrivien();
             this.us_khohang = new QLBH_LinhKienPC.GUI.KHOHANG.khohang();
             this.us_trangchu = new QLBH_LinhKienPC.GUI.TRANGCHU.trangchu();
             this.us_banhang = new QLBH_LinhKienPC.GUI.BANHANG.banhang();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,15 +63,6 @@
             this.panel1.Size = new System.Drawing.Size(300, 894);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(64)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(300, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1155, 100);
-            this.panel2.TabIndex = 1;
             // 
             // bt_close
             // 
@@ -172,6 +165,28 @@
             this.bt_trangchu.UseVisualStyleBackColor = true;
             this.bt_trangchu.Click += new System.EventHandler(this.bt_trangchu_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(300, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1155, 100);
+            this.panel2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 33.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(167)))), ((int)(((byte)(211)))));
+            this.label1.Location = new System.Drawing.Point(336, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1088, 52);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "PHẦN MỀM QUẢN LÝ BÁN LINH KIỆN MÁY TÍNH";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // us_quantrivien
             // 
             this.us_quantrivien.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -223,6 +238,8 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -244,5 +261,6 @@
         private TRANGCHU.trangchu us_trangchu;
         private KHOHANG.khohang us_khohang;
         private QUANTRIVIEN.quantrivien us_quantrivien;
+        private System.Windows.Forms.Label label1;
     }
 }

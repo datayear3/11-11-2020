@@ -40,6 +40,8 @@
             this.dtv_chucvu = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.MaCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_chucvu)).BeginInit();
             this.panel2.SuspendLayout();
@@ -147,7 +149,7 @@
             // 
             this.panel1.Controls.Add(this.dtv_chucvu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(593, 0);
+            this.panel1.Location = new System.Drawing.Point(621, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(463, 504);
             this.panel1.TabIndex = 9;
@@ -155,6 +157,9 @@
             // dtv_chucvu
             // 
             this.dtv_chucvu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtv_chucvu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaCV,
+            this.TenCV});
             this.dtv_chucvu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtv_chucvu.Location = new System.Drawing.Point(0, 0);
             this.dtv_chucvu.Name = "dtv_chucvu";
@@ -166,7 +171,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(217, 21);
+            this.label3.Location = new System.Drawing.Point(254, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(164, 36);
             this.label3.TabIndex = 10;
@@ -180,15 +185,30 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(593, 78);
+            this.panel2.Size = new System.Drawing.Size(621, 78);
             this.panel2.TabIndex = 11;
+            // 
+            // MaCV
+            // 
+            this.MaCV.DataPropertyName = "MaCV";
+            this.MaCV.HeaderText = "MÃ CHỨC VỤ";
+            this.MaCV.Name = "MaCV";
+            this.MaCV.Width = 150;
+            // 
+            // TenCV
+            // 
+            this.TenCV.DataPropertyName = "TenCV";
+            this.TenCV.FillWeight = 300F;
+            this.TenCV.HeaderText = "TÊN CHỨC VỤ";
+            this.TenCV.Name = "TenCV";
+            this.TenCV.Width = 300;
             // 
             // frm_chucvu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1056, 504);
+            this.ClientSize = new System.Drawing.Size(1084, 504);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bt_thoat);
@@ -228,5 +248,7 @@
         public System.Windows.Forms.DataGridView dtv_chucvu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaCV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenCV;
     }
 }
