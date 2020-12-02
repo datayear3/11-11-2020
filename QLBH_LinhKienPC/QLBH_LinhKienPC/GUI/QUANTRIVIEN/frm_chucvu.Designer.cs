@@ -149,7 +149,7 @@
             // 
             this.panel1.Controls.Add(this.dtv_chucvu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(621, 0);
+            this.panel1.Location = new System.Drawing.Point(604, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(463, 504);
             this.panel1.TabIndex = 9;
@@ -185,7 +185,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(621, 78);
+            this.panel2.Size = new System.Drawing.Size(604, 78);
             this.panel2.TabIndex = 11;
             // 
             // MaCV
@@ -201,14 +201,14 @@
             this.TenCV.FillWeight = 300F;
             this.TenCV.HeaderText = "TÊN CHỨC VỤ";
             this.TenCV.Name = "TenCV";
-            this.TenCV.Width = 300;
+            this.TenCV.Width = 250;
             // 
             // frm_chucvu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1084, 504);
+            this.ClientSize = new System.Drawing.Size(1067, 504);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bt_thoat);
