@@ -305,6 +305,7 @@
             this.cb_chucvu.Name = "cb_chucvu";
             this.cb_chucvu.Size = new System.Drawing.Size(200, 29);
             this.cb_chucvu.TabIndex = 24;
+            this.cb_chucvu.SelectedIndexChanged += new System.EventHandler(this.cb_chucvu_SelectedIndexChanged);
             // 
             // label9
             // 

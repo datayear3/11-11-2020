@@ -40,7 +40,10 @@
             this.dtv_chucvu = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cb_cv = new System.Windows.Forms.ComboBox();
             this.MaCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_chucvu)).BeginInit();
@@ -52,7 +55,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(89, 153);
+            this.label1.Location = new System.Drawing.Point(89, 103);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 22);
             this.label1.TabIndex = 0;
@@ -61,7 +64,7 @@
             // txt_mcv
             // 
             this.txt_mcv.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mcv.Location = new System.Drawing.Point(240, 146);
+            this.txt_mcv.Location = new System.Drawing.Point(240, 96);
             this.txt_mcv.Name = "txt_mcv";
             this.txt_mcv.Size = new System.Drawing.Size(284, 29);
             this.txt_mcv.TabIndex = 1;
@@ -71,7 +74,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(89, 220);
+            this.label2.Location = new System.Drawing.Point(89, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 22);
             this.label2.TabIndex = 0;
@@ -80,7 +83,7 @@
             // txt_tencv
             // 
             this.txt_tencv.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tencv.Location = new System.Drawing.Point(240, 213);
+            this.txt_tencv.Location = new System.Drawing.Point(240, 158);
             this.txt_tencv.Name = "txt_tencv";
             this.txt_tencv.Size = new System.Drawing.Size(284, 29);
             this.txt_tencv.TabIndex = 1;
@@ -149,7 +152,7 @@
             // 
             this.panel1.Controls.Add(this.dtv_chucvu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(604, 0);
+            this.panel1.Location = new System.Drawing.Point(595, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(463, 504);
             this.panel1.TabIndex = 9;
@@ -159,6 +162,7 @@
             this.dtv_chucvu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtv_chucvu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaCV,
+            this.Quyen,
             this.TenCV});
             this.dtv_chucvu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtv_chucvu.Location = new System.Drawing.Point(0, 0);
@@ -185,8 +189,28 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(604, 78);
+            this.panel2.Size = new System.Drawing.Size(595, 78);
             this.panel2.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(89, 222);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 22);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Quyền";
+            // 
+            // cb_cv
+            // 
+            this.cb_cv.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_cv.FormattingEnabled = true;
+            this.cb_cv.Location = new System.Drawing.Point(240, 212);
+            this.cb_cv.Name = "cb_cv";
+            this.cb_cv.Size = new System.Drawing.Size(284, 32);
+            this.cb_cv.TabIndex = 12;
             // 
             // MaCV
             // 
@@ -195,26 +219,34 @@
             this.MaCV.Name = "MaCV";
             this.MaCV.Width = 150;
             // 
+            // Quyen
+            // 
+            this.Quyen.DataPropertyName = "Quyen";
+            this.Quyen.HeaderText = "QUYỀN";
+            this.Quyen.Name = "Quyen";
+            // 
             // TenCV
             // 
             this.TenCV.DataPropertyName = "TenCV";
             this.TenCV.FillWeight = 300F;
             this.TenCV.HeaderText = "TÊN CHỨC VỤ";
             this.TenCV.Name = "TenCV";
-            this.TenCV.Width = 250;
+            this.TenCV.Width = 150;
             // 
             // frm_chucvu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1067, 504);
+            this.ClientSize = new System.Drawing.Size(1058, 504);
+            this.Controls.Add(this.cb_cv);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bt_thoat);
             this.Controls.Add(this.bt_xoa);
             this.Controls.Add(this.bt_sua);
             this.Controls.Add(this.bt_them);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_tencv);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_mcv);
@@ -248,7 +280,10 @@
         public System.Windows.Forms.DataGridView dtv_chucvu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.ComboBox cb_cv;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaCV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quyen;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenCV;
     }
 }

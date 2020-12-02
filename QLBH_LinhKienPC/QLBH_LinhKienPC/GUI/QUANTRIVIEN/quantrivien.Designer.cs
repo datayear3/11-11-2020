@@ -37,24 +37,30 @@
             // 
             // bt_chucvu
             // 
+            this.bt_chucvu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(38)))), ((int)(((byte)(99)))));
+            this.bt_chucvu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_chucvu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_chucvu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bt_chucvu.Location = new System.Drawing.Point(27, 128);
             this.bt_chucvu.Name = "bt_chucvu";
             this.bt_chucvu.Size = new System.Drawing.Size(236, 82);
             this.bt_chucvu.TabIndex = 0;
             this.bt_chucvu.Text = "QUẢN LÝ CHỨC VỤ";
-            this.bt_chucvu.UseVisualStyleBackColor = true;
+            this.bt_chucvu.UseVisualStyleBackColor = false;
             this.bt_chucvu.Click += new System.EventHandler(this.bt_chucvu_Click);
             // 
             // bt_nhanvien
             // 
+            this.bt_nhanvien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(38)))), ((int)(((byte)(99)))));
+            this.bt_nhanvien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_nhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_nhanvien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bt_nhanvien.Location = new System.Drawing.Point(296, 128);
             this.bt_nhanvien.Name = "bt_nhanvien";
             this.bt_nhanvien.Size = new System.Drawing.Size(236, 82);
             this.bt_nhanvien.TabIndex = 0;
             this.bt_nhanvien.Text = "QUẢN LÝ NHÂN VIÊN";
-            this.bt_nhanvien.UseVisualStyleBackColor = true;
+            this.bt_nhanvien.UseVisualStyleBackColor = false;
             this.bt_nhanvien.Click += new System.EventHandler(this.bt_nhanvien_Click);
             // 
             // panel1
@@ -88,6 +94,7 @@
             this.Controls.Add(this.bt_chucvu);
             this.Name = "quantrivien";
             this.Size = new System.Drawing.Size(1620, 980);
+            this.Load += new System.EventHandler(this.quantrivien_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
