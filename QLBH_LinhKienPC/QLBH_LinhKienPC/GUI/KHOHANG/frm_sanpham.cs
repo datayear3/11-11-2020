@@ -13,7 +13,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
     public partial class frm_sanpham : Form
     {
         BLL.BLL_sanpham bllsp;
-        internal static object dtv_sanpham;
+        //internal static object dtv_sanpham;
 
         public frm_sanpham()
         {

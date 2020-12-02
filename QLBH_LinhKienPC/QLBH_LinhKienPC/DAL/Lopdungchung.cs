@@ -14,12 +14,12 @@ namespace QLBH_LinhKienPC.DAL
     class Lopdungchung
     {
         SqlConnection conn;
-        GUI.frm_hoadon frmhd;
+       // GUI.frm_hoadon frmhd;
         string chuoiketnoi = @"Data Source=MC;Initial Catalog=QuanLyCuaHangBanLe;Integrated Security=True";
-        public Lopdungchung(GUI.frm_hoadon f)
-        {
-            frmhd = f;
-        }
+        //public Lopdungchung(GUI.frm_hoadon f)
+       // {
+          //  frmhd = f;
+       // }
 
         public Lopdungchung()
         {

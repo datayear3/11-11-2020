@@ -127,26 +127,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.bt_xoa.UseVisualStyleBackColor = true;
             this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
-            // frm_nhomsanpham
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 533);
-            this.Controls.Add(this.dtv_nsp);
-            this.Controls.Add(this.bt_xoa);
-            this.Controls.Add(this.bt_sua);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.txt_tn);
-            this.Controls.Add(this.txt_mn);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Name = "frm_nhomsanpham";
-            this.Text = "frm_nhomsanpham";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtv_nsp)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+           
 
         }
 
