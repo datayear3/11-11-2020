@@ -20,7 +20,7 @@ namespace QLBH_LinhKienPC.DAL
 
         public int SuaCV(string macv, string tencv,string q)
         {
-            string sql = "Update CHUC_VU set TenCV =N'" + tencv + "' ,TenCV =N'"+ q + "' where MaCV = '" + macv + "'";
+            string sql = "Update CHUC_VU set TenCV =N'" + tencv + "' ,Quyen =N'"+ q + "' where MaCV = '" + macv + "'";
             return lopchung.ThemSuaXoa(sql);
         }
 
