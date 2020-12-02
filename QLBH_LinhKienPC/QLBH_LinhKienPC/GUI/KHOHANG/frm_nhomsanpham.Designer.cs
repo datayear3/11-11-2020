@@ -99,7 +99,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(126, 277);
+            this.dataGridView1.Location = new System.Drawing.Point(131, 323);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(547, 150);
             this.dataGridView1.TabIndex = 3;
