@@ -29,9 +29,28 @@ namespace QLBH_LinhKienPC.BLL
 
         public void loadSP()
         {
-           // frm_nhomsanpham.dtv_nhomsanpham.DataSource = dal_nhomsanpham.LoadSP();
+            // frm_nhomsanpham.dat = dal_chucvu.LoadCV();
+            frm_nsp.dtv_nsp.DataSource = dal_nhomsanpham.LoadSP();
+
+        }
+        public void suaSP()
+        {
+
+            int ketqua = dal_nhomsanpham.SuaSP(frm_nsp.txt_mn.Text.ToString(), frm_nsp.txt_tn.Text.ToString());
+            if (ketqua >= 1)
+                MessageBox.Show("Sửa thành công");
+            else
+                MessageBox.Show("Sửa thất bai");
         }
 
+        public void xoaSP()
+        {
+            int ketqua = dal_nhomsanpham.XoaSP(frm_nsp.txt_mn.Text.ToString());
+            if (ketqua >= 1)
+                MessageBox.Show("Xóa thành công");
+            else
+                MessageBox.Show("Xóa thất bai");
+        }
 
 
     }

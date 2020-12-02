@@ -23,5 +23,18 @@ namespace QLBH_LinhKienPC.DAL
             return lopchung.LoadDuLieu(sql);
 
         }
+
+        public int SuaSP(string man, string tenn)
+        {
+            string sql = "Update NHOM_SAN_PHAM set TenNhom =N'" + tenn + "'where MaNhom = '" + man + "'";
+            return lopchung.ThemSuaXoa(sql);
+        }
+        public int XoaSP(string man)
+        {
+            string sql = "Delete NHOM_SAN_PHAM where MaNHom = N'" + man + "'";
+            return lopchung.ThemSuaXoa(sql);
+
+        }
     }
+
 }

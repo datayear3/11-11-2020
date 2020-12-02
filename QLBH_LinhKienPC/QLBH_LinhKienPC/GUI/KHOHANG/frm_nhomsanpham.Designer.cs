@@ -34,9 +34,11 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.label3 = new System.Windows.Forms.Label();
             this.txt_mn = new System.Windows.Forms.TextBox();
             this.txt_tn = new System.Windows.Forms.TextBox();
-            this.bt_themsp = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dtv_nsp = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.bt_sua = new System.Windows.Forms.Button();
+            this.bt_xoa = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_nsp)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -86,40 +88,63 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.txt_tn.Size = new System.Drawing.Size(100, 26);
             this.txt_tn.TabIndex = 1;
             // 
-            // bt_themsp
+            // dtv_nsp
             // 
-            this.bt_themsp.Location = new System.Drawing.Point(502, 131);
-            this.bt_themsp.Name = "bt_themsp";
-            this.bt_themsp.Size = new System.Drawing.Size(75, 23);
-            this.bt_themsp.TabIndex = 2;
-            this.bt_themsp.Text = "Thêm";
-            this.bt_themsp.UseVisualStyleBackColor = true;
-            this.bt_themsp.Click += new System.EventHandler(this.bt_themsp_Click);
+            this.dtv_nsp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtv_nsp.Location = new System.Drawing.Point(99, 306);
+            this.dtv_nsp.Name = "dtv_nsp";
+            this.dtv_nsp.Size = new System.Drawing.Size(651, 190);
+            this.dtv_nsp.TabIndex = 3;
+            this.dtv_nsp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_nsp_CellContentClick);
             // 
-            // dataGridView1
+            // button1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(131, 323);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(547, 150);
-            this.dataGridView1.TabIndex = 3;
+            this.button1.Location = new System.Drawing.Point(525, 106);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Thêm";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.bt_themsp_Click);
+            // 
+            // bt_sua
+            // 
+            this.bt_sua.Location = new System.Drawing.Point(525, 148);
+            this.bt_sua.Name = "bt_sua";
+            this.bt_sua.Size = new System.Drawing.Size(75, 23);
+            this.bt_sua.TabIndex = 2;
+            this.bt_sua.Text = "Sửa ";
+            this.bt_sua.UseVisualStyleBackColor = true;
+            this.bt_sua.Click += new System.EventHandler(this.bt_sua_Click);
+            // 
+            // bt_xoa
+            // 
+            this.bt_xoa.Location = new System.Drawing.Point(525, 202);
+            this.bt_xoa.Name = "bt_xoa";
+            this.bt_xoa.Size = new System.Drawing.Size(75, 23);
+            this.bt_xoa.TabIndex = 2;
+            this.bt_xoa.Text = "Xóa";
+            this.bt_xoa.UseVisualStyleBackColor = true;
+            this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
             // frm_nhomsanpham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 533);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.bt_themsp);
+            this.Controls.Add(this.dtv_nsp);
+            this.Controls.Add(this.bt_xoa);
+            this.Controls.Add(this.bt_sua);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txt_tn);
             this.Controls.Add(this.txt_mn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frm_nhomsanpham";
-            this.Text = "Form1";
+            this.Text = "frm_nhomsanpham";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_nsp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,7 +157,9 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         private System.Windows.Forms.Label label3;
        public System.Windows.Forms.TextBox txt_mn;
         public System.Windows.Forms.TextBox txt_tn;
-        private System.Windows.Forms.Button bt_themsp;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridView dtv_nsp;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_sua;
+        private System.Windows.Forms.Button bt_xoa;
     }
 }

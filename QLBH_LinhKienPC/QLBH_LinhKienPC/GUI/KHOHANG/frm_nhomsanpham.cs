@@ -23,7 +23,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            bllnsp.loadSP();
         }
 
         private void bt_themsp_Click(object sender, EventArgs e)
@@ -31,6 +31,42 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             bllnsp.LuuSP();
             bllnsp.loadSP();
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void bt_sua_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog;
+            dialog = MessageBox.Show(" Thông tin sẽ bị thay đổi. Bạn có muốn tiếp tục", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                bllnsp.suaSP();
+                bllnsp.loadSP();
+            }
+        }
+
+        private void dtv_nsp_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            txt_mn.Text = dtv_nsp.Rows[numrow].Cells[0].Value.ToString();
+            txt_tn.Text = dtv_nsp.Rows[numrow].Cells[1].Value.ToString();
+
+        }
+
+        private void bt_xoa_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog;
+            dialog = MessageBox.Show(" Bạn có muốn xóa hay không", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                bllnsp.xoaSP();
+                bllnsp.loadSP();
+            }
         }
     }
 }
