@@ -30,15 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bt_close = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.bt_thongke = new System.Windows.Forms.Button();
             this.bt_quantrivien = new System.Windows.Forms.Button();
             this.bt_khohang = new System.Windows.Forms.Button();
             this.bt_banhang = new System.Windows.Forms.Button();
             this.bt_trangchu = new System.Windows.Forms.Button();
+            this.bt_close = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.us_thongke = new QLBH_LinhKienPC.GUI.THONGKE.thongke();
             this.us_quantrivien = new QLBH_LinhKienPC.GUI.QUANTRIVIEN.quantrivien();
             this.us_khohang = new QLBH_LinhKienPC.GUI.KHOHANG.khohang();
             this.us_trangchu = new QLBH_LinhKienPC.GUI.TRANGCHU.trangchu();
@@ -52,7 +53,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(123)))), ((int)(((byte)(138)))));
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.bt_thongke);
             this.panel1.Controls.Add(this.bt_quantrivien);
             this.panel1.Controls.Add(this.bt_khohang);
             this.panel1.Controls.Add(this.bt_banhang);
@@ -63,23 +64,6 @@
             this.panel1.Size = new System.Drawing.Size(300, 894);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // bt_close
-            // 
-            this.bt_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(60)))), ((int)(((byte)(146)))));
-            this.bt_close.FlatAppearance.BorderSize = 0;
-            this.bt_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_close.Image = global::QLBH_LinhKienPC.Properties.Resources.icons8_logout_rounded_down_64;
-            this.bt_close.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bt_close.Location = new System.Drawing.Point(0, 0);
-            this.bt_close.Name = "bt_close";
-            this.bt_close.Size = new System.Drawing.Size(233, 100);
-            this.bt_close.TabIndex = 0;
-            this.bt_close.Text = "THOÁT";
-            this.bt_close.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_close.UseVisualStyleBackColor = false;
-            this.bt_close.Click += new System.EventHandler(this.button7_Click);
             // 
             // pictureBox1
             // 
@@ -92,20 +76,20 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // button5
+            // bt_thongke
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = global::QLBH_LinhKienPC.Properties.Resources.icons8_system_report_50;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(6, 328);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(294, 70);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "THỐNG KÊ";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.bt_thongke.FlatAppearance.BorderSize = 0;
+            this.bt_thongke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_thongke.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_thongke.Image = global::QLBH_LinhKienPC.Properties.Resources.icons8_system_report_50;
+            this.bt_thongke.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_thongke.Location = new System.Drawing.Point(6, 328);
+            this.bt_thongke.Name = "bt_thongke";
+            this.bt_thongke.Size = new System.Drawing.Size(294, 70);
+            this.bt_thongke.TabIndex = 0;
+            this.bt_thongke.Text = "THỐNG KÊ";
+            this.bt_thongke.UseVisualStyleBackColor = true;
+            this.bt_thongke.Click += new System.EventHandler(this.bt_thongke_Click);
             // 
             // bt_quantrivien
             // 
@@ -167,6 +151,23 @@
             this.bt_trangchu.UseVisualStyleBackColor = true;
             this.bt_trangchu.Click += new System.EventHandler(this.bt_trangchu_Click);
             // 
+            // bt_close
+            // 
+            this.bt_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(60)))), ((int)(((byte)(146)))));
+            this.bt_close.FlatAppearance.BorderSize = 0;
+            this.bt_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_close.Image = global::QLBH_LinhKienPC.Properties.Resources.icons8_logout_rounded_down_64;
+            this.bt_close.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bt_close.Location = new System.Drawing.Point(0, 0);
+            this.bt_close.Name = "bt_close";
+            this.bt_close.Size = new System.Drawing.Size(233, 100);
+            this.bt_close.TabIndex = 0;
+            this.bt_close.Text = "THOÁT";
+            this.bt_close.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_close.UseVisualStyleBackColor = false;
+            this.bt_close.Click += new System.EventHandler(this.button7_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(110)))), ((int)(((byte)(64)))));
@@ -182,13 +183,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 33.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(167)))), ((int)(((byte)(211)))));
+            this.label1.ForeColor = System.Drawing.Color.Green;
             this.label1.Location = new System.Drawing.Point(336, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1088, 52);
             this.label1.TabIndex = 0;
             this.label1.Text = "PHẦN MỀM QUẢN LÝ BÁN LINH KIỆN MÁY TÍNH";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // us_thongke
+            // 
+            this.us_thongke.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.us_thongke.Location = new System.Drawing.Point(300, 100);
+            this.us_thongke.Name = "us_thongke";
+            this.us_thongke.Size = new System.Drawing.Size(1620, 980);
+            this.us_thongke.TabIndex = 6;
             // 
             // us_quantrivien
             // 
@@ -230,6 +239,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1455, 894);
+            this.Controls.Add(this.us_thongke);
             this.Controls.Add(this.us_quantrivien);
             this.Controls.Add(this.us_khohang);
             this.Controls.Add(this.us_trangchu);
@@ -255,7 +265,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button bt_trangchu;
         public System.Windows.Forms.Button bt_close;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button bt_thongke;
         public System.Windows.Forms.Button bt_quantrivien;
         private System.Windows.Forms.Button bt_khohang;
         private System.Windows.Forms.Button bt_banhang;
@@ -267,5 +277,6 @@
         private KHOHANG.khohang us_khohang;
         private QUANTRIVIEN.quantrivien us_quantrivien;
         private System.Windows.Forms.Label label1;
+        private THONGKE.thongke us_thongke;
     }
 }
