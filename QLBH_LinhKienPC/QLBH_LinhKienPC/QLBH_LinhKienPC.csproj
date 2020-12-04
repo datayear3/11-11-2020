@@ -141,6 +141,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyCuaHangBanLeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCuaHangBanLeDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +209,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QuanLyCuaHangBanLeDataSet1.xsc">
+      <DependentUpon>QuanLyCuaHangBanLeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanLeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyCuaHangBanLeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyCuaHangBanLeDataSet1.xss">
+      <DependentUpon>QuanLyCuaHangBanLeDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Resources\icons8-user-64.png" />
   </ItemGroup>
   <ItemGroup>

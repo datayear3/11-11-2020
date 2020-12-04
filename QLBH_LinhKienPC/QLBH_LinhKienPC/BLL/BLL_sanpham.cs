@@ -4,6 +4,7 @@ using QLBH_LinhKienPC.GUI.KHOHANG;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QLBH_LinhKienPC.GUI.BANHANG;
 
 namespace QLBH_LinhKienPC.BLL
 {
@@ -12,10 +13,18 @@ namespace QLBH_LinhKienPC.BLL
 
         DAL.DAL_sanpham dal_sanpham = new DAL.DAL_sanpham();
         frm_sanpham frm_sp;
+        private frm_hoadonban frm_hoadonban;
+
         public BLL_sanpham(frm_sanpham f)
         {
             frm_sp = f;
         }
+
+        public BLL_sanpham(frm_hoadonban frm_hoadonban)
+        {
+            this.frm_hoadonban = frm_hoadonban;
+        }
+
         public void LuuSP()
         {
             /*

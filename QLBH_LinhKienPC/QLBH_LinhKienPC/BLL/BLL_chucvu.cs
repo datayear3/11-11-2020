@@ -17,8 +17,8 @@ namespace QLBH_LinhKienPC.BLL
         DAL.DAL_chucvu dal_chucvu = new DAL.DAL_chucvu();
         GUI.QUANTRIVIEN.frm_chucvu frm_chucvu;
         GUI.QUANTRIVIEN.frm_nhanvien frm_nv;
+        private frm_hoadonban frm_hoadonban;
 
-        
         public BLL_chucvu(GUI.QUANTRIVIEN.frm_chucvu f)
         {
             frm_chucvu = f;
@@ -27,6 +27,12 @@ namespace QLBH_LinhKienPC.BLL
         {
             frm_nv = f;
         }
+
+        public BLL_chucvu(frm_hoadonban frm_hoadonban)
+        {
+            this.frm_hoadonban = frm_hoadonban;
+        }
+
         public void LuuCV()
         {
             string q = "";
