@@ -31,12 +31,30 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
         SqlDataReader docdulieu;
         int i = 0;
         string sql;
+        private object dtv_hoadon;
+
         private void bt_thoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void frm_hoadonban_Load(object sender, EventArgs e)
+        { 
+               
+                bllnv.loadNV();
+        }
+
+        private void cb_mahoadon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void dtv_banhang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             cb_makhachhang.Items.Clear();
             cb_manhanvien.Items.Clear();
@@ -55,11 +73,6 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
                 i++;
             }
             ketnoi.Close();
-        }
-
-        private void frm_hoadonban_Load(object sender, EventArgs e)
-        {
-            ketnoi = new SqlConnection(chuoiketnoi);
         }
     }
 }

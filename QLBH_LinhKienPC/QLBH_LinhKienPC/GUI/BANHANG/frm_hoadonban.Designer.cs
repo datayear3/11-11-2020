@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.bt_thoat = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.dtv_ht = new System.Windows.Forms.DataGridView();
+            this.dtv_banhang = new System.Windows.Forms.DataGridView();
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,8 +49,14 @@
             this.cb_ngayban = new System.Windows.Forms.ComboBox();
             this.cb_masanpham = new System.Windows.Forms.ComboBox();
             this.quanLyCuaHangBanLeDataSet = new QLBH_LinhKienPC.QuanLyCuaHangBanLeDataSet();
-            ((System.ComponentModel.ISupportInitialize)(this.dtv_ht)).BeginInit();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cb_mahoadon = new System.Windows.Forms.ComboBox();
+            this.quanLyCuaHangBanLeDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyCuaHangBanLeDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_banhang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSetBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // bt_thoat
@@ -109,19 +116,20 @@
             this.button1.Text = "THÊM";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // dtv_ht
+            // dtv_banhang
             // 
-            this.dtv_ht.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtv_ht.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtv_banhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtv_banhang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TenKH,
             this.TenNV,
             this.NgayBan,
             this.TenSP,
             this.TongTienBan});
-            this.dtv_ht.Location = new System.Drawing.Point(564, 12);
-            this.dtv_ht.Name = "dtv_ht";
-            this.dtv_ht.Size = new System.Drawing.Size(546, 439);
-            this.dtv_ht.TabIndex = 9;
+            this.dtv_banhang.Location = new System.Drawing.Point(569, 12);
+            this.dtv_banhang.Name = "dtv_banhang";
+            this.dtv_banhang.Size = new System.Drawing.Size(546, 439);
+            this.dtv_banhang.TabIndex = 9;
+            this.dtv_banhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_banhang_CellContentClick);
             // 
             // TenKH
             // 
@@ -162,7 +170,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 100);
+            this.label2.Location = new System.Drawing.Point(12, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 15);
             this.label2.TabIndex = 11;
@@ -181,7 +189,7 @@
             // cb_makhachhang
             // 
             this.cb_makhachhang.FormattingEnabled = true;
-            this.cb_makhachhang.Location = new System.Drawing.Point(129, 96);
+            this.cb_makhachhang.Location = new System.Drawing.Point(129, 140);
             this.cb_makhachhang.Name = "cb_makhachhang";
             this.cb_makhachhang.Size = new System.Drawing.Size(121, 21);
             this.cb_makhachhang.TabIndex = 13;
@@ -199,7 +207,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(292, 102);
+            this.label4.Location = new System.Drawing.Point(298, 140);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 15);
             this.label4.TabIndex = 15;
@@ -218,7 +226,7 @@
             // cb_ngayban
             // 
             this.cb_ngayban.FormattingEnabled = true;
-            this.cb_ngayban.Location = new System.Drawing.Point(395, 96);
+            this.cb_ngayban.Location = new System.Drawing.Point(395, 134);
             this.cb_ngayban.Name = "cb_ngayban";
             this.cb_ngayban.Size = new System.Drawing.Size(136, 21);
             this.cb_ngayban.TabIndex = 17;
@@ -236,11 +244,42 @@
             this.quanLyCuaHangBanLeDataSet.DataSetName = "QuanLyCuaHangBanLeDataSet";
             this.quanLyCuaHangBanLeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(140, 85);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 15);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Mã Hóa Đơn";
+            // 
+            // cb_mahoadon
+            // 
+            this.cb_mahoadon.FormattingEnabled = true;
+            this.cb_mahoadon.Location = new System.Drawing.Point(244, 84);
+            this.cb_mahoadon.Name = "cb_mahoadon";
+            this.cb_mahoadon.Size = new System.Drawing.Size(135, 21);
+            this.cb_mahoadon.TabIndex = 20;
+            this.cb_mahoadon.SelectedIndexChanged += new System.EventHandler(this.cb_mahoadon_SelectedIndexChanged);
+            // 
+            // quanLyCuaHangBanLeDataSetBindingSource
+            // 
+            this.quanLyCuaHangBanLeDataSetBindingSource.DataSource = this.quanLyCuaHangBanLeDataSet;
+            this.quanLyCuaHangBanLeDataSetBindingSource.Position = 0;
+            // 
+            // quanLyCuaHangBanLeDataSetBindingSource1
+            // 
+            this.quanLyCuaHangBanLeDataSetBindingSource1.DataSource = this.quanLyCuaHangBanLeDataSet;
+            this.quanLyCuaHangBanLeDataSetBindingSource1.Position = 0;
+            // 
             // frm_hoadonban
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1116, 466);
+            this.Controls.Add(this.cb_mahoadon);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.cb_masanpham);
             this.Controls.Add(this.cb_ngayban);
             this.Controls.Add(this.label5);
@@ -250,7 +289,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dtv_ht);
+            this.Controls.Add(this.dtv_banhang);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
@@ -258,8 +297,10 @@
             this.Name = "frm_hoadonban";
             this.Text = "frm_hoadonban";
             this.Load += new System.EventHandler(this.frm_hoadonban_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtv_ht)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_banhang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSetBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,7 +312,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dtv_ht;
+        private System.Windows.Forms.DataGridView dtv_banhang;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayBan;
@@ -287,5 +328,9 @@
         private System.Windows.Forms.ComboBox cb_masanpham;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTienBan;
         private QuanLyCuaHangBanLeDataSet quanLyCuaHangBanLeDataSet;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cb_mahoadon;
+        private System.Windows.Forms.BindingSource quanLyCuaHangBanLeDataSetBindingSource;
+        private System.Windows.Forms.BindingSource quanLyCuaHangBanLeDataSetBindingSource1;
     }
 }

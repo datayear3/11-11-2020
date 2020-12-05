@@ -24,6 +24,11 @@ namespace QLBH_LinhKienPC.DAL
             return lopchung.ThemSuaXoa(sql);
         }
 
+        internal object LoadSP()
+        {
+            throw new NotImplementedException();
+        }
+
         public int Xoasp(string masp)
         {
             string sql = "Delete KHACH_HANG where MaKH = N'" + masp + "'";

@@ -14,6 +14,7 @@ namespace QLBH_LinhKienPC.BLL
         DAL.DAL_khachhang dal_khachhang = new DAL.DAL_khachhang();
         frm_khachhang frm_khachhang;
         private frm_hoadonban frm_hoadonban;
+        private object frm_hoadon;
 
         public BLL_khachhang(frm_khachhang f)
         {
@@ -60,7 +61,12 @@ namespace QLBH_LinhKienPC.BLL
             else
                 MessageBox.Show("Sửa thất bai");
         }
-        
+
+        internal void LayDSCV()
+        {
+            throw new NotImplementedException();
+        }
+
         public void xoakh()
         {
             int ketqua = dal_khachhang.Xoakh(frm_khachhang.txt_makh.Text);
@@ -75,14 +81,14 @@ namespace QLBH_LinhKienPC.BLL
             frm_khachhang.dtv_khachhang.DataSource = dal_khachhang.Loadkh();
         }
 
-        /*
-        public void LayDSNCC()
+
+        /*public void LayDSNCC()
         {
-            frm_hoadon.cb_makh.DataSource = dal_khachhang.Loadkh();
-            frm_hoadon.cb_makh.DisplayMember = "MaKH";
-            frm_hoadon.cb_makh.ValueMember = "MaKH";
+            frm_hoadonban.cb_makhachhang.DataSource = dal_khachhang.Loadkh();
+            frm_hoadonban.cb_makhachhang.DisplayMember = "MaKH";
+            frm_hoadonban.cb_makhachhang.ValueMember = "MaKH";
         }
-        
         */
+        
     }
 }

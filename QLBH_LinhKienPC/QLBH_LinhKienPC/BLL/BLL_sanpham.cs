@@ -36,6 +36,12 @@ namespace QLBH_LinhKienPC.BLL
 
             */
         }
-
+       /* public void LayDSSP()
+        {
+            frm_sp.cb_masanpham.DataSource = dal_sanpham.LoadSP();
+            frm_sp.cb_masanpham.DisplayMember = "MaSP";
+            frm_sp.cb_masanpham.ValueMember = "MaSP";
+        }
+       */
     }
 }
