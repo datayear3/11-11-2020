@@ -49,8 +49,6 @@
             this.cb_ngayban = new System.Windows.Forms.ComboBox();
             this.cb_masanpham = new System.Windows.Forms.ComboBox();
             this.quanLyCuaHangBanLeDataSet = new QLBH_LinhKienPC.QuanLyCuaHangBanLeDataSet();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cb_mahoadon = new System.Windows.Forms.ComboBox();
             this.quanLyCuaHangBanLeDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyCuaHangBanLeDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dtv_banhang)).BeginInit();
@@ -170,7 +168,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 146);
+            this.label2.Location = new System.Drawing.Point(12, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 15);
             this.label2.TabIndex = 11;
@@ -189,7 +187,7 @@
             // cb_makhachhang
             // 
             this.cb_makhachhang.FormattingEnabled = true;
-            this.cb_makhachhang.Location = new System.Drawing.Point(129, 140);
+            this.cb_makhachhang.Location = new System.Drawing.Point(129, 106);
             this.cb_makhachhang.Name = "cb_makhachhang";
             this.cb_makhachhang.Size = new System.Drawing.Size(121, 21);
             this.cb_makhachhang.TabIndex = 13;
@@ -207,7 +205,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(298, 140);
+            this.label4.Location = new System.Drawing.Point(298, 112);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 15);
             this.label4.TabIndex = 15;
@@ -226,7 +224,7 @@
             // cb_ngayban
             // 
             this.cb_ngayban.FormattingEnabled = true;
-            this.cb_ngayban.Location = new System.Drawing.Point(395, 134);
+            this.cb_ngayban.Location = new System.Drawing.Point(395, 106);
             this.cb_ngayban.Name = "cb_ngayban";
             this.cb_ngayban.Size = new System.Drawing.Size(136, 21);
             this.cb_ngayban.TabIndex = 17;
@@ -244,25 +242,6 @@
             this.quanLyCuaHangBanLeDataSet.DataSetName = "QuanLyCuaHangBanLeDataSet";
             this.quanLyCuaHangBanLeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(140, 85);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 15);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Mã Hóa Đơn";
-            // 
-            // cb_mahoadon
-            // 
-            this.cb_mahoadon.FormattingEnabled = true;
-            this.cb_mahoadon.Location = new System.Drawing.Point(244, 84);
-            this.cb_mahoadon.Name = "cb_mahoadon";
-            this.cb_mahoadon.Size = new System.Drawing.Size(135, 21);
-            this.cb_mahoadon.TabIndex = 20;
-            this.cb_mahoadon.SelectedIndexChanged += new System.EventHandler(this.cb_mahoadon_SelectedIndexChanged);
-            // 
             // quanLyCuaHangBanLeDataSetBindingSource
             // 
             this.quanLyCuaHangBanLeDataSetBindingSource.DataSource = this.quanLyCuaHangBanLeDataSet;
@@ -278,8 +257,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1116, 466);
-            this.Controls.Add(this.cb_mahoadon);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.cb_masanpham);
             this.Controls.Add(this.cb_ngayban);
             this.Controls.Add(this.label5);
@@ -328,8 +305,6 @@
         private System.Windows.Forms.ComboBox cb_masanpham;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTienBan;
         private QuanLyCuaHangBanLeDataSet quanLyCuaHangBanLeDataSet;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cb_mahoadon;
         private System.Windows.Forms.BindingSource quanLyCuaHangBanLeDataSetBindingSource;
         private System.Windows.Forms.BindingSource quanLyCuaHangBanLeDataSetBindingSource1;
     }
