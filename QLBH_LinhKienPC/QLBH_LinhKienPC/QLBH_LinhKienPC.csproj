@@ -51,11 +51,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\BLL_chucvu.cs" />
+    <Compile Include="BLL\BLL_hoadon.cs" />
     <Compile Include="BLL\BLL_khachhang.cs" />
     <Compile Include="BLL\BLL_nhanvien.cs" />
     <Compile Include="BLL\BLL_nhomsanpham.cs" />
     <Compile Include="BLL\BLL_sanpham.cs" />
     <Compile Include="DAL\DAL_chucvu.cs" />
+    <Compile Include="DAL\DAL_hoadon.cs" />
     <Compile Include="DAL\DAL_khachhang.cs" />
     <Compile Include="DAL\DAL_nhanvien.cs" />
     <Compile Include="DAL\DAL_nhomsanpham.cs" />

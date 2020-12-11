@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.bt_thoat = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bt_sua = new System.Windows.Forms.Button();
+            this.bt_xoa = new System.Windows.Forms.Button();
+            this.bt_them = new System.Windows.Forms.Button();
             this.dtv_banhang = new System.Windows.Forms.DataGridView();
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,47 +72,47 @@
             this.bt_thoat.UseVisualStyleBackColor = false;
             this.bt_thoat.Click += new System.EventHandler(this.bt_thoat_Click);
             // 
-            // button2
+            // bt_sua
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(4)))), ((int)(((byte)(114)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Azure;
-            this.button2.Location = new System.Drawing.Point(311, 308);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(172, 51);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "SỬA";
-            this.button2.UseVisualStyleBackColor = false;
+            this.bt_sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(4)))), ((int)(((byte)(114)))));
+            this.bt_sua.FlatAppearance.BorderSize = 0;
+            this.bt_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_sua.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_sua.ForeColor = System.Drawing.Color.Azure;
+            this.bt_sua.Location = new System.Drawing.Point(311, 308);
+            this.bt_sua.Name = "bt_sua";
+            this.bt_sua.Size = new System.Drawing.Size(172, 51);
+            this.bt_sua.TabIndex = 6;
+            this.bt_sua.Text = "SỬA";
+            this.bt_sua.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // bt_xoa
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(4)))), ((int)(((byte)(114)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Azure;
-            this.button3.Location = new System.Drawing.Point(28, 382);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(172, 51);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "XÓA";
-            this.button3.UseVisualStyleBackColor = false;
+            this.bt_xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(4)))), ((int)(((byte)(114)))));
+            this.bt_xoa.FlatAppearance.BorderSize = 0;
+            this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_xoa.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_xoa.ForeColor = System.Drawing.Color.Azure;
+            this.bt_xoa.Location = new System.Drawing.Point(28, 382);
+            this.bt_xoa.Name = "bt_xoa";
+            this.bt_xoa.Size = new System.Drawing.Size(172, 51);
+            this.bt_xoa.TabIndex = 7;
+            this.bt_xoa.Text = "XÓA";
+            this.bt_xoa.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // bt_them
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(4)))), ((int)(((byte)(114)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Azure;
-            this.button1.Location = new System.Drawing.Point(28, 308);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 51);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "THÊM";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bt_them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(4)))), ((int)(((byte)(114)))));
+            this.bt_them.FlatAppearance.BorderSize = 0;
+            this.bt_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_them.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_them.ForeColor = System.Drawing.Color.Azure;
+            this.bt_them.Location = new System.Drawing.Point(28, 308);
+            this.bt_them.Name = "bt_them";
+            this.bt_them.Size = new System.Drawing.Size(172, 51);
+            this.bt_them.TabIndex = 8;
+            this.bt_them.Text = "THÊM";
+            this.bt_them.UseVisualStyleBackColor = false;
             // 
             // dtv_banhang
             // 
@@ -267,9 +267,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtv_banhang);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt_sua);
+            this.Controls.Add(this.bt_xoa);
+            this.Controls.Add(this.bt_them);
             this.Controls.Add(this.bt_thoat);
             this.Name = "frm_hoadonban";
             this.Text = "frm_hoadonban";
@@ -286,9 +286,9 @@
         #endregion
 
         private System.Windows.Forms.Button bt_thoat;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_sua;
+        private System.Windows.Forms.Button bt_xoa;
+        private System.Windows.Forms.Button bt_them;
         private System.Windows.Forms.DataGridView dtv_banhang;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;

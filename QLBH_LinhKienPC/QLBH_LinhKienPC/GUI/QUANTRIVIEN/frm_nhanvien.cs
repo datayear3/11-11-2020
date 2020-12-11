@@ -15,6 +15,8 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
     {
         BLL.BLL_nhanvien bllnv;
         BLL.BLL_chucvu bllcv;
+        internal static object cb_manhanvien;
+
         public frm_nhanvien()
         {
             InitializeComponent();

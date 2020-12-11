@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
+using QLBH_LinhKienPC.GUI.QUANTRIVIEN;
 
 namespace QLBH_LinhKienPC.BLL
 {
@@ -37,8 +38,8 @@ namespace QLBH_LinhKienPC.BLL
         }
         public void Luuhd()
         {
-            
-            int ketqua = dal_hoadon.ThemHD( frm_khachhang.cb_makhachhang.Text.ToString(), frm_nhanvien.cb_manhanvien.Text.ToString()frm_sanpham.cb_masanpham.Text.ToString());
+
+            int ketqua = dal_hoadon.ThemHD(frm_khachhang.cb_makhachhang.Text.ToString(), frm_nhanvien.cb_manhanvien.Text.ToString(),frm_sanpham.cb_masanpham.Text.ToString());
             if (ketqua >= 1)
                 MessageBox.Show("Thêm thành công");
             else
@@ -48,7 +49,7 @@ namespace QLBH_LinhKienPC.BLL
 
         public void suahd()
         {
-            int ketqua = dal_hoadon.SuaHD(frm_khachhang.cb_makhachhang.Text.ToString(), frm_nhanvien.cb_manhanvien.Text.ToString()frm_sanpham.cb_masanpham.Text.ToString());
+            int ketqua = dal_hoadon.SuaHD(frm_khachhang.cb_makhachhang.Text.ToString(), frm_nhanvien.cb_manhanvien.Text.ToString(),frm_sanpham.cb_masanpham.Text.ToString());
             if (ketqua >= 1)
                 MessageBox.Show("Sửa thành công");
             else
@@ -57,7 +58,7 @@ namespace QLBH_LinhKienPC.BLL
 
         public void xoahd()
         {
-            int ketqua = dal_hoadon.SuaHD(frm_khachhang.cb_makhachhang.Text.ToString(), frm_nhanvien.cb_manhanvien.Text.ToString()frm_sanpham.cb_masanpham.Text.ToString());
+            int ketqua = dal_hoadon.SuaHD(frm_khachhang.cb_makhachhang.Text.ToString(), frm_nhanvien.cb_manhanvien.Text.ToString(),frm_sanpham.cb_masanpham.Text.ToString());
             if (ketqua >= 1)
                 MessageBox.Show("Xóa thành công");
             else
@@ -68,3 +69,4 @@ namespace QLBH_LinhKienPC.BLL
             frm_hoadonban.dtv_banhang.DataSource = dal_hoadon.LoadHD();
         }
     }
+}
