@@ -79,7 +79,7 @@ namespace QLBH_LinhKienPC.BLL
         
         public void loadNV()
         {
-            frm_nv.dtv_nhanvien.DataSource = dal_nv.LoadNV();
+            //frm_nv.dtv_nhanvien.DataSource = dal_nv.LoadNV();
         }
 
         /*

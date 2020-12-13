@@ -36,10 +36,11 @@ namespace QLBH_LinhKienPC.BLL
         {
             this.frm_hoadonban = frm_hoadonban;
         }
+        /*
         public void Luuhd()
         {
 
-            int ketqua = dal_hoadon.ThemHD(frm_khachhang.cb_makhachhang.Text.ToString(), frm_nhanvien.cb_manhanvien.Text.ToString(),frm_sanpham.cb_masanpham.Text.ToString());
+            //int ketqua = dal_hoadon.ThemHD(frm_khachhang.cb_makhachhang.Text.ToString(), frm_nhanvien.cb_manhanvien.Text.ToString(),frm_sanpham.cb_masanpham.Text.ToString());
             if (ketqua >= 1)
                 MessageBox.Show("Thêm thành công");
             else
@@ -49,7 +50,7 @@ namespace QLBH_LinhKienPC.BLL
 
         public void suahd()
         {
-            int ketqua = dal_hoadon.SuaHD(frm_khachhang.cb_makhachhang.Text.ToString(), frm_nhanvien.cb_manhanvien.Text.ToString(),frm_sanpham.cb_masanpham.Text.ToString());
+            //int ketqua = dal_hoadon.SuaHD(frm_khachhang.cb_makhachhang.Text.ToString(), frm_nhanvien.cb_manhanvien.Text.ToString(),frm_sanpham.cb_masanpham.Text.ToString());
             if (ketqua >= 1)
                 MessageBox.Show("Sửa thành công");
             else
@@ -68,5 +69,6 @@ namespace QLBH_LinhKienPC.BLL
         {
             frm_hoadonban.dtv_banhang.DataSource = dal_hoadon.LoadHD();
         }
+        */
     }
 }

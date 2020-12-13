@@ -39,7 +39,7 @@ namespace QLBH_LinhKienPC.DAL
         }
         public DataTable LoadCV_cb()
         {
-            string sql = "Select DISTINCT(Quyen) from CHUC_VU";
+            string sql = "Select DISTINCT (Quyen) from CHUC_VU";
             return lopchung.LoadDuLieu(sql);
 
         }

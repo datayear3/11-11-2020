@@ -38,13 +38,13 @@
             this.bt_thoat = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtv_chucvu = new System.Windows.Forms.DataGridView();
+            this.MaCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.cb_cv = new System.Windows.Forms.ComboBox();
-            this.MaCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_chucvu)).BeginInit();
             this.panel2.SuspendLayout();
@@ -171,6 +171,27 @@
             this.dtv_chucvu.TabIndex = 0;
             this.dtv_chucvu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_chucvu_CellContentClick);
             // 
+            // MaCV
+            // 
+            this.MaCV.DataPropertyName = "MaCV";
+            this.MaCV.HeaderText = "MÃ CHỨC VỤ";
+            this.MaCV.Name = "MaCV";
+            this.MaCV.Width = 150;
+            // 
+            // Quyen
+            // 
+            this.Quyen.DataPropertyName = "Quyen";
+            this.Quyen.HeaderText = "QUYỀN";
+            this.Quyen.Name = "Quyen";
+            // 
+            // TenCV
+            // 
+            this.TenCV.DataPropertyName = "TenCV";
+            this.TenCV.FillWeight = 300F;
+            this.TenCV.HeaderText = "TÊN CHỨC VỤ";
+            this.TenCV.Name = "TenCV";
+            this.TenCV.Width = 150;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -211,27 +232,7 @@
             this.cb_cv.Name = "cb_cv";
             this.cb_cv.Size = new System.Drawing.Size(284, 32);
             this.cb_cv.TabIndex = 12;
-            // 
-            // MaCV
-            // 
-            this.MaCV.DataPropertyName = "MaCV";
-            this.MaCV.HeaderText = "MÃ CHỨC VỤ";
-            this.MaCV.Name = "MaCV";
-            this.MaCV.Width = 150;
-            // 
-            // Quyen
-            // 
-            this.Quyen.DataPropertyName = "Quyen";
-            this.Quyen.HeaderText = "QUYỀN";
-            this.Quyen.Name = "Quyen";
-            // 
-            // TenCV
-            // 
-            this.TenCV.DataPropertyName = "TenCV";
-            this.TenCV.FillWeight = 300F;
-            this.TenCV.HeaderText = "TÊN CHỨC VỤ";
-            this.TenCV.Name = "TenCV";
-            this.TenCV.Width = 150;
+            this.cb_cv.SelectedIndexChanged += new System.EventHandler(this.cb_cv_SelectedIndexChanged);
             // 
             // frm_chucvu
             // 

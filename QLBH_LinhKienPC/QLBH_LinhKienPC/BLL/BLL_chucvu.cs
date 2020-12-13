@@ -92,6 +92,8 @@ namespace QLBH_LinhKienPC.BLL
         public void loadCV()
         {
             frm_chucvu.dtv_chucvu.DataSource = dal_chucvu.LoadCV();
+
+
             DataTable cb_quyen = dal_chucvu.LoadCV_cb();
             frm_chucvu.cb_cv.Items.Clear();
             if (cb_quyen != null)
