@@ -36,39 +36,14 @@ namespace QLBH_LinhKienPC.BLL
         {
             this.frm_hoadonban = frm_hoadonban;
         }
-        /*
-        public void Luuhd()
+
+        public void xoaNV()
         {
-
-            //int ketqua = dal_hoadon.ThemHD(frm_khachhang.cb_makhachhang.Text.ToString(), frm_nhanvien.cb_manhanvien.Text.ToString(),frm_sanpham.cb_masanpham.Text.ToString());
-            if (ketqua >= 1)
-                MessageBox.Show("Thêm thành công");
-            else
-                MessageBox.Show("Thêm thất bai");
-
-        }
-
-        public void suahd()
-        {
-            //int ketqua = dal_hoadon.SuaHD(frm_khachhang.cb_makhachhang.Text.ToString(), frm_nhanvien.cb_manhanvien.Text.ToString(),frm_sanpham.cb_masanpham.Text.ToString());
-            if (ketqua >= 1)
-                MessageBox.Show("Sửa thành công");
-            else
-                MessageBox.Show("Sửa thất bai");
-        }
-
-        public void xoahd()
-        {
-            int ketqua = dal_hoadon.SuaHD(frm_khachhang.cb_makhachhang.Text.ToString(), frm_nhanvien.cb_manhanvien.Text.ToString(),frm_sanpham.cb_masanpham.Text.ToString());
+            int ketqua = dal_hoadon.XoaNV(frm_hoadon.txt_mahd.Text);
             if (ketqua >= 1)
                 MessageBox.Show("Xóa thành công");
             else
                 MessageBox.Show("Xóa thất bai");
         }
-        public void loadHD()
-        {
-            frm_hoadonban.dtv_banhang.DataSource = dal_hoadon.LoadHD();
-        }
-        */
     }
 }

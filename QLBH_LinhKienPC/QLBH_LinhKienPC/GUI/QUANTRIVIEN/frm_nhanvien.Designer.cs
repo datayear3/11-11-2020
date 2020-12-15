@@ -285,6 +285,7 @@
             this.dt_ns.Name = "dt_ns";
             this.dt_ns.Size = new System.Drawing.Size(200, 29);
             this.dt_ns.TabIndex = 23;
+            this.dt_ns.ValueChanged += new System.EventHandler(this.dt_ns_ValueChanged);
             // 
             // label8
             // 

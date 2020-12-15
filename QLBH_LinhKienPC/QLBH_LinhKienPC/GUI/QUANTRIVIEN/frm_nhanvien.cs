@@ -94,5 +94,10 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
         {
 
         }
+
+        private void dt_ns_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

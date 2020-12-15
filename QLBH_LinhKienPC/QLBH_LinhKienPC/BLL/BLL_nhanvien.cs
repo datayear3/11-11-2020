@@ -82,14 +82,7 @@ namespace QLBH_LinhKienPC.BLL
             //frm_nv.dtv_nhanvien.DataSource = dal_nv.LoadNV();
         }
 
-        /*
-        public void LayDSNCC()
-        {
-            frm_hoadon.cb_makh.DataSource = dal_khachhang.Loadkh();
-            frm_hoadon.cb_makh.DisplayMember = "MaKH";
-            frm_hoadon.cb_makh.ValueMember = "MaKH";
-        }
-        */
+        
         
         
     }
