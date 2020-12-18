@@ -37,16 +37,16 @@ namespace QLBH_LinhKienPC.BLL
             this.frm_hoadonban = frm_hoadonban;
         }
 
-        public void xoaNV()
+        public void xoaHD()
         {
-           /*
-            int ketqua = dal_hoadon.XoaNV(frm_hoadon.txt_mahd.Text);
+           
+            int ketqua = dal_hoadon.XoaHD(frm_hoadonban.txt_mhd.Text);
             if (ketqua >= 1)
                 MessageBox.Show("Xóa thành công");
             else
                 MessageBox.Show("Xóa thất bai");
 
-            */
         }
+        
     }
 }

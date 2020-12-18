@@ -14,12 +14,23 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
 {
     public partial class frm_hoadonban : Form
     {
-        private void dtv_banhang_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //dt_ngayban.Value = Convert.ToDateTime(dtv_banhang.CurrentRow.Cells["NgayBan"].Value);
-        }
+        BLL.BLL_nhanvien bllnv;
+        BLL.BLL_khachhang bllkh;
+        BLL.BLL_hoadon bllhd;
+        BLL.BLL_sanpham bllsp;
+        
 
         private void frm_hoadonban_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cb_makhachhang_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

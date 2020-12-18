@@ -46,9 +46,7 @@
             this.cb_makhachhang = new System.Windows.Forms.ComboBox();
             this.cb_manhanvien = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.dt_ngayban = new System.Windows.Forms.ComboBox();
-            this.cb_masanpham = new System.Windows.Forms.ComboBox();
             this.quanLyCuaHangBanLeDataSet = new QLBH_LinhKienPC.QuanLyCuaHangBanLeDataSet();
             this.quanLyCuaHangBanLeDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyCuaHangBanLeDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -73,6 +71,7 @@
             this.bt_thoat.TabIndex = 5;
             this.bt_thoat.Text = "THOÁT";
             this.bt_thoat.UseVisualStyleBackColor = false;
+            this.bt_thoat.Click += new System.EventHandler(this.bt_thoat_Click);
             // 
             // bt_sua
             // 
@@ -130,7 +129,6 @@
             this.dtv_banhang.Name = "dtv_banhang";
             this.dtv_banhang.Size = new System.Drawing.Size(648, 439);
             this.dtv_banhang.TabIndex = 9;
-            this.dtv_banhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_banhang_CellContentClick);
             // 
             // MaHD
             // 
@@ -205,6 +203,7 @@
             this.cb_makhachhang.Name = "cb_makhachhang";
             this.cb_makhachhang.Size = new System.Drawing.Size(121, 21);
             this.cb_makhachhang.TabIndex = 13;
+            this.cb_makhachhang.SelectedIndexChanged += new System.EventHandler(this.cb_makhachhang_SelectedIndexChanged);
             // 
             // cb_manhanvien
             // 
@@ -224,16 +223,6 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "Ngày Bán";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(292, 200);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 15);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Mã Sản Phẩm";
-            // 
             // dt_ngayban
             // 
             this.dt_ngayban.FormattingEnabled = true;
@@ -241,14 +230,6 @@
             this.dt_ngayban.Name = "dt_ngayban";
             this.dt_ngayban.Size = new System.Drawing.Size(136, 21);
             this.dt_ngayban.TabIndex = 17;
-            // 
-            // cb_masanpham
-            // 
-            this.cb_masanpham.FormattingEnabled = true;
-            this.cb_masanpham.Location = new System.Drawing.Point(395, 194);
-            this.cb_masanpham.Name = "cb_masanpham";
-            this.cb_masanpham.Size = new System.Drawing.Size(136, 21);
-            this.cb_masanpham.TabIndex = 18;
             // 
             // quanLyCuaHangBanLeDataSet
             // 
@@ -267,17 +248,17 @@
             // 
             // txt_mhd
             // 
-            this.txt_mhd.Location = new System.Drawing.Point(174, 242);
+            this.txt_mhd.Location = new System.Drawing.Point(395, 183);
             this.txt_mhd.Multiline = true;
             this.txt_mhd.Name = "txt_mhd";
-            this.txt_mhd.Size = new System.Drawing.Size(199, 30);
+            this.txt_mhd.Size = new System.Drawing.Size(134, 30);
             this.txt_mhd.TabIndex = 19;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(81, 243);
+            this.label6.Location = new System.Drawing.Point(298, 192);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 15);
             this.label6.TabIndex = 20;
@@ -287,12 +268,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1225, 466);
+            this.ClientSize = new System.Drawing.Size(1210, 466);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_mhd);
-            this.Controls.Add(this.cb_masanpham);
             this.Controls.Add(this.dt_ngayban);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cb_manhanvien);
             this.Controls.Add(this.cb_makhachhang);
@@ -329,9 +308,7 @@
         private System.Windows.Forms.ComboBox cb_makhachhang;
         private System.Windows.Forms.ComboBox cb_manhanvien;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox dt_ngayban;
-        private System.Windows.Forms.ComboBox cb_masanpham;
         private QuanLyCuaHangBanLeDataSet quanLyCuaHangBanLeDataSet;
         private System.Windows.Forms.BindingSource quanLyCuaHangBanLeDataSetBindingSource;
         private System.Windows.Forms.BindingSource quanLyCuaHangBanLeDataSetBindingSource1;
@@ -341,7 +318,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTienBan;
-        private System.Windows.Forms.TextBox txt_mhd;
+        public System.Windows.Forms.TextBox txt_mhd;
         private System.Windows.Forms.Label label6;
     }
 }

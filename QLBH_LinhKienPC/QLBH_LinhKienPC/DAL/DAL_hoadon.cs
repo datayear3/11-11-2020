@@ -37,5 +37,10 @@ namespace QLBH_LinhKienPC.DAL
             return lopchung.LoadDuLieu(sql);
 
         }
+
+        internal object LoadMaKH()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
