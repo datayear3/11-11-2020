@@ -24,7 +24,12 @@ namespace QLBH_LinhKienPC.DAL
             return lopchung.ThemSuaXoa(sql);
         }
 
+        public int XoaSP(string masp)
+        {
+            string sql = "Delete MA_SAN_PHAM where MaSP = N'" + masp + "'";
+            return lopchung.ThemSuaXoa(sql);
 
+        }
         public DataTable Loadsp()
         {
             string sql = "Select * from SAN_PHAM";

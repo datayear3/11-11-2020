@@ -31,7 +31,8 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
 
         private void khohang_Load(object sender, EventArgs e)
         {
-
+            frm_nhacungcap sp = new frm_nhacungcap();
+            sp.ShowDialog();
         }
     }
 }
