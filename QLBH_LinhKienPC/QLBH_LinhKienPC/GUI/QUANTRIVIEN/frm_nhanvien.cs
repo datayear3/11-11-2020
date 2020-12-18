@@ -47,6 +47,22 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
 
         private void bt_them_Click(object sender, EventArgs e)
         {
+            /*
+            string l_mcv = "select DISTINCT(MaCV) form CHUC_VU where TenCV = '" + tencv.ToString() + "'";
+            string mcv = "";
+
+            //string select_ma = "select DISTINCT(maloai) from loai where tenloai = '" + tl + "'";
+            DataTable dt_ml = lopchung.LoadDuLieu(l_mcv);
+            if (dt_ml != null)
+            {
+                foreach (DataRow dr in dt_ml.Rows)
+                {
+
+                    mcv = dr["MaCV"].ToString();
+
+                }
+            }
+            */
             bllnv.LuuNV();
             bllnv.loadNV();
         }
@@ -65,7 +81,7 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
                 txt_tennv.Text = dtv_nhanvien.Rows[numrow].Cells[2].Value.ToString();
                 txt_diachi.Text = dtv_nhanvien.Rows[numrow].Cells[3].Value.ToString();
                 txt_sdt.Text = dtv_nhanvien.Rows[numrow].Cells[4].Value.ToString();
-                cb_chucvu.Text = dtv_nhanvien.CurrentRow.Cells["MaCV"].Value.ToString();
+                cb_chucvu.Text = dtv_nhanvien.CurrentRow.Cells["TenCV"].Value.ToString();
                 txt_mk.Text = dtv_nhanvien.CurrentRow.Cells["MatKhau"].Value.ToString();
                 cb_ns.Text = dtv_nhanvien.Rows[numrow].Cells[6].Value.ToString();
             if (dtv_nhanvien.Rows[numrow].Cells[5].Value.ToString() == "Nam")
@@ -98,6 +114,11 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
         private void dt_ns_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_tk_TextChanged(object sender, EventArgs e)
+        {
+            bllnv.loadNV_Search();
         }
     }
 }

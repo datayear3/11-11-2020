@@ -43,6 +43,7 @@ namespace QLBH_LinhKienPC.BLL
                 gt = "Nu";
             }
             
+
             int ketqua = dal_nv.ThemNV(frm_nv.txt_manv.Text.ToString(), frm_nv.txt_tennv.Text.ToString(), frm_nv.txt_diachi.Text.ToString(), frm_nv.txt_sdt.Text.ToString(),gt,frm_nv.cb_ns.Text, frm_nv.txt_mk.Text.ToString(),frm_nv.cb_chucvu.SelectedValue.ToString());
             if (ketqua >= 1)
                 MessageBox.Show("Thêm thành công");
@@ -93,9 +94,21 @@ namespace QLBH_LinhKienPC.BLL
 
 
         }
+        public void loadNV_Search()
+        {
 
-        
-        
-        
+            string tk = frm_nv.txt_tk.Text;
+
+
+            frm_nv.dtv_nhanvien.DataSource = dal_nv.LoadNV_Search(tk);
+
+ 
+
+        }
+
+
+
+
+
     }
 }
