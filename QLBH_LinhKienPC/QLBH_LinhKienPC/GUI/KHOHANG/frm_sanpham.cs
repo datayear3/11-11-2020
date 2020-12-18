@@ -32,7 +32,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
 
         private void frm_sanpham_Load(object sender, EventArgs e)
         {
-            bllnsp.LayDSNHOM();
+           // bllnsp.LayDSNHOM();
             bllsp.loadsp();
             
         }

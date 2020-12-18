@@ -60,8 +60,10 @@ namespace QLBH_LinhKienPC.BLL
             */
         }
         public void loadsp()
-            {
+        {
             //frm_sanpham.dat = dal_sanpham.LoadSP();
+            /*
+
             frm_sp.dtv_sp.DataSource = dal_sanpham.Loadsp();
             DataTable cb_quyen = dal_sanpham.Loadsp();
             frm_sp.cb_dvt.Items.Clear();
@@ -75,6 +77,7 @@ namespace QLBH_LinhKienPC.BLL
                 }
             }
             frm_sp.cb_dvt.SelectedIndex = 0;
+            */
 
         }
         public void XoaSP()
