@@ -28,6 +28,7 @@ namespace QLBH_LinhKienPC.GUI
             us_banhang.Visible = false;
             us_khohang.Visible = false;
             us_quantrivien.Visible = false;
+            us_thongke.Visible = false;
 
         }
 
@@ -37,6 +38,7 @@ namespace QLBH_LinhKienPC.GUI
             us_banhang.Visible = true;
             us_khohang.Visible = false;
             us_quantrivien.Visible = false;
+            us_thongke.Visible = false;
 
         }
 
@@ -46,11 +48,6 @@ namespace QLBH_LinhKienPC.GUI
         }
 
         private void trangchu1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
         {
 
         }
@@ -66,6 +63,7 @@ namespace QLBH_LinhKienPC.GUI
             us_banhang.Visible = false;
             us_khohang.Visible = true;
             us_quantrivien.Visible = false;
+            us_thongke.Visible = false;
 
         }
 
@@ -75,11 +73,22 @@ namespace QLBH_LinhKienPC.GUI
             us_banhang.Visible = false;
             us_khohang.Visible = false;
             us_quantrivien.Visible = true;
+            us_thongke.Visible = false;
 
         }
 
         private void us_quantrivien_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void bt_thongke_Click(object sender, EventArgs e)
+        {
+            us_trangchu.Visible = false;
+            us_banhang.Visible = false;
+            us_khohang.Visible = false;
+            us_quantrivien.Visible = false;
+            us_thongke.Visible = true;
 
         }
     }

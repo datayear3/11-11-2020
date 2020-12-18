@@ -51,11 +51,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\BLL_chucvu.cs" />
+    <Compile Include="BLL\BLL_hoadon.cs" />
     <Compile Include="BLL\BLL_khachhang.cs" />
     <Compile Include="BLL\BLL_nhanvien.cs" />
     <Compile Include="BLL\BLL_nhomsanpham.cs" />
     <Compile Include="BLL\BLL_sanpham.cs" />
     <Compile Include="DAL\DAL_chucvu.cs" />
+    <Compile Include="DAL\DAL_hoadon.cs" />
     <Compile Include="DAL\DAL_khachhang.cs" />
     <Compile Include="DAL\DAL_nhanvien.cs" />
     <Compile Include="DAL\DAL_nhomsanpham.cs" />
@@ -127,6 +129,12 @@
     <Compile Include="GUI\QUANTRIVIEN\quantrivien.Designer.cs">
       <DependentUpon>quantrivien.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\THONGKE\thongke.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\THONGKE\thongke.Designer.cs">
+      <DependentUpon>thongke.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\TRANGCHU\trangchu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,6 +143,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyCuaHangBanLeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCuaHangBanLeDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +181,9 @@
     <EmbeddedResource Include="GUI\QUANTRIVIEN\quantrivien.resx">
       <DependentUpon>quantrivien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\THONGKE\thongke.resx">
+      <DependentUpon>thongke.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\TRANGCHU\trangchu.resx">
       <DependentUpon>trangchu.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +211,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QuanLyCuaHangBanLeDataSet1.xsc">
+      <DependentUpon>QuanLyCuaHangBanLeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanLeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyCuaHangBanLeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyCuaHangBanLeDataSet1.xss">
+      <DependentUpon>QuanLyCuaHangBanLeDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Resources\icons8-user-64.png" />
   </ItemGroup>
   <ItemGroup>

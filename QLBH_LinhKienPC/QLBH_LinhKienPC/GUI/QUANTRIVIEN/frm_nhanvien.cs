@@ -15,6 +15,8 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
     {
         BLL.BLL_nhanvien bllnv;
         BLL.BLL_chucvu bllcv;
+        internal static object cb_manhanvien;
+
         public frm_nhanvien()
         {
             InitializeComponent();
@@ -65,8 +67,8 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
                 txt_sdt.Text = dtv_nhanvien.Rows[numrow].Cells[4].Value.ToString();
                 cb_chucvu.Text = dtv_nhanvien.CurrentRow.Cells["MaCV"].Value.ToString();
                 txt_mk.Text = dtv_nhanvien.CurrentRow.Cells["MatKhau"].Value.ToString();
-                dt_ns.Value = Convert.ToDateTime(dtv_nhanvien.CurrentRow.Cells["NgaySinh"].Value);
-                if (dtv_nhanvien.Rows[numrow].Cells[5].Value.ToString() == "Nam")
+                cb_ns.Text = dtv_nhanvien.Rows[numrow].Cells[6].Value.ToString();
+            if (dtv_nhanvien.Rows[numrow].Cells[5].Value.ToString() == "Nam")
                 {
                     rbt_nam.Checked = true;
                     rbt_nu.Checked = false;
@@ -89,6 +91,11 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
         }
 
         private void cb_chucvu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dt_ns_ValueChanged(object sender, EventArgs e)
         {
 
         }

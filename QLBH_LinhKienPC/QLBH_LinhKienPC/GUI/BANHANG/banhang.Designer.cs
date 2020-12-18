@@ -33,7 +33,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bt_them_khachhang = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bt_hoadon = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -95,22 +95,25 @@
             this.bt_them_khachhang.UseVisualStyleBackColor = false;
             this.bt_them_khachhang.Click += new System.EventHandler(this.bt_them_khachhang_Click);
             // 
-            // button1
+            // bt_hoadon
             // 
-            this.button1.Location = new System.Drawing.Point(105, 160);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 80);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bt_hoadon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(101)))), ((int)(((byte)(53)))));
+            this.bt_hoadon.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_hoadon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bt_hoadon.Location = new System.Drawing.Point(249, 0);
+            this.bt_hoadon.Name = "bt_hoadon";
+            this.bt_hoadon.Size = new System.Drawing.Size(251, 80);
+            this.bt_hoadon.TabIndex = 2;
+            this.bt_hoadon.Text = "HÓA ĐƠN";
+            this.bt_hoadon.UseVisualStyleBackColor = false;
+            this.bt_hoadon.Click += new System.EventHandler(this.button1_Click);
             // 
             // banhang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(165)))), ((int)(((byte)(149)))));
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt_hoadon);
             this.Controls.Add(this.bt_them_khachhang);
             this.Controls.Add(this.panel1);
             this.Name = "banhang";
@@ -130,6 +133,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button bt_them_khachhang;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_hoadon;
     }
 }

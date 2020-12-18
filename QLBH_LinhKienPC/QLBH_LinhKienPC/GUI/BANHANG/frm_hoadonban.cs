@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLBH_LinhKienPC.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,19 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QLBH_LinhKienPC.GUI.BANHANG
 {
     public partial class frm_hoadonban : Form
     {
-        public frm_hoadonban()
+        private void dtv_banhang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            InitializeComponent();
-        }
-
-        private void bt_thoat_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            dt_ngayban.Value = Convert.ToDateTime(dtv_banhang.CurrentRow.Cells["NgayBan"].Value);
         }
     }
 }

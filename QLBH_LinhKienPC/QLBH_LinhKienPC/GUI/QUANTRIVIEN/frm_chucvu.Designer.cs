@@ -211,6 +211,7 @@
             this.cb_cv.Name = "cb_cv";
             this.cb_cv.Size = new System.Drawing.Size(284, 32);
             this.cb_cv.TabIndex = 12;
+            this.cb_cv.SelectedIndexChanged += new System.EventHandler(this.cb_cv_SelectedIndexChanged);
             // 
             // MaCV
             // 
@@ -231,7 +232,7 @@
             this.TenCV.FillWeight = 300F;
             this.TenCV.HeaderText = "TÊN CHỨC VỤ";
             this.TenCV.Name = "TenCV";
-            this.TenCV.Width = 150;
+            this.TenCV.Width = 170;
             // 
             // frm_chucvu
             // 

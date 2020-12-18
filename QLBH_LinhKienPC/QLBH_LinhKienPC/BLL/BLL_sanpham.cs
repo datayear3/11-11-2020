@@ -5,10 +5,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
+=======
+using QLBH_LinhKienPC.GUI.BANHANG;
+>>>>>>> 76979854a7c0472fe80d2056f1ebd07eb2e98e5e
 
 namespace QLBH_LinhKienPC.BLL
 {
@@ -17,10 +21,18 @@ namespace QLBH_LinhKienPC.BLL
 
         DAL.DAL_sanpham dal_sanpham = new DAL.DAL_sanpham();
         frm_sanpham frm_sp;
+        private frm_hoadonban frm_hoadonban;
+
         public BLL_sanpham(frm_sanpham f)
         {
             frm_sp = f;
         }
+
+        public BLL_sanpham(frm_hoadonban frm_hoadonban)
+        {
+            this.frm_hoadonban = frm_hoadonban;
+        }
+
         public void LuuSP()
         {
             
@@ -56,7 +68,17 @@ namespace QLBH_LinhKienPC.BLL
             else
                 MessageBox.Show("Xóa thất bai");
         }
+<<<<<<< HEAD
     
       
+=======
+       /* public void LayDSSP()
+        {
+            frm_sp.cb_masanpham.DataSource = dal_sanpham.LoadSP();
+            frm_sp.cb_masanpham.DisplayMember = "MaSP";
+            frm_sp.cb_masanpham.ValueMember = "MaSP";
+        }
+       */
+>>>>>>> 76979854a7c0472fe80d2056f1ebd07eb2e98e5e
     }
 }

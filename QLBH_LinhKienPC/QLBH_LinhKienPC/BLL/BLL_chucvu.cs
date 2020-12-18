@@ -17,8 +17,8 @@ namespace QLBH_LinhKienPC.BLL
         DAL.DAL_chucvu dal_chucvu = new DAL.DAL_chucvu();
         GUI.QUANTRIVIEN.frm_chucvu frm_chucvu;
         GUI.QUANTRIVIEN.frm_nhanvien frm_nv;
+        private frm_hoadonban frm_hoadonban;
 
-        
         public BLL_chucvu(GUI.QUANTRIVIEN.frm_chucvu f)
         {
             frm_chucvu = f;
@@ -27,6 +27,12 @@ namespace QLBH_LinhKienPC.BLL
         {
             frm_nv = f;
         }
+
+        public BLL_chucvu(frm_hoadonban frm_hoadonban)
+        {
+            this.frm_hoadonban = frm_hoadonban;
+        }
+
         public void LuuCV()
         {
             string q = "";
@@ -86,6 +92,8 @@ namespace QLBH_LinhKienPC.BLL
         public void loadCV()
         {
             frm_chucvu.dtv_chucvu.DataSource = dal_chucvu.LoadCV();
+
+
             DataTable cb_quyen = dal_chucvu.LoadCV_cb();
             frm_chucvu.cb_cv.Items.Clear();
             if (cb_quyen != null)
@@ -103,9 +111,9 @@ namespace QLBH_LinhKienPC.BLL
         
         public void LayDSCV()
         {
-            frm_nv.cb_chucvu.DataSource = dal_chucvu.LoadCV();
-            frm_nv.cb_chucvu.DisplayMember = "MaCV";
-            frm_nv.cb_chucvu.ValueMember = "MaCV";
+            frm_nv.cb_chucvu.DataSource = dal_chucvu.LoadTenCV();
+            frm_nv.cb_chucvu.DisplayMember = "TenCV";
+            frm_nv.cb_chucvu.ValueMember = "TenCV";
         }
         
         

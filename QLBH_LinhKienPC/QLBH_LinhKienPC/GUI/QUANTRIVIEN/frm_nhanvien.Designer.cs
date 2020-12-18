@@ -48,11 +48,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.dtv_nhanvien = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
-            this.dt_ns = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.cb_chucvu = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txt_mk = new System.Windows.Forms.TextBox();
+            this.cb_ns = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_tk = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_nhanvien)).BeginInit();
@@ -106,7 +108,7 @@
             this.bt_thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_thoat.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_thoat.ForeColor = System.Drawing.Color.Azure;
-            this.bt_thoat.Location = new System.Drawing.Point(446, 456);
+            this.bt_thoat.Location = new System.Drawing.Point(657, 382);
             this.bt_thoat.Name = "bt_thoat";
             this.bt_thoat.Size = new System.Drawing.Size(172, 51);
             this.bt_thoat.TabIndex = 16;
@@ -121,7 +123,7 @@
             this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_xoa.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_xoa.ForeColor = System.Drawing.Color.Azure;
-            this.bt_xoa.Location = new System.Drawing.Point(195, 456);
+            this.bt_xoa.Location = new System.Drawing.Point(240, 382);
             this.bt_xoa.Name = "bt_xoa";
             this.bt_xoa.Size = new System.Drawing.Size(172, 51);
             this.bt_xoa.TabIndex = 17;
@@ -136,7 +138,7 @@
             this.bt_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_them.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_them.ForeColor = System.Drawing.Color.Azure;
-            this.bt_them.Location = new System.Drawing.Point(195, 382);
+            this.bt_them.Location = new System.Drawing.Point(45, 382);
             this.bt_them.Name = "bt_them";
             this.bt_them.Size = new System.Drawing.Size(172, 51);
             this.bt_them.TabIndex = 18;
@@ -273,18 +275,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(533, 91);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 20);
+            this.label7.Size = new System.Drawing.Size(86, 20);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Ngày Sinh";
-            // 
-            // dt_ns
-            // 
-            this.dt_ns.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_ns.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dt_ns.Location = new System.Drawing.Point(646, 91);
-            this.dt_ns.Name = "dt_ns";
-            this.dt_ns.Size = new System.Drawing.Size(200, 29);
-            this.dt_ns.TabIndex = 23;
+            this.label7.Text = "Năm Sinh";
             // 
             // label8
             // 
@@ -323,8 +316,38 @@
             this.txt_mk.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_mk.Location = new System.Drawing.Point(646, 202);
             this.txt_mk.Name = "txt_mk";
+            this.txt_mk.PasswordChar = '*';
             this.txt_mk.Size = new System.Drawing.Size(200, 29);
             this.txt_mk.TabIndex = 12;
+            // 
+            // cb_ns
+            // 
+            this.cb_ns.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_ns.FormattingEnabled = true;
+            this.cb_ns.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.cb_ns.Location = new System.Drawing.Point(646, 88);
+            this.cb_ns.Name = "cb_ns";
+            this.cb_ns.Size = new System.Drawing.Size(200, 29);
+            this.cb_ns.TabIndex = 24;
+            this.cb_ns.SelectedIndexChanged += new System.EventHandler(this.cb_chucvu_SelectedIndexChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(41, 478);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(87, 20);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "TÌM KIẾM";
+            // 
+            // txt_tk
+            // 
+            this.txt_tk.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tk.Location = new System.Drawing.Point(176, 478);
+            this.txt_tk.Name = "txt_tk";
+            this.txt_tk.Size = new System.Drawing.Size(298, 29);
+            this.txt_tk.TabIndex = 12;
             // 
             // frm_nhanvien
             // 
@@ -332,8 +355,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(860, 886);
+            this.Controls.Add(this.cb_ns);
             this.Controls.Add(this.cb_chucvu);
-            this.Controls.Add(this.dt_ns);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.rbt_nu);
@@ -344,9 +367,11 @@
             this.Controls.Add(this.bt_them);
             this.Controls.Add(this.txt_sdt);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_mk);
             this.Controls.Add(this.label9);
+            this.Controls.Add(this.txt_tk);
             this.Controls.Add(this.txt_diachi);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_tennv);
@@ -391,10 +416,12 @@
         private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.DataGridView dtv_nhanvien;
         private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.DateTimePicker dt_ns;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.ComboBox cb_chucvu;
         private System.Windows.Forms.Label label9;
         public System.Windows.Forms.TextBox txt_mk;
+        public System.Windows.Forms.ComboBox cb_ns;
+        private System.Windows.Forms.Label label10;
+        public System.Windows.Forms.TextBox txt_tk;
     }
 }

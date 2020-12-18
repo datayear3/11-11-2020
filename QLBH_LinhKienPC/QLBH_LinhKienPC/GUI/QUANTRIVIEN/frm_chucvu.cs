@@ -69,5 +69,10 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
                 bllcv.loadCV();
             }
         }
+
+        private void cb_cv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
