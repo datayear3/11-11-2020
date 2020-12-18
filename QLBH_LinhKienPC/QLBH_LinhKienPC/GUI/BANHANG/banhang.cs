@@ -25,10 +25,11 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+
+        private void banhang_Load(object sender, EventArgs e)
         {
-            frm_hoadonban hdb = new frm_hoadonban();
-            hdb.ShowDialog();
+
         }
     }
 }
