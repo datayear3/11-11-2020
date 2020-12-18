@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace QLBH_LinhKienPC.GUI.KHOHANG
 {
@@ -16,17 +18,23 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         internal object dtv_banhang;
         internal object cb_masanpham;
         BLL.BLL_sanpham bllsp;
+        BLL.BLL_nhomsanpham bllnsp;
         internal static object dtv_sanpham;
 
         public frm_sanpham()
         {
             InitializeComponent();
+           // bllnsp = new BLL.BLL_nhomsanpham(this);
             bllsp = new BLL.BLL_sanpham(this);
+           
+
         }
-      
+
         private void frm_sanpham_Load(object sender, EventArgs e)
         {
+            bllnsp.LayDSNHOM();
             bllsp.loadsp();
+            
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -61,7 +69,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             dialog = MessageBox.Show(" Thông tin sẽ bị thay đổi. Bạn có muốn tiếp tục", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
             {
-                bllsp.SuaSP();
+                //bllsp.SuaSP();
                 bllsp.loadsp();
             }
         }

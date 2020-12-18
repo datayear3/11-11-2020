@@ -13,6 +13,8 @@ namespace QLBH_LinhKienPC.BLL
     {
         DAL.DAL_nhomsanpham dal_nhomsanpham = new DAL.DAL_nhomsanpham();
         frm_nhomsanpham frm_nsp;
+        GUI.KHOHANG.frm_sanpham frm_sp;
+
         public BLL_nhomsanpham(frm_nhomsanpham f)
         {
             frm_nsp = f;
@@ -50,6 +52,12 @@ namespace QLBH_LinhKienPC.BLL
                 MessageBox.Show("Xóa thành công");
             else
                 MessageBox.Show("Xóa thất bai");
+        }
+        public void LayDSNHOM()
+        {
+            frm_sp.cb_tn.DataSource = dal_nhomsanpham.LoadTenNhom();
+            frm_sp.cb_tn.DisplayMember = "TenNhom";
+            frm_sp.cb_tn.ValueMember = "TenNhom";
         }
 
 

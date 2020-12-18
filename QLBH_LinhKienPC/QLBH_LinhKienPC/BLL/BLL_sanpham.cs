@@ -35,13 +35,15 @@ namespace QLBH_LinhKienPC.BLL
 
         public void LuuSP()
         {
-            
+            /*
                 int ketqua = dal_sanpham.ThemSP(frm_sp.txt_msp.Text, frm_sp.txt_tsp.Text, frm_sp.txt_dvt.Text.ToString(), frm_sp.txt_mncc.Text.ToString(), frm_sp.txt_mn.Text.ToString(), frm_sp.txt_gn.Text.ToString(), frm_sp.txt_gb.Text.ToString(), frm_sp.txt_slt.Text.ToString());
 
                 if (ketqua >= 1)
                     MessageBox.Show("Thêm thành công");
                 else
                     MessageBox.Show("Thêm thất bai");
+
+            
          }
 
         public void SuaSP()
@@ -54,10 +56,25 @@ namespace QLBH_LinhKienPC.BLL
                     MessageBox.Show("Sửa thất bai");
             }
 
+
+            */
+        }
         public void loadsp()
             {
             //frm_sanpham.dat = dal_sanpham.LoadSP();
             frm_sp.dtv_sp.DataSource = dal_sanpham.Loadsp();
+            DataTable cb_quyen = dal_sanpham.Loadsp();
+            frm_sp.cb_dvt.Items.Clear();
+            if (cb_quyen != null)
+            {
+                foreach (DataRow dr in cb_quyen.Rows)
+                {
+
+                    frm_sp.cb_dvt.Items.Add(dr["DonViTinh"].ToString());
+
+                }
+            }
+            frm_sp.cb_dvt.SelectedIndex = 0;
 
         }
         public void XoaSP()

@@ -37,20 +37,20 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.label6 = new System.Windows.Forms.Label();
             this.lb5 = new System.Windows.Forms.Label();
             this.txt_msp = new System.Windows.Forms.TextBox();
-            this.txt_mn = new System.Windows.Forms.TextBox();
             this.txt_tsp = new System.Windows.Forms.TextBox();
             this.txt_gb = new System.Windows.Forms.TextBox();
-            this.txt_mncc = new System.Windows.Forms.TextBox();
             this.txt_gn = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_slt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt_dvt = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.bt_them = new System.Windows.Forms.Button();
             this.bt_sua = new System.Windows.Forms.Button();
             this.bt_xoa = new System.Windows.Forms.Button();
             this.dtv_sp = new System.Windows.Forms.DataGridView();
+            this.cb_tncc = new System.Windows.Forms.ComboBox();
+            this.cb_tn = new System.Windows.Forms.ComboBox();
+            this.cb_dvt = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_sp)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,9 +70,9 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(105, 247);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 19);
+            this.label2.Size = new System.Drawing.Size(79, 19);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Mã nhóm";
+            this.label2.Text = "Tên  nhóm";
             // 
             // label3
             // 
@@ -122,9 +122,9 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.lb5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb5.Location = new System.Drawing.Point(105, 211);
             this.lb5.Name = "lb5";
-            this.lb5.Size = new System.Drawing.Size(123, 19);
+            this.lb5.Size = new System.Drawing.Size(125, 19);
             this.lb5.TabIndex = 0;
-            this.lb5.Text = "Mã nhà cung cấp";
+            this.lb5.Text = "Tên nhà cung cấp";
             // 
             // txt_msp
             // 
@@ -133,13 +133,6 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.txt_msp.Size = new System.Drawing.Size(142, 20);
             this.txt_msp.TabIndex = 1;
             this.txt_msp.TextChanged += new System.EventHandler(this.txt_msp_TextChanged);
-            // 
-            // txt_mn
-            // 
-            this.txt_mn.Location = new System.Drawing.Point(252, 248);
-            this.txt_mn.Name = "txt_mn";
-            this.txt_mn.Size = new System.Drawing.Size(142, 20);
-            this.txt_mn.TabIndex = 1;
             // 
             // txt_tsp
             // 
@@ -154,13 +147,6 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.txt_gb.Name = "txt_gb";
             this.txt_gb.Size = new System.Drawing.Size(174, 20);
             this.txt_gb.TabIndex = 1;
-            // 
-            // txt_mncc
-            // 
-            this.txt_mncc.Location = new System.Drawing.Point(252, 212);
-            this.txt_mncc.Name = "txt_mncc";
-            this.txt_mncc.Size = new System.Drawing.Size(142, 20);
-            this.txt_mncc.TabIndex = 1;
             // 
             // txt_gn
             // 
@@ -195,14 +181,6 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.label9.Size = new System.Drawing.Size(83, 19);
             this.label9.TabIndex = 0;
             this.label9.Text = "Đơn vị tính";
-            // 
-            // txt_dvt
-            // 
-            this.txt_dvt.Location = new System.Drawing.Point(252, 166);
-            this.txt_dvt.Name = "txt_dvt";
-            this.txt_dvt.Size = new System.Drawing.Size(142, 20);
-            this.txt_dvt.TabIndex = 1;
-            this.txt_dvt.TextChanged += new System.EventHandler(this.txt_dvt_TextChanged);
             // 
             // label10
             // 
@@ -253,23 +231,47 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.dtv_sp.TabIndex = 3;
             this.dtv_sp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_sp_CellContentClick);
             // 
+            // cb_tncc
+            // 
+            this.cb_tncc.FormattingEnabled = true;
+            this.cb_tncc.Location = new System.Drawing.Point(252, 211);
+            this.cb_tncc.Name = "cb_tncc";
+            this.cb_tncc.Size = new System.Drawing.Size(142, 21);
+            this.cb_tncc.TabIndex = 4;
+            // 
+            // cb_tn
+            // 
+            this.cb_tn.FormattingEnabled = true;
+            this.cb_tn.Location = new System.Drawing.Point(252, 248);
+            this.cb_tn.Name = "cb_tn";
+            this.cb_tn.Size = new System.Drawing.Size(142, 21);
+            this.cb_tn.TabIndex = 4;
+            // 
+            // cb_dvt
+            // 
+            this.cb_dvt.FormattingEnabled = true;
+            this.cb_dvt.Location = new System.Drawing.Point(252, 166);
+            this.cb_dvt.Name = "cb_dvt";
+            this.cb_dvt.Size = new System.Drawing.Size(142, 21);
+            this.cb_dvt.TabIndex = 5;
+            // 
             // frm_sanpham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1128, 645);
+            this.Controls.Add(this.cb_dvt);
+            this.Controls.Add(this.cb_tn);
+            this.Controls.Add(this.cb_tncc);
             this.Controls.Add(this.dtv_sp);
             this.Controls.Add(this.bt_xoa);
             this.Controls.Add(this.bt_sua);
             this.Controls.Add(this.bt_them);
-            this.Controls.Add(this.txt_mncc);
             this.Controls.Add(this.txt_slt);
             this.Controls.Add(this.txt_tsp);
             this.Controls.Add(this.txt_gb);
             this.Controls.Add(this.txt_gn);
-            this.Controls.Add(this.txt_dvt);
-            this.Controls.Add(this.txt_mn);
             this.Controls.Add(this.txt_msp);
             this.Controls.Add(this.lb5);
             this.Controls.Add(this.label6);
@@ -300,19 +302,19 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lb5;
         public System.Windows.Forms.TextBox txt_msp;
-        public System.Windows.Forms.TextBox txt_mn;
         public System.Windows.Forms.TextBox txt_tsp;
         public System.Windows.Forms.TextBox txt_gb;
-        public System.Windows.Forms.TextBox txt_mncc;
         public System.Windows.Forms.TextBox txt_gn;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.TextBox txt_slt;
         private System.Windows.Forms.Label label9;
-        public System.Windows.Forms.TextBox txt_dvt;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button bt_them;
         private System.Windows.Forms.Button bt_sua;
         private System.Windows.Forms.Button bt_xoa;
         public System.Windows.Forms.DataGridView dtv_sp;
+        public System.Windows.Forms.ComboBox cb_tncc;
+        public System.Windows.Forms.ComboBox cb_tn;
+        public System.Windows.Forms.ComboBox cb_dvt;
     }
 }

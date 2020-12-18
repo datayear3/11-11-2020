@@ -258,8 +258,8 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         private System.Windows.Forms.Label label9;
         public System.Windows.Forms.TextBox txt_tncc;
         public System.Windows.Forms.TextBox txt_mncc;
-        private System.Windows.Forms.TextBox txt_sdt;
-        private System.Windows.Forms.TextBox txt_dc;
+        public System.Windows.Forms.TextBox txt_sdt;
+        public System.Windows.Forms.TextBox txt_dc;
         public System.Windows.Forms.DataGridView dvt_ncc;
         private System.Windows.Forms.Button bt_them;
         private System.Windows.Forms.Button bt_sua;
