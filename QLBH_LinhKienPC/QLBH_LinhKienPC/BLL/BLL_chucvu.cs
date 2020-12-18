@@ -62,15 +62,15 @@ namespace QLBH_LinhKienPC.BLL
             int tamp = frm_chucvu.cb_cv.SelectedIndex;
             if (tamp == 0)
             {
-                q = "ADMIN";
+                q = "admin";
             }
             else if (tamp == 1)
             {
-                q = "KHO";
+                q = "kho";
             }
             else
             {
-                q = "NV";
+                q = "nv";
             }
 
             int ketqua = dal_chucvu.SuaCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(), q);

@@ -47,29 +47,15 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
 
         private void bt_them_Click(object sender, EventArgs e)
         {
-            /*
-            string l_mcv = "select DISTINCT(MaCV) form CHUC_VU where TenCV = '" + tencv.ToString() + "'";
-            string mcv = "";
-
-            //string select_ma = "select DISTINCT(maloai) from loai where tenloai = '" + tl + "'";
-            DataTable dt_ml = lopchung.LoadDuLieu(l_mcv);
-            if (dt_ml != null)
-            {
-                foreach (DataRow dr in dt_ml.Rows)
-                {
-
-                    mcv = dr["MaCV"].ToString();
-
-                }
-            }
-            */
+            
             bllnv.LuuNV();
             bllnv.loadNV();
         }
 
         private void bt_sua_Click(object sender, EventArgs e)
         {
-
+            bllnv.suaNV();
+            bllnv.loadNV();
         }
 
         private void dtv_nhanvien_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -32,9 +32,22 @@ namespace QLBH_LinhKienPC.DAL
             return lopchung.ThemSuaXoa(sql);
         }
 
-        public int SuaNV(string manv, string tennv, string diachi, string sdt, String gt, String ns, String mk, String mcv)
+        public int SuaNV(string manv, string tennv, string diachi, string sdt, String gt, String ns, String mk, String tcv)
         {
-            string sql = "Update NHAN_VIEN set TenNV =N'" + tennv + "',DiaChiKH =N'" + diachi + "',SDTKH =N'" + sdt + "',GioiTinh =N'" + gt + "',N'" + ns + "', N'" + mk + "'where MaNV = '" + manv + "'";
+            string mcv = "";
+            string tl = tcv.ToString();
+            string select_ma = "select DISTINCT(MaCV) from CHUC_VU where TenCV = '" + tl + "'";
+            DataTable dt_ml = lopchung.LoadDuLieu(select_ma);
+            if (dt_ml != null)
+            {
+                foreach (DataRow dr in dt_ml.Rows)
+                {
+
+                    mcv = dr["MaCV"].ToString();
+
+                }
+            }
+            string sql = "Update NHAN_VIEN set TenNV = N'" + tennv + "', DiaChiNV =N'" + diachi + "',SDTNV = N'" + sdt + "', GioiTinh = '" + gt + "', NgaySinh = N'" + ns+ "', MaCV = '" + mcv + "', MatKhau = '" + mk + "' where MaNV = '" + manv + "'";
             return lopchung.ThemSuaXoa(sql);
         }
 

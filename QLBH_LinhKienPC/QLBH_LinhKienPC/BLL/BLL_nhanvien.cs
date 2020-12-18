@@ -50,25 +50,26 @@ namespace QLBH_LinhKienPC.BLL
             else
                 MessageBox.Show("Thêm thất bai");
         }
-        /*
+        
         public void suaNV()
         {
             string gt = "";
-            if (frm_khachhang.rbt_nam.Checked == true)
+            if (frm_nv.rbt_nam.Checked == true)
             {
                 gt = "Nam";
             }
-            if (frm_khachhang.rbt_nu.Checked == true)
+            if (frm_nv.rbt_nu.Checked == true)
             {
                 gt = "Nu";
             }
-            int ketqua = dal_khachhang.Suakh(frm_khachhang.txt_makh.Text, frm_khachhang.txt_tenkh.Text, frm_khachhang.txt_diachi.Text, frm_khachhang.txt_sdt.Text, gt);
+            string tencv = frm_nv.cb_chucvu.Text;
+            int ketqua = dal_nv.SuaNV(frm_nv.txt_manv.Text, frm_nv.txt_tennv.Text, frm_nv.txt_diachi.Text, frm_nv.txt_sdt.Text, gt,frm_nv.cb_ns.Text, frm_nv.txt_mk.Text,tencv);
             if (ketqua >= 1)
                 MessageBox.Show("Sửa thành công");
             else
                 MessageBox.Show("Sửa thất bai");
         }
-        */
+        
         public void xoaNV()
         {
             int ketqua = dal_nv.XoaNV(frm_nv.txt_manv.Text);

@@ -30,14 +30,14 @@ namespace QLBH_LinhKienPC.DAL
             return lopchung.ThemSuaXoa(sql);
 
         }
-
+        
         public DataTable LoadCV()
         {
             string sql = "Select * from CHUC_VU";
             return lopchung.LoadDuLieu(sql);
 
         }
-
+        
         public DataTable LoadTenCV()
         {
             string sql = "Select DISTINCT (TenCV) from CHUC_VU";

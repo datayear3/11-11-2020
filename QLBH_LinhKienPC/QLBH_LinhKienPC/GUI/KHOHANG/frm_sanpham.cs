@@ -14,9 +14,9 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
 {
     public partial class frm_sanpham : Form
     {
-        internal static object txt_tenkh;
-        internal object dtv_banhang;
-        internal object cb_masanpham;
+       // internal static object txt_tenkh;
+       // internal object dtv_banhang;
+       // internal object cb_masanpham;
         BLL.BLL_sanpham bllsp;
         BLL.BLL_nhomsanpham bllnsp;
         internal static object dtv_sanpham;
