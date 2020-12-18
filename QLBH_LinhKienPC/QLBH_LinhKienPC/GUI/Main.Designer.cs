@@ -156,15 +156,15 @@
             this.bt_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(60)))), ((int)(((byte)(146)))));
             this.bt_close.FlatAppearance.BorderSize = 0;
             this.bt_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_close.Image = global::QLBH_LinhKienPC.Properties.Resources.icons8_logout_rounded_down_64;
-            this.bt_close.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bt_close.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bt_close.Location = new System.Drawing.Point(0, 0);
             this.bt_close.Name = "bt_close";
             this.bt_close.Size = new System.Drawing.Size(233, 100);
             this.bt_close.TabIndex = 0;
             this.bt_close.Text = "THOÁT";
-            this.bt_close.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_close.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.bt_close.UseVisualStyleBackColor = false;
             this.bt_close.Click += new System.EventHandler(this.button7_Click);
             // 
