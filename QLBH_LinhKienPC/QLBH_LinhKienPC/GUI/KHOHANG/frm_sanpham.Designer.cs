@@ -186,7 +186,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(44, 304);
+            this.label10.Location = new System.Drawing.Point(105, 296);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 19);
             this.label10.TabIndex = 0;
@@ -225,9 +225,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // dtv_sp
             // 
             this.dtv_sp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtv_sp.Location = new System.Drawing.Point(191, 327);
+            this.dtv_sp.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dtv_sp.Location = new System.Drawing.Point(0, 414);
             this.dtv_sp.Name = "dtv_sp";
-            this.dtv_sp.Size = new System.Drawing.Size(738, 178);
+            this.dtv_sp.Size = new System.Drawing.Size(1128, 231);
             this.dtv_sp.TabIndex = 3;
             this.dtv_sp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_sp_CellContentClick);
             // 

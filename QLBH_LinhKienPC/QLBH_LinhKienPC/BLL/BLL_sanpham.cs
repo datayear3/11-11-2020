@@ -61,23 +61,14 @@ namespace QLBH_LinhKienPC.BLL
         }
         public void loadsp()
         {
-            //frm_sanpham.dat = dal_sanpham.LoadSP();
-            /*
-
             frm_sp.dtv_sp.DataSource = dal_sanpham.Loadsp();
-            DataTable cb_quyen = dal_sanpham.Loadsp();
+            
+            
             frm_sp.cb_dvt.Items.Clear();
-            if (cb_quyen != null)
-            {
-                foreach (DataRow dr in cb_quyen.Rows)
-                {
-
-                    frm_sp.cb_dvt.Items.Add(dr["DonViTinh"].ToString());
-
-                }
-            }
+            frm_sp.cb_dvt.Items.Add("Cái");
+ 
             frm_sp.cb_dvt.SelectedIndex = 0;
-            */
+            
 
         }
         public void XoaSP()

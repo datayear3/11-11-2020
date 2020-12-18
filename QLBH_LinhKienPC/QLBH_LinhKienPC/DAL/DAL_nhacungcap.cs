@@ -37,5 +37,12 @@ namespace QLBH_LinhKienPC.DAL
             return lopchung.ThemSuaXoa(sql);
 
         }
+        public DataTable LoadTenNCC()
+        {
+            string sql = "Select DISTINCT (TenNCC) from NHA_CUNG_CAP";
+            return lopchung.LoadDuLieu(sql);
+
+        }
+
     }
 }

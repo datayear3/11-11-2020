@@ -41,6 +41,7 @@ namespace QLBH_LinhKienPC.DAL
             return lopchung.LoadDuLieu(sql);
 
         }
+
     }
 
 }

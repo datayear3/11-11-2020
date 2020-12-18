@@ -19,20 +19,22 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
        // internal object cb_masanpham;
         BLL.BLL_sanpham bllsp;
         BLL.BLL_nhomsanpham bllnsp;
+        BLL.BLL_nhacungcap bllncc;
         internal static object dtv_sanpham;
 
         public frm_sanpham()
         {
             InitializeComponent();
-           // bllnsp = new BLL.BLL_nhomsanpham(this);
+            bllnsp = new BLL.BLL_nhomsanpham(this);
             bllsp = new BLL.BLL_sanpham(this);
-           
+            bllncc = new BLL.BLL_nhacungcap(this);
 
         }
 
         private void frm_sanpham_Load(object sender, EventArgs e)
         {
-           // bllnsp.LayDSNHOM();
+            bllnsp.LayDSNhomSP();
+            bllncc.LayDSNCC();
             bllsp.loadsp();
             
         }

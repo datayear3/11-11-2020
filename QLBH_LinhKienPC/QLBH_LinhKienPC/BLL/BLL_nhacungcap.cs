@@ -13,10 +13,16 @@ namespace QLBH_LinhKienPC.BLL
     {
         DAL.DAL_nhacungcap dal_nhacungcap = new DAL.DAL_nhacungcap();
         frm_nhacungcap frm_ncc;
+        frm_sanpham frm_sp;
         public BLL_nhacungcap(frm_nhacungcap f)
         {
             frm_ncc = f;
         }
+        public BLL_nhacungcap(frm_sanpham f)
+        {
+            frm_sp = f;
+        }
+
         public void LuuNCC()
         {
 
@@ -52,5 +58,13 @@ namespace QLBH_LinhKienPC.BLL
             else
                 MessageBox.Show("Xóa thất bai");
         }
+
+        public void LayDSNCC()
+        {
+            frm_sp.cb_tncc.DataSource = dal_nhacungcap.LoadTenNCC();
+            frm_sp.cb_tncc.DisplayMember = "TenNCC";
+            frm_sp.cb_tncc.ValueMember = "TenNCC";
+        }
+
     }
 }
