@@ -50,8 +50,8 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.bt_them = new System.Windows.Forms.Button();
             this.bt_sua = new System.Windows.Forms.Button();
             this.bt_xoa = new System.Windows.Forms.Button();
-            //this.dtv_sanpham = new System.Windows.Forms.DataGridView();
-           // ((System.ComponentModel.ISupportInitialize)(this.dtv_sanpham)).BeginInit();
+            this.dtv_sp = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_sp)).BeginInit();
             this.SuspendLayout();
             // 
             // l
@@ -132,6 +132,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.txt_msp.Name = "txt_msp";
             this.txt_msp.Size = new System.Drawing.Size(142, 20);
             this.txt_msp.TabIndex = 1;
+            this.txt_msp.TextChanged += new System.EventHandler(this.txt_msp_TextChanged);
             // 
             // txt_mn
             // 
@@ -139,7 +140,6 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.txt_mn.Name = "txt_mn";
             this.txt_mn.Size = new System.Drawing.Size(142, 20);
             this.txt_mn.TabIndex = 1;
-            this.txt_mn.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txt_tsp
             // 
@@ -147,7 +147,6 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.txt_tsp.Name = "txt_tsp";
             this.txt_tsp.Size = new System.Drawing.Size(142, 20);
             this.txt_tsp.TabIndex = 1;
-            this.txt_tsp.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txt_gb
             // 
@@ -162,7 +161,6 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.txt_mncc.Name = "txt_mncc";
             this.txt_mncc.Size = new System.Drawing.Size(142, 20);
             this.txt_mncc.TabIndex = 1;
-            this.txt_mncc.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txt_gn
             // 
@@ -170,7 +168,6 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.txt_gn.Name = "txt_gn";
             this.txt_gn.Size = new System.Drawing.Size(174, 20);
             this.txt_gn.TabIndex = 1;
-            this.txt_gn.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label8
             // 
@@ -188,7 +185,6 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.txt_slt.Name = "txt_slt";
             this.txt_slt.Size = new System.Drawing.Size(174, 20);
             this.txt_slt.TabIndex = 1;
-            this.txt_slt.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label9
             // 
@@ -206,7 +202,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.txt_dvt.Name = "txt_dvt";
             this.txt_dvt.Size = new System.Drawing.Size(142, 20);
             this.txt_dvt.TabIndex = 1;
-            this.txt_dvt.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txt_dvt.TextChanged += new System.EventHandler(this.txt_dvt_TextChanged);
             // 
             // label10
             // 
@@ -226,6 +222,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.bt_them.TabIndex = 2;
             this.bt_them.Text = "Thêm";
             this.bt_them.UseVisualStyleBackColor = true;
+            this.bt_them.Click += new System.EventHandler(this.bt_them_Click);
             // 
             // bt_sua
             // 
@@ -235,6 +232,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.bt_sua.TabIndex = 2;
             this.bt_sua.Text = "Sửa";
             this.bt_sua.UseVisualStyleBackColor = true;
+            this.bt_sua.Click += new System.EventHandler(this.bt_sua_Click);
             // 
             // bt_xoa
             // 
@@ -244,9 +242,16 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.bt_xoa.TabIndex = 2;
             this.bt_xoa.Text = "Xóa";
             this.bt_xoa.UseVisualStyleBackColor = true;
+            this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
-            // dtv_ttsanpham
-            
+            // dtv_sp
+            // 
+            this.dtv_sp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtv_sp.Location = new System.Drawing.Point(191, 327);
+            this.dtv_sp.Name = "dtv_sp";
+            this.dtv_sp.Size = new System.Drawing.Size(738, 178);
+            this.dtv_sp.TabIndex = 3;
+            this.dtv_sp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_sp_CellContentClick);
             // 
             // frm_sanpham
             // 
@@ -254,7 +259,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1128, 645);
-           
+            this.Controls.Add(this.dtv_sp);
             this.Controls.Add(this.bt_xoa);
             this.Controls.Add(this.bt_sua);
             this.Controls.Add(this.bt_them);
@@ -279,7 +284,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.Name = "frm_sanpham";
             this.Text = "`";
             this.Load += new System.EventHandler(this.frm_sanpham_Load);
-           // ((System.ComponentModel.ISupportInitialize)(this.dtv_sanpham)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_sp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,20 +299,20 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lb5;
-        private System.Windows.Forms.TextBox txt_msp;
-        private System.Windows.Forms.TextBox txt_mn;
-        private System.Windows.Forms.TextBox txt_tsp;
-        private System.Windows.Forms.TextBox txt_gb;
-        private System.Windows.Forms.TextBox txt_mncc;
-        private System.Windows.Forms.TextBox txt_gn;
+        public System.Windows.Forms.TextBox txt_msp;
+        public System.Windows.Forms.TextBox txt_mn;
+        public System.Windows.Forms.TextBox txt_tsp;
+        public System.Windows.Forms.TextBox txt_gb;
+        public System.Windows.Forms.TextBox txt_mncc;
+        public System.Windows.Forms.TextBox txt_gn;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txt_slt;
+        public System.Windows.Forms.TextBox txt_slt;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txt_dvt;
+        public System.Windows.Forms.TextBox txt_dvt;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button bt_them;
         private System.Windows.Forms.Button bt_sua;
         private System.Windows.Forms.Button bt_xoa;
-       
+        public System.Windows.Forms.DataGridView dtv_sp;
     }
 }

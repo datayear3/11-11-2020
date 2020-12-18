@@ -30,6 +30,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -42,15 +43,27 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(275, 37);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(188, 135);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "THÊM SẢN PHẨM";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // khohang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "khohang";
             this.Size = new System.Drawing.Size(1620, 980);
+            this.Load += new System.EventHandler(this.khohang_Load);
             this.ResumeLayout(false);
 
         }
@@ -58,5 +71,6 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

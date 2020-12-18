@@ -22,5 +22,16 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             frm_nhomsanpham nsp = new frm_nhomsanpham();
             nsp.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frm_sanpham sp = new frm_sanpham();
+            sp.ShowDialog();
+        }
+
+        private void khohang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
