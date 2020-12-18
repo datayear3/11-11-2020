@@ -16,7 +16,7 @@ namespace QLBH_LinhKienPC.DAL
         public int ThemNCC(string mancc, string tenncc, string sdtncc, string dcncc)
         {
 
-            string sql = "Insert into NHA_CUNG_CAP values(N'" + mancc + "',N'" + tenncc + "',N'" + sdtncc + "N'" + dcncc + "')";
+            string sql = "Insert into NHA_CUNG_CAP(TenNCC,MaNCC,SDTNCC,DiaChiNCC) values(N'" + mancc + "',N'" + tenncc+ "',N'" + sdtncc + "',N'" + dcncc + "')";
             return lopchung.ThemSuaXoa(sql);
         }
         public DataTable LoadNCC()

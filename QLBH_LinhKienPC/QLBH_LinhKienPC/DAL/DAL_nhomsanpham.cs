@@ -35,6 +35,12 @@ namespace QLBH_LinhKienPC.DAL
             return lopchung.ThemSuaXoa(sql);
 
         }
+        public DataTable LoadTenNhom()
+        {
+            string sql = "Select DISTINCT (TenNhom) from NHOM_SAN_PHAM";
+            return lopchung.LoadDuLieu(sql);
+
+        }
     }
 
 }

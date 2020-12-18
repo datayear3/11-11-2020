@@ -20,12 +20,12 @@ namespace QLBH_LinhKienPC.BLL
         public void LuuNCC()
         {
 
-           /* int ketqua = dal_nhacungcap.ThemNCC(frm_ncc.txt_mncc.Text, frm_ncc.txt_tncc.Text);
+            int ketqua = dal_nhacungcap.ThemNCC(frm_ncc.txt_mncc.Text.ToString(), frm_ncc.txt_tncc.Text.ToString(), frm_ncc.txt_sdt.Text.ToString(), frm_ncc.txt_dc.Text.ToString());
             if (ketqua >= 1)
                 MessageBox.Show("Thêm thành công");
             else
                 MessageBox.Show("Thêm thất bai");
-           */
+           
         }
         
         public void loadNCC()
