@@ -14,7 +14,6 @@ namespace QLBH_LinhKienPC.BLL
         DAL.DAL_khachhang dal_khachhang = new DAL.DAL_khachhang();
         frm_khachhang frm_khachhang;
         private frm_hoadonban frm_hoadonban;
-        private object frm_hoadon;
 
         public BLL_khachhang(frm_khachhang f)
         {

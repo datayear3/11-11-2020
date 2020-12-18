@@ -94,14 +94,7 @@ namespace QLBH_LinhKienPC.BLL
 
         }
 
-        /*
-        public void LayDSNCC()
-        {
-            frm_hoadon.cb_makh.DataSource = dal_khachhang.Loadkh();
-            frm_hoadon.cb_makh.DisplayMember = "MaKH";
-            frm_hoadon.cb_makh.ValueMember = "MaKH";
-        }
-        */
+        
         
         
     }
