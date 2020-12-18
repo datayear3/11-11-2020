@@ -37,7 +37,7 @@ namespace QLBH_LinhKienPC.BLL
         public void suaNCC()
         {
 
-            int ketqua = dal_nhacungcap.SuaNCC(frm_ncc.txt_mncc.Text.ToString(), frm_ncc.txt_tncc.Text.ToString());
+            int ketqua = dal_nhacungcap.SuaNCC(frm_ncc.txt_mncc.Text.ToString(), frm_ncc.txt_tncc.Text.ToString(), frm_ncc.txt_sdt.Text.ToString(), frm_ncc.txt_dc.Text.ToString());
             if (ketqua >= 1)
                 MessageBox.Show("Sửa thành công");
             else

@@ -13,12 +13,7 @@ namespace QLBH_LinhKienPC.DAL
         Lopdungchung lopchung = new Lopdungchung();
 
         /*
-         public DataTable LoadMaPN()
-        {
-            string sql = "Select DISTINCT (MaPN) from PHIEU_NHAP";
-            return lopchung.LoadDuLieu(sql);
-
-        }
+        
         
         public int ThemPN(string mapn, string mancc, string manv, string nn, string ttn)
         {
@@ -26,12 +21,14 @@ namespace QLBH_LinhKienPC.DAL
             string sql = "Insert into PHIEU_NHAP values(N'" + mapn + "',N'" + mancc + "',N'" + manv + "',N'" + nn + "',N'" + ttn + "')";
             return lopchung.ThemSuaXoa(sql);
         }
+        */
         public DataTable LoadPN()
         {
             string sql = "Select * from PHIEU_NHAP";
             return lopchung.LoadDuLieu(sql);
 
         }
+        /*
         public int SuaPN(string mapn, string mancc, string manv, string nn, string ttn)
         {
             string sql = "Update NHOM_SAN_PHAM set TenNhom =N'" + mapn + "'where MaNhom = '" + man + "'";

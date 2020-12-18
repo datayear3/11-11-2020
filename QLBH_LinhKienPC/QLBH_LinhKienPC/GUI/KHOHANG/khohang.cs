@@ -39,5 +39,11 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             frm_nhacungcap sp = new frm_nhacungcap();
             sp.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frm_phieunhap sp = new frm_phieunhap();
+            sp.ShowDialog();
+        }
     }
 }

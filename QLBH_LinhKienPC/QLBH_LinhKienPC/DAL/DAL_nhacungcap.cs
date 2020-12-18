@@ -26,9 +26,9 @@ namespace QLBH_LinhKienPC.DAL
 
         }
 
-        public int SuaNCC(string mancc, string tenncc)
+        public int SuaNCC(string mancc, string tenncc,string sdtncc, string dc)
         {
-            string sql = "Update NHA_CUNG_CAP set TenNCC =N'" + tenncc + "'where MaNCC = '" + mancc + "'";
+            string sql = "Update NHA_CUNG_CAP set TenNCC = N'" + tenncc + "', SDTNCC = '" + sdtncc+ "', DiaChiNCC = '" + dc +  "'where MaNCC = '" + mancc + "'";
             return lopchung.ThemSuaXoa(sql);
         }
         public int XoaNCC(string mancc)

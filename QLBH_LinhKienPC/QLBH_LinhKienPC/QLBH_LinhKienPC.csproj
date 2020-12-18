@@ -91,6 +91,12 @@
     <Compile Include="GUI\BANHANG\frm_khachhang.Designer.cs">
       <DependentUpon>frm_khachhang.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\KHOHANG\frm_chitietphieunhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\KHOHANG\frm_chitietphieunhap.Designer.cs">
+      <DependentUpon>frm_chitietphieunhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\KHOHANG\frm_nhacungcap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\BANHANG\frm_khachhang.resx">
       <DependentUpon>frm_khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KHOHANG\frm_chitietphieunhap.resx">
+      <DependentUpon>frm_chitietphieunhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\KHOHANG\frm_nhacungcap.resx">
       <DependentUpon>frm_nhacungcap.cs</DependentUpon>

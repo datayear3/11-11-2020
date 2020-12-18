@@ -63,6 +63,8 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             numrow = e.RowIndex;
             txt_mncc.Text = dvt_ncc.Rows[numrow].Cells[0].Value.ToString();
             txt_tncc.Text = dvt_ncc.Rows[numrow].Cells[1].Value.ToString();
+            txt_sdt.Text = dvt_ncc.Rows[numrow].Cells[2].Value.ToString();
+            txt_dc.Text = dvt_ncc.Rows[numrow].Cells[3].Value.ToString();
         }
 
         private void bt_xoa_Click(object sender, EventArgs e)
