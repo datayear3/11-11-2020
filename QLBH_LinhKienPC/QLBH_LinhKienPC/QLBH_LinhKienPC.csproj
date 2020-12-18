@@ -56,12 +56,14 @@
     <Compile Include="BLL\BLL_nhacungcap.cs" />
     <Compile Include="BLL\BLL_nhanvien.cs" />
     <Compile Include="BLL\BLL_nhomsanpham.cs" />
+    <Compile Include="BLL\BLL_phieunhap.cs" />
     <Compile Include="BLL\BLL_sanpham.cs" />
     <Compile Include="DAL\DAL_chucvu.cs" />
     <Compile Include="DAL\DAL_hoadon.cs" />
     <Compile Include="DAL\DAL_khachhang.cs" />
     <Compile Include="DAL\DAL_nhanvien.cs" />
     <Compile Include="DAL\DAL_nhomsanpham.cs" />
+    <Compile Include="DAL\DAL_phieunhap.cs" />
     <Compile Include="DAL\DAL_sanpham.cs" />
     <Compile Include="DAL\DAL_nhacungcap.cs" />
     <Compile Include="DAL\Lopdungchung.cs" />
@@ -100,6 +102,12 @@
     </Compile>
     <Compile Include="GUI\KHOHANG\frm_nhomsanpham.Designer.cs">
       <DependentUpon>frm_nhomsanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\KHOHANG\frm_phieunhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\KHOHANG\frm_phieunhap.Designer.cs">
+      <DependentUpon>frm_phieunhap.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\KHOHANG\frm_sanpham.cs">
       <SubType>Form</SubType>
@@ -173,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\KHOHANG\frm_nhomsanpham.resx">
       <DependentUpon>frm_nhomsanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KHOHANG\frm_phieunhap.resx">
+      <DependentUpon>frm_phieunhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\KHOHANG\frm_sanpham.resx">
       <DependentUpon>frm_sanpham.cs</DependentUpon>
