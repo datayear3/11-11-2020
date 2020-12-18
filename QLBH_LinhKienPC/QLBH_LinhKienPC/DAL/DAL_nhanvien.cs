@@ -11,8 +11,22 @@ namespace QLBH_LinhKienPC.DAL
     {
         Lopdungchung lopchung = new Lopdungchung();
 
-        public int ThemNV(string manv, string tennv, string diachi, string sdt, String gt, string ns,String mk, String mcv)
+        public int ThemNV(string manv, string tennv, string diachi, string sdt, String gt, string ns,String mk, String tcv)
         {
+
+            string mcv = "";
+            string tl = tcv.ToString();
+            string select_ma = "select DISTINCT(MaCV) from CHUC_VU where TenCV = '" + tl + "'";
+            DataTable dt_ml = lopchung.LoadDuLieu(select_ma);
+            if (dt_ml != null)
+            {
+                foreach (DataRow dr in dt_ml.Rows)
+                {
+
+                    mcv = dr["MaCV"].ToString();
+
+                }
+            }
 
             string sql = "Insert into NHAN_VIEN(MaNV,TenNV,DiaChiNV,SDTNV,GioiTinh,NgaySinh,MatKhau,MaCV) values(N'" + manv + "',N'" + tennv + "',N'" + diachi + "',N'" + sdt + "',N'" + gt +"', N'" + ns.ToString() + "', N'" + mk + "',N'" + mcv + "')";
             return lopchung.ThemSuaXoa(sql);
@@ -33,10 +47,15 @@ namespace QLBH_LinhKienPC.DAL
 
         public DataTable LoadNV()
         {
-            string sql = "Select * from NHAN_VIEN";
+            string sql = "Select MaNV,TenCV,TenNV,DiaChiNV,SDTNV,GioiTinh,NgaySinh,MatKhau from NHAN_VIEN,CHUC_VU WHERE NHAN_VIEN.MaCV = CHUC_VU.MaCV";
             return lopchung.LoadDuLieu(sql);
 
         }
-        
+        public DataTable LoadNV_Search(string tnv)
+        {
+            string sql = "Select MaNV,TenCV,TenNV,DiaChiNV,SDTNV,GioiTinh,NgaySinh,MatKhau from NHAN_VIEN,CHUC_VU WHERE NHAN_VIEN.MaCV = CHUC_VU.MaCV and TenNV LIKE '%"+tnv+"'";
+            return lopchung.LoadDuLieu(sql);
+
+        }
     }
 }
