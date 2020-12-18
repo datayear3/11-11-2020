@@ -11,7 +11,7 @@ namespace QLBH_LinhKienPC.DAL
     {
         Lopdungchung lopchung = new Lopdungchung();
 
-        public int ThemNV(string manv, string tennv, string diachi, string sdt, String gt, DateTime ns,String mk, String mcv)
+        public int ThemNV(string manv, string tennv, string diachi, string sdt, String gt, string ns,String mk, String mcv)
         {
 
             string sql = "Insert into NHAN_VIEN(MaNV,TenNV,DiaChiNV,SDTNV,GioiTinh,NgaySinh,MatKhau,MaCV) values(N'" + manv + "',N'" + tennv + "',N'" + diachi + "',N'" + sdt + "',N'" + gt +"', N'" + ns.ToString() + "', N'" + mk + "',N'" + mcv + "')";
@@ -37,5 +37,6 @@ namespace QLBH_LinhKienPC.DAL
             return lopchung.LoadDuLieu(sql);
 
         }
+        
     }
 }

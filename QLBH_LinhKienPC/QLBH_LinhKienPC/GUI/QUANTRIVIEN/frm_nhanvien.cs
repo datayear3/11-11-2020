@@ -67,8 +67,8 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
                 txt_sdt.Text = dtv_nhanvien.Rows[numrow].Cells[4].Value.ToString();
                 cb_chucvu.Text = dtv_nhanvien.CurrentRow.Cells["MaCV"].Value.ToString();
                 txt_mk.Text = dtv_nhanvien.CurrentRow.Cells["MatKhau"].Value.ToString();
-                dt_ns.Value = Convert.ToDateTime(dtv_nhanvien.CurrentRow.Cells["NgaySinh"].Value);
-                if (dtv_nhanvien.Rows[numrow].Cells[5].Value.ToString() == "Nam")
+                cb_ns.Text = dtv_nhanvien.Rows[numrow].Cells[6].Value.ToString();
+            if (dtv_nhanvien.Rows[numrow].Cells[5].Value.ToString() == "Nam")
                 {
                     rbt_nam.Checked = true;
                     rbt_nu.Checked = false;

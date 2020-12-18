@@ -43,7 +43,7 @@ namespace QLBH_LinhKienPC.BLL
                 gt = "Nu";
             }
             
-            int ketqua = dal_nv.ThemNV(frm_nv.txt_manv.Text.ToString(), frm_nv.txt_tennv.Text.ToString(), frm_nv.txt_diachi.Text.ToString(), frm_nv.txt_sdt.Text.ToString(),gt,frm_nv.dt_ns.Value, frm_nv.txt_mk.Text.ToString(),frm_nv.cb_chucvu.SelectedValue.ToString());
+            int ketqua = dal_nv.ThemNV(frm_nv.txt_manv.Text.ToString(), frm_nv.txt_tennv.Text.ToString(), frm_nv.txt_diachi.Text.ToString(), frm_nv.txt_sdt.Text.ToString(),gt,frm_nv.cb_ns.Text, frm_nv.txt_mk.Text.ToString(),frm_nv.cb_chucvu.SelectedValue.ToString());
             if (ketqua >= 1)
                 MessageBox.Show("Thêm thành công");
             else
@@ -79,7 +79,19 @@ namespace QLBH_LinhKienPC.BLL
         
         public void loadNV()
         {
-            //frm_nv.dtv_nhanvien.DataSource = dal_nv.LoadNV();
+            frm_nv.dtv_nhanvien.DataSource = dal_nv.LoadNV();
+
+            // load combobox nam sinh
+            string t = DateTime.Now.ToString("yyyy");
+            frm_nv.cb_ns.Items.Clear();
+            for (int i = 1990; i < Convert.ToInt32(t); i++)
+            {
+                frm_nv.cb_ns.Items.Add(i);
+            }
+            frm_nv.cb_ns.SelectedIndex = 0;
+
+
+
         }
 
         /*

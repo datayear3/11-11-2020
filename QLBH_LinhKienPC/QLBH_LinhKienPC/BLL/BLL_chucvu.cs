@@ -111,9 +111,9 @@ namespace QLBH_LinhKienPC.BLL
         
         public void LayDSCV()
         {
-            frm_nv.cb_chucvu.DataSource = dal_chucvu.LoadCV();
-            frm_nv.cb_chucvu.DisplayMember = "MaCV";
-            frm_nv.cb_chucvu.ValueMember = "MaCV";
+            frm_nv.cb_chucvu.DataSource = dal_chucvu.LoadTenCV();
+            frm_nv.cb_chucvu.DisplayMember = "TenCV";
+            frm_nv.cb_chucvu.ValueMember = "TenCV";
         }
         
         

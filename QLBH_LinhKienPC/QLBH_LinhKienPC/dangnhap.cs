@@ -56,7 +56,7 @@ namespace QLBH_LinhKienPC
             {
                 GUI.Main main = new GUI.Main();
                 main.bt_close.Text = "Xin chao, " + ten_nv;
-                if (loai_quyen != "ADMIN")
+                if (loai_quyen != "admin")
                 {
                     main.bt_quantrivien.Visible = false;
                 }
