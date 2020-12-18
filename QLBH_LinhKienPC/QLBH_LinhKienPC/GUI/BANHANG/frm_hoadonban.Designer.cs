@@ -306,6 +306,7 @@
             this.Controls.Add(this.bt_thoat);
             this.Name = "frm_hoadonban";
             this.Text = "frm_hoadonban";
+            this.Load += new System.EventHandler(this.frm_hoadonban_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtv_banhang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSetBindingSource)).EndInit();

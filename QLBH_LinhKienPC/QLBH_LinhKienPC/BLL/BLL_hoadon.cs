@@ -39,11 +39,14 @@ namespace QLBH_LinhKienPC.BLL
 
         public void xoaNV()
         {
+           /*
             int ketqua = dal_hoadon.XoaNV(frm_hoadon.txt_mahd.Text);
             if (ketqua >= 1)
                 MessageBox.Show("Xóa thành công");
             else
                 MessageBox.Show("Xóa thất bai");
+
+            */
         }
     }
 }

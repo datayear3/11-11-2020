@@ -5,14 +5,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-<<<<<<< HEAD
+
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
-=======
+
 using QLBH_LinhKienPC.GUI.BANHANG;
->>>>>>> 76979854a7c0472fe80d2056f1ebd07eb2e98e5e
+
 
 namespace QLBH_LinhKienPC.BLL
 {
@@ -62,23 +62,13 @@ namespace QLBH_LinhKienPC.BLL
         }
         public void XoaSP()
         {
-            int ketqua = dal_sanpham.XoaSP(frm_sp.txt_msp.Text);
+           /* int ketqua = dal_sanpham.XoaSP(frm_sp.txt_msp.Text);
             if (ketqua >= 1)
                 MessageBox.Show("Xóa thành công");
             else
                 MessageBox.Show("Xóa thất bai");
+           */
         }
-<<<<<<< HEAD
-    
-      
-=======
-       /* public void LayDSSP()
-        {
-            frm_sp.cb_masanpham.DataSource = dal_sanpham.LoadSP();
-            frm_sp.cb_masanpham.DisplayMember = "MaSP";
-            frm_sp.cb_masanpham.ValueMember = "MaSP";
-        }
-       */
->>>>>>> 76979854a7c0472fe80d2056f1ebd07eb2e98e5e
+
     }
 }

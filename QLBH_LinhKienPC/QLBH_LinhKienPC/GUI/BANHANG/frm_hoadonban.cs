@@ -16,7 +16,12 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
     {
         private void dtv_banhang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            dt_ngayban.Value = Convert.ToDateTime(dtv_banhang.CurrentRow.Cells["NgayBan"].Value);
+            //dt_ngayban.Value = Convert.ToDateTime(dtv_banhang.CurrentRow.Cells["NgayBan"].Value);
+        }
+
+        private void frm_hoadonban_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

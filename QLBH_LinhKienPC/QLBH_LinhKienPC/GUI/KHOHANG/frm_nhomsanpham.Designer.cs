@@ -127,6 +127,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.bt_xoa.UseVisualStyleBackColor = true;
             this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
+
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 533);
@@ -145,6 +146,15 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             ((System.ComponentModel.ISupportInitialize)(this.dtv_nsp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
+
+            // frm_nhomsanpham
+            // 
+            this.ClientSize = new System.Drawing.Size(1115, 513);
+            this.Name = "frm_nhomsanpham";
+            this.Load += new System.EventHandler(this.frm_nhomsanpham_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtv_nsp)).EndInit();
+            this.ResumeLayout(false);
 
 
         }

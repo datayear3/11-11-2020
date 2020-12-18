@@ -68,5 +68,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
                 bllnsp.loadSP();
             }
         }
+
+        private void frm_nhomsanpham_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
