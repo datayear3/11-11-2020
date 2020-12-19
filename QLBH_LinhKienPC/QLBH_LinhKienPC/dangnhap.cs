@@ -27,6 +27,7 @@ namespace QLBH_LinhKienPC
         private void bt_dn_Click(object sender, EventArgs e)
         {
             string sql = "select count(*) from NHAN_VIEN where MaNV = '" + dn_tk.Text.ToUpper() + "'and MatKhau = '" + dn_mk.Text.ToUpper() + "'";
+
             string mcv = "select * from NHAN_VIEN where MaNV = '" + dn_tk.Text.ToUpper() + "'";
             
 
@@ -80,10 +81,11 @@ namespace QLBH_LinhKienPC
                 if (loai_quyen == "kho")
                 {
                     main.bt_quantrivien.Visible = false;
-                    main.bt_banhang.Visible = false;
+                    main.bt_banhang.Visible = true;
                     main.bt_khohang.Visible = true;
-                    main.bt_khohang.Location = new System.Drawing.Point(0, 176);
-                    main.bt_thongke.Location = new System.Drawing.Point(0, 252);
+                    main.us_banhang.bt_them_khachhang.Visible = false;
+                    main.us_banhang.bt_hoadon.Visible = false;
+
                 }
 
 

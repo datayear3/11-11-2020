@@ -272,7 +272,7 @@
         //private BANHANG.banhang banhang1;
         //private TRANGCHU.trangchu trangchu1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private BANHANG.banhang us_banhang;
+        public BANHANG.banhang us_banhang;
         private TRANGCHU.trangchu us_trangchu;
         private KHOHANG.khohang us_khohang;
         private QUANTRIVIEN.quantrivien us_quantrivien;

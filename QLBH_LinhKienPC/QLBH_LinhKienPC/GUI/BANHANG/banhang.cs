@@ -21,12 +21,19 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
         private void bt_them_khachhang_Click(object sender, EventArgs e)
         {
             frm_khachhang kh = new frm_khachhang();
+
             kh.ShowDialog();
            
         }
 
         private void banhang_Load(object sender, EventArgs e)
         {
+            DAL.Lopdungchung conn = new DAL.Lopdungchung();
+
+            // load data gitview
+            string show_data = "select MaHD,TenNV,TenKH,TenSP,NgayBan,DGB,SLB,TongTienBan from HOA_DON_BAN,NHAN_VIEN,KHACH_HANG,SAN_PHAM where NHAN_VIEN.MaNV = HOA_DON_BAN.MaNV and HOA_DON_BAN.MaKH = KHACH_HANG.MaKH and HOA_DON_BAN.MaSP = SAN_PHAM.MaSP";
+            DataTable dt = conn.LoadDuLieu(show_data);
+            dvt_doanhthu.DataSource = dt;
 
         }
 

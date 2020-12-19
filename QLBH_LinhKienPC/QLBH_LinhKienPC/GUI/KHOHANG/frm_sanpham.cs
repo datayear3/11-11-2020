@@ -20,7 +20,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         BLL.BLL_sanpham bllsp;
         BLL.BLL_nhomsanpham bllnsp;
         BLL.BLL_nhacungcap bllncc;
-        internal static object dtv_sanpham;
+       // internal static object dtv_sanpham;
 
         public frm_sanpham()
         {
