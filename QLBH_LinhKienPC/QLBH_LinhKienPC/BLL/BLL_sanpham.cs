@@ -21,14 +21,19 @@ namespace QLBH_LinhKienPC.BLL
 
         DAL.DAL_sanpham dal_sanpham = new DAL.DAL_sanpham();
         frm_sanpham frm_sp;
-      
+        frm_phieunhap frm_pn;
 
         public BLL_sanpham(frm_sanpham f)
         {
             frm_sp = f;
         }
 
-       
+        public BLL_sanpham(frm_phieunhap f)
+        {
+            frm_pn = f;
+        }
+
+
         public void LuuSP()
         {
 
@@ -80,6 +85,12 @@ namespace QLBH_LinhKienPC.BLL
             else
                 MessageBox.Show("Xóa thất bai");
            
+        }
+        public void LayDSSP()
+        {
+            frm_pn.cb_tsp.DataSource = dal_sanpham.LoadTenSP();
+            frm_pn.cb_tsp.DisplayMember = "TenSP";
+            frm_pn.cb_tsp.ValueMember = "TenSP";
         }
 
     }

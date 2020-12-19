@@ -94,6 +94,12 @@ namespace QLBH_LinhKienPC.DAL
             return lopchung.LoadDuLieu(sql);
 
         }
-       
+        public DataTable LoadTenSP()
+        {
+            string sql = "Select TenSP from SAN_PHAM";
+            return lopchung.LoadDuLieu(sql);
+
+        }
+
     }
 }

@@ -38,13 +38,13 @@
             this.bt_thoat = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtv_chucvu = new System.Windows.Forms.DataGridView();
+            this.MaCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.cb_cv = new System.Windows.Forms.ComboBox();
-            this.MaCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_chucvu)).BeginInit();
             this.panel2.SuspendLayout();
@@ -171,11 +171,33 @@
             this.dtv_chucvu.TabIndex = 0;
             this.dtv_chucvu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_chucvu_CellContentClick);
             // 
+            // MaCV
+            // 
+            this.MaCV.DataPropertyName = "MaCV";
+            this.MaCV.HeaderText = "MÃ CHỨC VỤ";
+            this.MaCV.Name = "MaCV";
+            this.MaCV.Width = 150;
+            // 
+            // Quyen
+            // 
+            this.Quyen.DataPropertyName = "Quyen";
+            this.Quyen.HeaderText = "QUYỀN";
+            this.Quyen.Name = "Quyen";
+            // 
+            // TenCV
+            // 
+            this.TenCV.DataPropertyName = "TenCV";
+            this.TenCV.FillWeight = 300F;
+            this.TenCV.HeaderText = "TÊN CHỨC VỤ";
+            this.TenCV.Name = "TenCV";
+            this.TenCV.Width = 170;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(254, 20);
+            this.label3.Location = new System.Drawing.Point(218, 19);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(164, 36);
             this.label3.TabIndex = 10;
@@ -184,7 +206,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Green;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -213,32 +235,11 @@
             this.cb_cv.TabIndex = 12;
             this.cb_cv.SelectedIndexChanged += new System.EventHandler(this.cb_cv_SelectedIndexChanged);
             // 
-            // MaCV
-            // 
-            this.MaCV.DataPropertyName = "MaCV";
-            this.MaCV.HeaderText = "MÃ CHỨC VỤ";
-            this.MaCV.Name = "MaCV";
-            this.MaCV.Width = 150;
-            // 
-            // Quyen
-            // 
-            this.Quyen.DataPropertyName = "Quyen";
-            this.Quyen.HeaderText = "QUYỀN";
-            this.Quyen.Name = "Quyen";
-            // 
-            // TenCV
-            // 
-            this.TenCV.DataPropertyName = "TenCV";
-            this.TenCV.FillWeight = 300F;
-            this.TenCV.HeaderText = "TÊN CHỨC VỤ";
-            this.TenCV.Name = "TenCV";
-            this.TenCV.Width = 170;
-            // 
             // frm_chucvu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1058, 504);
             this.Controls.Add(this.cb_cv);
             this.Controls.Add(this.panel2);

@@ -37,29 +37,32 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(30, 20);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 143);
+            this.button1.Size = new System.Drawing.Size(241, 143);
             this.button1.TabIndex = 0;
-            this.button1.Text = "THÊM NHÓM HÀNG";
+            this.button1.Text = "QUẢN LÝ NHÓM HÀNG";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(440, 20);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(204, 143);
+            this.button2.Size = new System.Drawing.Size(259, 143);
             this.button2.TabIndex = 1;
-            this.button2.Text = "THÊM SẢN PHẨM";
+            this.button2.Text = "QUẢN LÝ  SẢN PHẨM";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(28, 198);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(188, 142);
+            this.button3.Size = new System.Drawing.Size(243, 142);
             this.button3.TabIndex = 2;
             this.button3.Text = "QUẢN LÝ NHÀ CUNG CẤP";
             this.button3.UseVisualStyleBackColor = true;
@@ -67,11 +70,12 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(440, 205);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(204, 135);
+            this.button4.Size = new System.Drawing.Size(259, 135);
             this.button4.TabIndex = 3;
-            this.button4.Text = "THÊM PHIẾU NHẬP";
+            this.button4.Text = "QUẢN LÝ PHIẾU NHẬP";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 

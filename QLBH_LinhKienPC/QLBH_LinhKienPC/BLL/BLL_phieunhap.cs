@@ -13,6 +13,7 @@ namespace QLBH_LinhKienPC.BLL
     {
         DAL.DAL_phieunhap dal_phieunhap = new DAL.DAL_phieunhap();
         frm_phieunhap frm_pn;
+        //frm_sanpham frm_sp;
        // GUI.KHOHANG.frm_phieunhap frm_pn;
 
 
@@ -24,8 +25,21 @@ namespace QLBH_LinhKienPC.BLL
         public void loadPN()
         {
             // frm_nhomsanpham.dat = dal_chucvu.LoadCV();
-            //frm_pn.dvt.pn.DataSource = dal_phieunhap.LoadPN();
+            frm_pn.dvt_pn.DataSource = dal_phieunhap.LoadPN();
 
         }
+        public void LuuPN()
+        {
+            // [MaPN],[TenNCC],[TenSP],[NgayNhap],[SLN],[DONGIA],[TongTienNhap]
+            int ketqua = dal_phieunhap.ThemPN(frm_pn.txt_mpn.Text, frm_pn.txt_tncc.Text, frm_pn.cb_tsp.SelectedValue.ToString(), frm_pn.date_n.Value.ToString(), frm_pn.num_sln.Value.ToString(), frm_pn.txt_gn.Text, frm_pn.txt_ttn.Text);
+
+            if (ketqua >= 1)
+                MessageBox.Show("Thêm thành công");
+            else
+                MessageBox.Show("Thêm thất bai");
+
+
+        }
+
     }
 }

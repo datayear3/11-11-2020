@@ -12,19 +12,49 @@ namespace QLBH_LinhKienPC.DAL
     {
         Lopdungchung lopchung = new Lopdungchung();
 
-        /*
         
         
-        public int ThemPN(string mapn, string mancc, string manv, string nn, string ttn)
+        public int ThemPN(string mapn, string tenncc, string tensp, string nn, string sln, string dg, string tt)
         {
 
-            string sql = "Insert into PHIEU_NHAP values(N'" + mapn + "',N'" + mancc + "',N'" + manv + "',N'" + nn + "',N'" + ttn + "')";
+
+            string mancc = "";
+            ///string tncc = tenncc.ToString();
+            string select_mancc = "select DISTINCT(MaNCC) from NHA_CUNG_CAP where TenNCC = '" + tenncc + "'";
+            DataTable dt_mncc = lopchung.LoadDuLieu(select_mancc);
+            if (dt_mncc != null)
+            {
+                foreach (DataRow dr in dt_mncc.Rows)
+                {
+
+                    mancc = dr["MaNCC"].ToString();
+
+                }
+            }
+
+            string masp = "";
+           // string tncc = tenncc.ToString();
+            string select_masp = "select DISTINCT(MaSP) from SAN_PHAM  where TenSP = '" + tensp + "'";
+            DataTable dt_mnsp = lopchung.LoadDuLieu(select_masp);
+            if (dt_mnsp != null)
+            {
+                foreach (DataRow dr in dt_mnsp.Rows)
+                {
+
+                    masp = dr["MaSP"].ToString();
+
+                }
+            }
+
+
+            string sql = "Insert into PHIEU_NHAP(MaPN,MaNCC,MaSP,NgayNhap,SLN,DONGIA,TongTienNhap) values(N'" + mapn + "',N'" + mancc + "',N'" + masp + "',N'" + nn + "','" + Convert.ToInt32(sln)+ "','" + Convert.ToInt32(dg) + "','" + Convert.ToInt32(tt) + "')";
             return lopchung.ThemSuaXoa(sql);
+
+
         }
-        */
         public DataTable LoadPN()
         {
-            string sql = "Select * from PHIEU_NHAP";
+            string sql = "Select [MaPN],[TenNCC],[TenSP],[NgayNhap],[SLN],[DONGIA],[TongTienNhap] from PHIEU_NHAP,NHA_CUNG_CAP,SAN_PHAM where PHIEU_NHAP.MaSP = SAN_PHAM.MaSP and  PHIEU_NHAP.MaNCC = NHA_CUNG_CAP.MaNCC ";
             return lopchung.LoadDuLieu(sql);
 
         }
