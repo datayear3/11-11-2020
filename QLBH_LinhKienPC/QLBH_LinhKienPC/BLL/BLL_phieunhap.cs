@@ -40,6 +40,27 @@ namespace QLBH_LinhKienPC.BLL
 
 
         }
+        public void XoaPN()
+        {
+            int ketqua = dal_phieunhap.XoaPN(frm_pn.txt_mpn.Text);
+            if (ketqua >= 1)
+                MessageBox.Show("Xóa thành công");
+            else
+                MessageBox.Show("Xóa thất bai");
+
+        }
+
+        public void SuaPN()
+        {
+
+            int ketqua = dal_phieunhap.SuaPN(frm_pn.txt_mpn.Text.ToString(),frm_pn.txt_tncc.Text.ToString(),frm_pn.cb_tsp.SelectedValue.ToString(), frm_pn.num_sln.Value.ToString(), frm_pn.txt_gn.Text, frm_pn.txt_ttn.Text);
+            if (ketqua >= 1)
+                MessageBox.Show("Sửa thành công");
+            else
+                MessageBox.Show("Sửa thất bai");
+        }
+
+
 
     }
 }

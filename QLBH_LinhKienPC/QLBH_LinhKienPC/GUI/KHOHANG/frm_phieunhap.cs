@@ -36,11 +36,6 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         {
 
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
         long dg = 0;
         private void cb_tsp_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -89,6 +84,31 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         private void bt_them_Click(object sender, EventArgs e)
         {
             bllpn.LuuPN();
+            bllpn.loadPN();
+        }
+
+        private void bt_xoa_Click(object sender, EventArgs e)
+        {
+            bllpn.XoaPN();
+            bllpn.loadPN();
+        }
+
+        private void dvt_pn_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            txt_mpn.Text = dvt_pn.Rows[numrow].Cells[0].Value.ToString();
+            txt_tncc.Text = dvt_pn.Rows[numrow].Cells[1].Value.ToString();
+            cb_tsp.Text = dvt_pn.Rows[numrow].Cells[2].Value.ToString();
+            date_n.Text = dvt_pn.Rows[numrow].Cells[3].Value.ToString();
+            num_sln.Value = Convert.ToInt32(dvt_pn.Rows[numrow].Cells[4].Value.ToString());
+            txt_gn.Text = dvt_pn.Rows[numrow].Cells[5].Value.ToString();
+            txt_ttn.Text = dvt_pn.Rows[numrow].Cells[6].Value.ToString();
+        }
+
+        private void bt_sua_Click(object sender, EventArgs e)
+        {
+            bllpn.SuaPN();
             bllpn.loadPN();
         }
     }

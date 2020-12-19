@@ -138,7 +138,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.dvt_pn.Name = "dvt_pn";
             this.dvt_pn.Size = new System.Drawing.Size(918, 222);
             this.dvt_pn.TabIndex = 2;
-            this.dvt_pn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dvt_pn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvt_pn_CellContentClick);
             // 
             // bt_them
             // 
@@ -158,6 +158,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.bt_sua.TabIndex = 3;
             this.bt_sua.Text = "Sửa";
             this.bt_sua.UseVisualStyleBackColor = true;
+            this.bt_sua.Click += new System.EventHandler(this.bt_sua_Click);
             // 
             // bt_xoa
             // 
@@ -167,6 +168,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.bt_xoa.TabIndex = 3;
             this.bt_xoa.Text = "Xóa";
             this.bt_xoa.UseVisualStyleBackColor = true;
+            this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
             // label3
             // 
