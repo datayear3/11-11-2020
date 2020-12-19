@@ -13,14 +13,17 @@ namespace QLBH_LinhKienPC.BLL
     {
         DAL.DAL_khachhang dal_khachhang = new DAL.DAL_khachhang();
         frm_khachhang frm_khachhang;
-      
+        private frm_hoadon frm_hoadon;
 
         public BLL_khachhang(frm_khachhang f)
         {
             frm_khachhang = f;
         }
 
-       
+        public BLL_khachhang(frm_hoadon frm_hoadon)
+        {
+            this.frm_hoadon = frm_hoadon;
+        }
 
         public void Luukh()
         {
@@ -78,11 +81,11 @@ namespace QLBH_LinhKienPC.BLL
         }
 
 
-        /*public void LayDSNCC()
+        /*public void LayDSKH()
         {
-            frm_hoadonban.cb_makhachhang.DataSource = dal_khachhang.Loadkh();
-            frm_hoadonban.cb_makhachhang.DisplayMember = "MaKH";
-            frm_hoadonban.cb_makhachhang.ValueMember = "MaKH";
+            frm_hoadon.cb_makh.DataSource = dal_khachhang.Loadkh();
+            frm_hoadon.cb_makh.DisplayMember = "MaKH";
+            frm_hoadon.cb_makh.ValueMember = "MaKH";
         }
         */
         
