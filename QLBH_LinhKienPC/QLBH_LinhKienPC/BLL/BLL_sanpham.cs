@@ -21,14 +21,17 @@ namespace QLBH_LinhKienPC.BLL
 
         DAL.DAL_sanpham dal_sanpham = new DAL.DAL_sanpham();
         frm_sanpham frm_sp;
-      
+        private frm_hoadon frm_hoadon;
 
         public BLL_sanpham(frm_sanpham f)
         {
             frm_sp = f;
         }
 
-       
+        public BLL_sanpham(frm_hoadon frm_hoadon)
+        {
+            this.frm_hoadon = frm_hoadon;
+        }
 
         public void LuuSP()
         {
