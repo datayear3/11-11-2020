@@ -131,6 +131,7 @@
             this.MaHD.DataPropertyName = "MaHD";
             this.MaHD.HeaderText = "MÃ HÓA ĐƠN";
             this.MaHD.Name = "MaHD";
+            this.MaHD.ReadOnly = true;
             this.MaHD.Width = 130;
             // 
             // TenNV
@@ -138,6 +139,7 @@
             this.TenNV.DataPropertyName = "TenNV";
             this.TenNV.HeaderText = "TÊN NHÂN VIÊN";
             this.TenNV.Name = "TenNV";
+            this.TenNV.ReadOnly = true;
             this.TenNV.Width = 150;
             // 
             // TenKH
@@ -145,6 +147,7 @@
             this.TenKH.DataPropertyName = "TenKH";
             this.TenKH.HeaderText = "TÊN KHÁCH HÀNG";
             this.TenKH.Name = "TenKH";
+            this.TenKH.ReadOnly = true;
             this.TenKH.Width = 150;
             // 
             // NgayBan
@@ -152,12 +155,14 @@
             this.NgayBan.DataPropertyName = "NgayBan";
             this.NgayBan.HeaderText = "NGÀY BÁN";
             this.NgayBan.Name = "NgayBan";
+            this.NgayBan.ReadOnly = true;
             // 
             // DGB
             // 
             this.DGB.DataPropertyName = "DGB";
             this.DGB.HeaderText = "ĐƠN GIÁ BÁN";
             this.DGB.Name = "DGB";
+            this.DGB.ReadOnly = true;
             this.DGB.Width = 150;
             // 
             // SLB
@@ -165,6 +170,7 @@
             this.SLB.DataPropertyName = "SLB";
             this.SLB.HeaderText = "SỐ LƯỢNG BÁN";
             this.SLB.Name = "SLB";
+            this.SLB.ReadOnly = true;
             this.SLB.Width = 150;
             // 
             // TenSP
@@ -172,6 +178,7 @@
             this.TenSP.DataPropertyName = "TenSP";
             this.TenSP.HeaderText = "TÊN SẢN PHẨM";
             this.TenSP.Name = "TenSP";
+            this.TenSP.ReadOnly = true;
             this.TenSP.Width = 150;
             // 
             // TongTienBan
@@ -179,6 +186,7 @@
             this.TongTienBan.DataPropertyName = "TongTienBan";
             this.TongTienBan.HeaderText = "TỔNG TIỀN";
             this.TongTienBan.Name = "TongTienBan";
+            this.TongTienBan.ReadOnly = true;
             // 
             // banhang
             // 

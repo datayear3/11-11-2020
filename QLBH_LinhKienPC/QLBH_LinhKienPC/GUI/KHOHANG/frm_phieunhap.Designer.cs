@@ -31,12 +31,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_pn = new System.Windows.Forms.TextBox();
             this.txt_mncc = new System.Windows.Forms.TextBox();
-            this.txt_mnv = new System.Windows.Forms.TextBox();
             this.txt_nn = new System.Windows.Forms.TextBox();
             this.txt_ttn = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -63,20 +61,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(169, 184);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 19);
+            this.label2.Size = new System.Drawing.Size(112, 19);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Mã Nhà Cung Cấp:";
+            this.label2.Text = "Nhà Cung Cấp:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(169, 236);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 19);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Mã Nhân Viên";
             // 
             // label4
             // 
@@ -115,14 +103,6 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.txt_mncc.Size = new System.Drawing.Size(156, 26);
             this.txt_mncc.TabIndex = 1;
             // 
-            // txt_mnv
-            // 
-            this.txt_mnv.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mnv.Location = new System.Drawing.Point(326, 233);
-            this.txt_mnv.Name = "txt_mnv";
-            this.txt_mnv.Size = new System.Drawing.Size(156, 26);
-            this.txt_mnv.TabIndex = 1;
-            // 
             // txt_nn
             // 
             this.txt_nn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -153,7 +133,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // dvt_pn
             // 
             this.dvt_pn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvt_pn.Location = new System.Drawing.Point(173, 297);
+            this.dvt_pn.Location = new System.Drawing.Point(187, 325);
             this.dvt_pn.Name = "dvt_pn";
             this.dvt_pn.Size = new System.Drawing.Size(689, 166);
             this.dvt_pn.TabIndex = 2;
@@ -161,27 +141,27 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             // bt_them
             // 
-            this.bt_them.Location = new System.Drawing.Point(910, 125);
+            this.bt_them.Location = new System.Drawing.Point(576, 254);
             this.bt_them.Name = "bt_them";
-            this.bt_them.Size = new System.Drawing.Size(79, 19);
+            this.bt_them.Size = new System.Drawing.Size(79, 36);
             this.bt_them.TabIndex = 3;
             this.bt_them.Text = "Thêm";
             this.bt_them.UseVisualStyleBackColor = true;
             // 
             // bt_sua
             // 
-            this.bt_sua.Location = new System.Drawing.Point(910, 180);
+            this.bt_sua.Location = new System.Drawing.Point(774, 254);
             this.bt_sua.Name = "bt_sua";
-            this.bt_sua.Size = new System.Drawing.Size(79, 19);
+            this.bt_sua.Size = new System.Drawing.Size(79, 36);
             this.bt_sua.TabIndex = 3;
             this.bt_sua.Text = "Sửa";
             this.bt_sua.UseVisualStyleBackColor = true;
             // 
             // bt_xoa
             // 
-            this.bt_xoa.Location = new System.Drawing.Point(910, 221);
+            this.bt_xoa.Location = new System.Drawing.Point(676, 254);
             this.bt_xoa.Name = "bt_xoa";
-            this.bt_xoa.Size = new System.Drawing.Size(79, 19);
+            this.bt_xoa.Size = new System.Drawing.Size(79, 36);
             this.bt_xoa.TabIndex = 3;
             this.bt_xoa.Text = "Xóa";
             this.bt_xoa.UseVisualStyleBackColor = true;
@@ -195,12 +175,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.Controls.Add(this.bt_sua);
             this.Controls.Add(this.bt_them);
             this.Controls.Add(this.dvt_pn);
-            this.Controls.Add(this.txt_mnv);
             this.Controls.Add(this.txt_mncc);
             this.Controls.Add(this.txt_ttn);
             this.Controls.Add(this.txt_nn);
             this.Controls.Add(this.txt_pn);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -219,12 +197,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.TextBox txt_pn;
         public System.Windows.Forms.TextBox txt_mncc;
-        public System.Windows.Forms.TextBox txt_mnv;
         public System.Windows.Forms.TextBox txt_nn;
         public System.Windows.Forms.TextBox txt_ttn;
         private System.Windows.Forms.Label label6;
