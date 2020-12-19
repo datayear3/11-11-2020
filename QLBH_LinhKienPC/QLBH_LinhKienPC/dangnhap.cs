@@ -68,8 +68,9 @@ namespace QLBH_LinhKienPC
                     main.bt_quantrivien.Visible = true;
                     main.bt_banhang.Visible = false;
                     main.bt_khohang.Visible = false;
-                    main.bt_quantrivien.Location = new System.Drawing.Point(0, 252);
-                    main.bt_thongke.Location = new System.Drawing.Point(0, 176);
+                    main.bt_thongke.Visible = false;
+                    main.bt_quantrivien.Location = new System.Drawing.Point(0, 176);
+                    // main.bt_thongke.Location = new System.Drawing.Point(0, 176);
                 }
                 if (loai_quyen == "nhanvien")
                 {
