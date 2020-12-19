@@ -48,11 +48,19 @@ namespace QLBH_LinhKienPC.BLL
 
             try
             {
-                int ketqua = dal_chucvu.ThemCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(), q);
-                if (ketqua >= 1)
-                    MessageBox.Show("Thêm thành công");
+                if (frm_chucvu.txt_mcv.Text.ToString() != "")
+                {
+                    int ketqua = dal_chucvu.ThemCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(), q);
+                    if (ketqua >= 1)
+                        MessageBox.Show("Thêm thành công");
+                    else
+                        MessageBox.Show("Thêm thất bai");
+                }
                 else
-                    MessageBox.Show("Thêm thất bai");
+                {
+                    MessageBox.Show("Mã Chức vụ " + " không được bỏ trống !!! ");
+                }
+                
             }
             catch (Exception)
             {
@@ -84,11 +92,19 @@ namespace QLBH_LinhKienPC.BLL
 
             try
             {
-                int ketqua = dal_chucvu.SuaCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(), q);
-                if (ketqua >= 1)
-                    MessageBox.Show("Sửa thành công");
+                
+                if (frm_chucvu.txt_mcv.Text.ToString() != "")
+                {
+                    int ketqua = dal_chucvu.SuaCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(), q);
+                    if (ketqua >= 1)
+                        MessageBox.Show("Sửa thành công");
+                    else
+                        MessageBox.Show("Sửa thất bai");
+                }
                 else
-                    MessageBox.Show("Sửa thất bai");
+                {
+                    MessageBox.Show("Mã Chức vụ " + " không được bỏ trống !!! ");
+                }
             }
             catch (Exception)
             {
