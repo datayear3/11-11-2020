@@ -49,7 +49,7 @@ namespace QLBH_LinhKienPC.BLL
         
         public void suaNV()
         {
-            string gt = "";
+            string gt ="";
             if (frm_nv.rbt_nam.Checked == true)
             {
                 gt = "Nam";
@@ -59,7 +59,7 @@ namespace QLBH_LinhKienPC.BLL
                 gt = "Nu";
             }
             string tencv = frm_nv.cb_chucvu.Text;
-            int ketqua = dal_nv.SuaNV(frm_nv.txt_manv.Text, frm_nv.txt_tennv.Text, frm_nv.txt_diachi.Text, frm_nv.txt_sdt.Text, gt,frm_nv.cb_ns.Text, frm_nv.txt_mk.Text,tencv);
+            int ketqua = dal_nv.SuaNV(frm_nv.txt_manv.Text, frm_nv.txt_tennv.Text, frm_nv.txt_diachi.Text, frm_nv.txt_sdt.Text,gt.ToString(),frm_nv.cb_ns.Text, frm_nv.txt_mk.Text,tencv);
             if (ketqua >= 1)
                 MessageBox.Show("Sửa thành công");
             else

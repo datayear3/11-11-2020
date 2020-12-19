@@ -55,11 +55,39 @@ namespace QLBH_LinhKienPC
             if (kq >= 1)
             {
                 GUI.Main main = new GUI.Main();
-                main.bt_close.Text = "Xin chao, " + ten_nv;
-                if (loai_quyen != "admin")
+                main.bt_close.Text = "Xin chào, " + ten_nv;
+
+                // vi tri ban hang --- new System.Drawing.Point(0, 176);
+                // vi tri kho hang --- new System.Drawing.Point(0, 252);
+                // vi tri thong ke --- new System.Drawing.Point(6, 328);
+                // vi tri quan tri vien --- new System.Drawing.Point(3, 404);
+
+                if (loai_quyen == "admin")
+                {
+                    main.bt_quantrivien.Visible = true;
+                    main.bt_banhang.Visible = false;
+                    main.bt_khohang.Visible = false;
+                    main.bt_quantrivien.Location = new System.Drawing.Point(0, 252);
+                    main.bt_thongke.Location = new System.Drawing.Point(0, 176);
+                }
+                if (loai_quyen == "nhanvien")
                 {
                     main.bt_quantrivien.Visible = false;
+                    main.bt_banhang.Visible = true;
+                    main.bt_khohang.Visible = false;
+                    main.bt_thongke.Location = new System.Drawing.Point(0, 252);
                 }
+                if (loai_quyen == "kho")
+                {
+                    main.bt_quantrivien.Visible = false;
+                    main.bt_banhang.Visible = false;
+                    main.bt_khohang.Visible = true;
+                    main.bt_khohang.Location = new System.Drawing.Point(0, 176);
+                    main.bt_thongke.Location = new System.Drawing.Point(0, 252);
+                }
+
+
+
                 this.Hide();
                 main.ShowDialog();
                 this.Show();

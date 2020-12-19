@@ -43,7 +43,7 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
         private void bt_sua_Click(object sender, EventArgs e)
         {
             DialogResult dialog;
-            dialog = MessageBox.Show(" Thông tin sẽ bị thay đổi. Bạn có muốn tiếp tục", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            dialog = MessageBox.Show(" Thông tin sẽ bị thay đổi. Bạn có muốn tiếp tục ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
             {
                 bllcv.suaCV();
@@ -62,7 +62,7 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
         private void bt_xoa_Click(object sender, EventArgs e)
         {
             DialogResult dialog;
-            dialog = MessageBox.Show(" Bạn có muốn xóa hay không", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            dialog = MessageBox.Show(" Bạn có muốn xóa hay không ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
             {
                 bllcv.xoaCV();

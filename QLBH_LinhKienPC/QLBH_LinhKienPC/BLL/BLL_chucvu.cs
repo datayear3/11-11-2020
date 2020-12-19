@@ -17,7 +17,6 @@ namespace QLBH_LinhKienPC.BLL
         DAL.DAL_chucvu dal_chucvu = new DAL.DAL_chucvu();
         GUI.QUANTRIVIEN.frm_chucvu frm_chucvu;
         GUI.QUANTRIVIEN.frm_nhanvien frm_nv;
-       // private frm_hoadonban frm_hoadonban;
 
         public BLL_chucvu(GUI.QUANTRIVIEN.frm_chucvu f)
         {
@@ -46,13 +45,25 @@ namespace QLBH_LinhKienPC.BLL
             {
                 q = "NV";
             }
-            int ketqua = dal_chucvu.ThemCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(),q);
-            if (ketqua >= 1)
-                MessageBox.Show("Thêm thành công");
-            else
-                MessageBox.Show("Thêm thất bai");
+
+            try
+            {
+                int ketqua = dal_chucvu.ThemCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(), q);
+                if (ketqua >= 1)
+                    MessageBox.Show("Thêm thành công");
+                else
+                    MessageBox.Show("Thêm thất bai");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Thêm dữ liệu không thành công !!! " + "Mã Chức vụ '" + frm_chucvu.txt_mcv.Text.ToString() + "' đã tồn tại !!! " );
+            }
+
+
+
         }
-        
+
         public void suaCV()
         {
             string q = "";
@@ -70,20 +81,47 @@ namespace QLBH_LinhKienPC.BLL
                 q = "nv";
             }
 
-            int ketqua = dal_chucvu.SuaCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(), q);
-            if (ketqua >= 1)
-                MessageBox.Show("Sửa thành công");
-            else
-                MessageBox.Show("Sửa thất bai");
+
+            try
+            {
+                int ketqua = dal_chucvu.SuaCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(), q);
+                if (ketqua >= 1)
+                    MessageBox.Show("Sửa thành công");
+                else
+                    MessageBox.Show("Sửa thất bai");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Sửa dữ liệu không thành công !!! " + "Mã Chức vụ '" + frm_chucvu.txt_mcv.Text.ToString() + "' không tồn tại !!! ");
+            }
+
         }
 
         public void xoaCV()
         {
-            int ketqua = dal_chucvu.XoaCV(frm_chucvu.txt_mcv.Text.ToString());
-            if (ketqua >= 1)
-                MessageBox.Show("Xóa thành công");
-            else
-                MessageBox.Show("Xóa thất bai");
+            try
+            {
+                if (frm_chucvu.txt_mcv.Text.ToString() != "")
+                {
+                    int ketqua = dal_chucvu.XoaCV(frm_chucvu.txt_mcv.Text.ToString());
+                    if (ketqua >= 1)
+                        MessageBox.Show("Xóa thành công");
+                    else
+                        MessageBox.Show("Xóa thất bai");
+                }
+                else
+                {
+                    MessageBox.Show("Mã Chức vụ " + " không được bỏ trống !!! ");
+                }
+                
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Xóa dữ liệu không thành công !!! " + "Mã Chức vụ '" + frm_chucvu.txt_mcv.Text.ToString() + "' không tồn tại !!! ");
+            }
+            
         }
     
         public void loadCV()

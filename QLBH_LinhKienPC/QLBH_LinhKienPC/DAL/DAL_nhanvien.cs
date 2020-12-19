@@ -47,7 +47,7 @@ namespace QLBH_LinhKienPC.DAL
 
                 }
             }
-            string sql = "Update NHAN_VIEN set TenNV = N'" + tennv + "', DiaChiNV =N'" + diachi + "',SDTNV = N'" + sdt + "', GioiTinh = '" + gt + "', NgaySinh = N'" + ns+ "', MaCV = '" + mcv + "', MatKhau = '" + mk + "' where MaNV = '" + manv + "'";
+            string sql = "Update NHAN_VIEN set TenNV = N'" + tennv + "', DiaChiNV =N'" + diachi + "',SDTNV = N'" + sdt + "', GioiTinh = '" + gt.ToString() + "', NgaySinh = N'" + ns+ "', MaCV = '" + mcv + "', MatKhau = '" + mk + "' where MaNV = '" + manv + "'";
             return lopchung.ThemSuaXoa(sql);
         }
 
@@ -66,7 +66,7 @@ namespace QLBH_LinhKienPC.DAL
         }
         public DataTable LoadNV_Search(string tnv)
         {
-            string sql = "Select MaNV,TenCV,TenNV,DiaChiNV,SDTNV,GioiTinh,NgaySinh,MatKhau from NHAN_VIEN,CHUC_VU WHERE NHAN_VIEN.MaCV = CHUC_VU.MaCV and TenNV LIKE '%"+tnv+"'";
+            string sql = "Select MaNV,TenCV,TenNV,DiaChiNV,SDTNV,GioiTinh,NgaySinh,MatKhau from NHAN_VIEN,CHUC_VU WHERE NHAN_VIEN.MaCV = CHUC_VU.MaCV and TenNV LIKE '%"+tnv+"%'";
             return lopchung.LoadDuLieu(sql);
 
         }

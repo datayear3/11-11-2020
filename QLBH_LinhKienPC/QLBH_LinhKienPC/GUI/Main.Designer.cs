@@ -265,10 +265,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button bt_trangchu;
         public System.Windows.Forms.Button bt_close;
-        private System.Windows.Forms.Button bt_thongke;
+        public System.Windows.Forms.Button bt_thongke;
         public System.Windows.Forms.Button bt_quantrivien;
-        private System.Windows.Forms.Button bt_khohang;
-        private System.Windows.Forms.Button bt_banhang;
+        public System.Windows.Forms.Button bt_khohang;
+        public System.Windows.Forms.Button bt_banhang;
         //private BANHANG.banhang banhang1;
         //private TRANGCHU.trangchu trangchu1;
         private System.Windows.Forms.PictureBox pictureBox1;
