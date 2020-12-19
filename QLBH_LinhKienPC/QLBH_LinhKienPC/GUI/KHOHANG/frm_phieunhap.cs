@@ -111,5 +111,40 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             bllpn.SuaPN();
             bllpn.loadPN();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_mpn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_gn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_tncc_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_ttn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
