@@ -81,7 +81,8 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             int numrow;
             numrow = e.RowIndex;
             txt_msp.Text = dtv_sp.Rows[numrow].Cells[0].Value.ToString();
-            txt_tsp.Text = dtv_sp.Rows[numrow].Cells[1].Value.ToString();
+            txt_tsp.Text = dtv_sp.Rows[numrow].Cells[2].Value.ToString();
+            cb_dvt.Text = dtv_sp.Rows[numrow].Cells[3].Value.ToString();
         }
 
         private void bt_xoa_Click(object sender, EventArgs e)

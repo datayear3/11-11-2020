@@ -31,17 +31,20 @@ namespace QLBH_LinhKienPC.BLL
        
         public void LuuSP()
         {
-            /*
-                int ketqua = dal_sanpham.ThemSP(frm_sp.txt_msp.Text, frm_sp.txt_tsp.Text, frm_sp.txt_dvt.Text.ToString(), frm_sp.txt_mncc.Text.ToString(), frm_sp.txt_mn.Text.ToString(), frm_sp.txt_gn.Text.ToString(), frm_sp.txt_gb.Text.ToString(), frm_sp.txt_slt.Text.ToString());
 
-                if (ketqua >= 1)
-                    MessageBox.Show("Thêm thành công");
-                else
-                    MessageBox.Show("Thêm thất bai");
+
+
+            // SAN PHAM ( MASP,MANHOM,TENSP,DVT,SLTON,GB,GN,MANCC,...,....)
+            int ketqua = dal_sanpham.ThemSP(frm_sp.txt_msp.Text, frm_sp.cb_tn.SelectedValue.ToString(), frm_sp.txt_tsp.Text.ToString(), frm_sp.cb_dvt.Text, frm_sp.txt_slt.Text, frm_sp.txt_gb.Text,frm_sp.txt_gn.Text,frm_sp.cb_tncc.SelectedValue.ToString());
+
+            if (ketqua >= 1)
+                MessageBox.Show("Thêm thành công");
+            else
+                MessageBox.Show("Thêm thất bai");
 
             
          }
-
+        /*
         public void SuaSP()
             {
 
@@ -54,7 +57,7 @@ namespace QLBH_LinhKienPC.BLL
 
 
             */
-        }
+        
         public void loadsp()
         {
             frm_sp.dtv_sp.DataSource = dal_sanpham.Loadsp();
@@ -62,19 +65,21 @@ namespace QLBH_LinhKienPC.BLL
             
             frm_sp.cb_dvt.Items.Clear();
             frm_sp.cb_dvt.Items.Add("Cái");
- 
+            frm_sp.cb_dvt.Items.Add("Con");
+
+
             frm_sp.cb_dvt.SelectedIndex = 0;
             
 
         }
         public void XoaSP()
         {
-           /* int ketqua = dal_sanpham.XoaSP(frm_sp.txt_msp.Text);
+            int ketqua = dal_sanpham.XoaSP(frm_sp.txt_msp.Text);
             if (ketqua >= 1)
                 MessageBox.Show("Xóa thành công");
             else
                 MessageBox.Show("Xóa thất bai");
-           */
+           
         }
 
     }
