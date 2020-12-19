@@ -11,14 +11,14 @@ namespace QLBH_LinhKienPC.DAL
     {
         Lopdungchung lopchung = new Lopdungchung();
 
-        public int ThemHD(string mahd, string manv, string makh, DateTime ngayban, string thanhtien , string masp, string dongia , string soluong )
+        public int ThemHD(string mahd, string manv, string makh, DateTime ngayban, string thanhtien, string masp, string dongia, string soluong)
         {
 
-            string sql = "Insert into HOA_DON_BAN(MaHD,MaNV,MaKH,NgayBan,TongTienBan,DGB,MaSP,SLB) values(N'" + mahd + "',N'" + manv + "',N'" + makh + "',N'" + ngayban.ToString()  +"',N'" + thanhtien + "',N'" + masp + "',N'" + dongia + "',N'" + soluong  + "')";
+            string sql = "Insert into HOA_DON_BAN(MaHD,MaNV,MaKH,NgayBan,TongTienBan,DGB,MaSP,SLB) values(N'" + mahd + "',N'" + manv + "',N'" + makh + "',N'" + ngayban.ToString() + "',N'" + thanhtien + "',N'" + masp + "',N'" + dongia + "',N'" + soluong + "')";
             return lopchung.ThemSuaXoa(sql);
         }
 
-        
+
 
         public int SuaHD(string mahd, string manv, string makh, DateTime ngayban, string thanhtien, string masp, string dongia, string soluong)
         {
@@ -50,6 +50,6 @@ namespace QLBH_LinhKienPC.DAL
 
         }
 
-        
+
     }
 }

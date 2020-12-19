@@ -51,13 +51,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\BLL_chucvu.cs" />
+    <Compile Include="BLL\BLL_hoadon.cs" />
     <Compile Include="BLL\BLL_khachhang.cs" />
     <Compile Include="BLL\BLL_nhacungcap.cs" />
     <Compile Include="BLL\BLL_nhanvien.cs" />
     <Compile Include="BLL\BLL_nhomsanpham.cs" />
     <Compile Include="BLL\BLL_phieunhap.cs" />
     <Compile Include="BLL\BLL_sanpham.cs" />
+    <Compile Include="BLL\frm_nhavien.cs" />
     <Compile Include="DAL\DAL_chucvu.cs" />
+    <Compile Include="DAL\DAL_hoadon.cs" />
     <Compile Include="DAL\DAL_khachhang.cs" />
     <Compile Include="DAL\DAL_nhanvien.cs" />
     <Compile Include="DAL\DAL_nhomsanpham.cs" />
@@ -76,6 +79,12 @@
     </Compile>
     <Compile Include="GUI\BANHANG\banhang.Designer.cs">
       <DependentUpon>banhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\BANHANG\frm_hoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\BANHANG\frm_hoadon.Designer.cs">
+      <DependentUpon>frm_hoadon.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\BANHANG\frm_khachhang.cs">
       <SubType>Form</SubType>
@@ -161,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\BANHANG\banhang.resx">
       <DependentUpon>banhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\BANHANG\frm_hoadon.resx">
+      <DependentUpon>frm_hoadon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\BANHANG\frm_khachhang.resx">
       <DependentUpon>frm_khachhang.cs</DependentUpon>

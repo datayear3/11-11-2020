@@ -1,4 +1,5 @@
 ﻿using QLBH_LinhKienPC.GUI;
+using QLBH_LinhKienPC.GUI.BANHANG;
 using QLBH_LinhKienPC.GUI.KHOHANG;
 using QLBH_LinhKienPC.GUI.QUANTRIVIEN;
 using System;

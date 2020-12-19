@@ -128,7 +128,7 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
             else
                 sl = Convert.ToDouble(txt_soluong.Text);
             tt = gn * sl;
-            txt_tongtienban.Text = tt.ToString();
+         //   txt_tongtienban.Text = tt.ToString();
         }
 
         /*private void dtv_hd_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -350,4 +350,3 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
         }
     }
 }
-
