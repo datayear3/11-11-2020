@@ -56,9 +56,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(160, 80);
+            this.label1.Location = new System.Drawing.Point(213, 98);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 19);
+            this.label1.Size = new System.Drawing.Size(146, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Phiếu Nhập:";
             // 
@@ -66,9 +67,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(160, 263);
+            this.label2.Location = new System.Drawing.Point(213, 324);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 19);
+            this.label2.Size = new System.Drawing.Size(139, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nhà Cung Cấp:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -77,9 +79,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(573, 82);
+            this.label4.Location = new System.Drawing.Point(764, 101);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 19);
+            this.label4.Size = new System.Drawing.Size(110, 23);
             this.label4.TabIndex = 0;
             this.label4.Text = "Ngày Nhập:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -88,36 +91,40 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(573, 142);
+            this.label5.Location = new System.Drawing.Point(764, 175);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 19);
+            this.label5.Size = new System.Drawing.Size(142, 23);
             this.label5.TabIndex = 0;
             this.label5.Text = "Tổng tiền nhập:";
             // 
             // txt_mpn
             // 
             this.txt_mpn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mpn.Location = new System.Drawing.Point(317, 79);
+            this.txt_mpn.Location = new System.Drawing.Point(423, 97);
+            this.txt_mpn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_mpn.Name = "txt_mpn";
-            this.txt_mpn.Size = new System.Drawing.Size(156, 26);
+            this.txt_mpn.Size = new System.Drawing.Size(207, 30);
             this.txt_mpn.TabIndex = 1;
             // 
             // txt_tncc
             // 
             this.txt_tncc.Enabled = false;
             this.txt_tncc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tncc.Location = new System.Drawing.Point(317, 263);
+            this.txt_tncc.Location = new System.Drawing.Point(423, 324);
+            this.txt_tncc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_tncc.Name = "txt_tncc";
-            this.txt_tncc.Size = new System.Drawing.Size(156, 26);
+            this.txt_tncc.Size = new System.Drawing.Size(207, 30);
             this.txt_tncc.TabIndex = 1;
             // 
             // txt_ttn
             // 
             this.txt_ttn.Enabled = false;
             this.txt_ttn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ttn.Location = new System.Drawing.Point(692, 139);
+            this.txt_ttn.Location = new System.Drawing.Point(923, 171);
+            this.txt_ttn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_ttn.Name = "txt_ttn";
-            this.txt_ttn.Size = new System.Drawing.Size(156, 26);
+            this.txt_ttn.Size = new System.Drawing.Size(207, 30);
             this.txt_ttn.TabIndex = 1;
             // 
             // label6
@@ -125,26 +132,30 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Blue;
-            this.label6.Location = new System.Drawing.Point(422, 21);
+            this.label6.Location = new System.Drawing.Point(563, 26);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(195, 32);
+            this.label6.Size = new System.Drawing.Size(250, 42);
             this.label6.TabIndex = 0;
             this.label6.Text = "PHIẾU NHẬP";
             // 
             // dvt_pn
             // 
             this.dvt_pn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvt_pn.Location = new System.Drawing.Point(72, 345);
+            this.dvt_pn.Location = new System.Drawing.Point(96, 425);
+            this.dvt_pn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dvt_pn.Name = "dvt_pn";
-            this.dvt_pn.Size = new System.Drawing.Size(918, 222);
+            this.dvt_pn.RowHeadersWidth = 51;
+            this.dvt_pn.Size = new System.Drawing.Size(1224, 273);
             this.dvt_pn.TabIndex = 2;
             this.dvt_pn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvt_pn_CellContentClick);
             // 
             // bt_them
             // 
-            this.bt_them.Location = new System.Drawing.Point(562, 209);
+            this.bt_them.Location = new System.Drawing.Point(749, 257);
+            this.bt_them.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bt_them.Name = "bt_them";
-            this.bt_them.Size = new System.Drawing.Size(79, 36);
+            this.bt_them.Size = new System.Drawing.Size(105, 44);
             this.bt_them.TabIndex = 3;
             this.bt_them.Text = "Thêm";
             this.bt_them.UseVisualStyleBackColor = true;
@@ -152,9 +163,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             // bt_sua
             // 
-            this.bt_sua.Location = new System.Drawing.Point(769, 209);
+            this.bt_sua.Location = new System.Drawing.Point(1025, 257);
+            this.bt_sua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bt_sua.Name = "bt_sua";
-            this.bt_sua.Size = new System.Drawing.Size(79, 36);
+            this.bt_sua.Size = new System.Drawing.Size(105, 44);
             this.bt_sua.TabIndex = 3;
             this.bt_sua.Text = "Sửa";
             this.bt_sua.UseVisualStyleBackColor = true;
@@ -162,9 +174,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             // bt_xoa
             // 
-            this.bt_xoa.Location = new System.Drawing.Point(669, 209);
+            this.bt_xoa.Location = new System.Drawing.Point(892, 257);
+            this.bt_xoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bt_xoa.Name = "bt_xoa";
-            this.bt_xoa.Size = new System.Drawing.Size(79, 36);
+            this.bt_xoa.Size = new System.Drawing.Size(105, 44);
             this.bt_xoa.TabIndex = 3;
             this.bt_xoa.Text = "Xóa";
             this.bt_xoa.UseVisualStyleBackColor = true;
@@ -174,9 +187,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(160, 184);
+            this.label3.Location = new System.Drawing.Point(213, 226);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 19);
+            this.label3.Size = new System.Drawing.Size(129, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "Số lượng nhập";
             this.label3.Click += new System.EventHandler(this.label2_Click);
@@ -185,9 +199,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(160, 223);
+            this.label7.Location = new System.Drawing.Point(213, 274);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 19);
+            this.label7.Size = new System.Drawing.Size(86, 23);
             this.label7.TabIndex = 0;
             this.label7.Text = "Giá nhập";
             this.label7.Click += new System.EventHandler(this.label2_Click);
@@ -196,18 +211,20 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             this.txt_gn.Enabled = false;
             this.txt_gn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_gn.Location = new System.Drawing.Point(317, 219);
+            this.txt_gn.Location = new System.Drawing.Point(423, 270);
+            this.txt_gn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_gn.Name = "txt_gn";
-            this.txt_gn.Size = new System.Drawing.Size(156, 26);
+            this.txt_gn.Size = new System.Drawing.Size(207, 30);
             this.txt_gn.TabIndex = 1;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(160, 135);
+            this.label8.Location = new System.Drawing.Point(213, 166);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 19);
+            this.label8.Size = new System.Drawing.Size(125, 23);
             this.label8.TabIndex = 0;
             this.label8.Text = "Tên sản phẩm";
             this.label8.Click += new System.EventHandler(this.label2_Click);
@@ -215,14 +232,15 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // num_sln
             // 
             this.num_sln.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_sln.Location = new System.Drawing.Point(317, 177);
+            this.num_sln.Location = new System.Drawing.Point(423, 218);
+            this.num_sln.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.num_sln.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.num_sln.Name = "num_sln";
-            this.num_sln.Size = new System.Drawing.Size(156, 26);
+            this.num_sln.Size = new System.Drawing.Size(208, 30);
             this.num_sln.TabIndex = 4;
             this.num_sln.ValueChanged += new System.EventHandler(this.num_sln_ValueChanged);
             // 
@@ -231,26 +249,28 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.date_n.Enabled = false;
             this.date_n.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_n.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date_n.Location = new System.Drawing.Point(692, 80);
+            this.date_n.Location = new System.Drawing.Point(923, 98);
+            this.date_n.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.date_n.Name = "date_n";
-            this.date_n.Size = new System.Drawing.Size(156, 26);
+            this.date_n.Size = new System.Drawing.Size(207, 30);
             this.date_n.TabIndex = 5;
             // 
             // cb_tsp
             // 
             this.cb_tsp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_tsp.FormattingEnabled = true;
-            this.cb_tsp.Location = new System.Drawing.Point(317, 126);
+            this.cb_tsp.Location = new System.Drawing.Point(423, 155);
+            this.cb_tsp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cb_tsp.Name = "cb_tsp";
-            this.cb_tsp.Size = new System.Drawing.Size(156, 28);
+            this.cb_tsp.Size = new System.Drawing.Size(207, 33);
             this.cb_tsp.TabIndex = 6;
             this.cb_tsp.SelectedIndexChanged += new System.EventHandler(this.cb_tsp_SelectedIndexChanged);
             // 
             // frm_phieunhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 606);
+            this.ClientSize = new System.Drawing.Size(1371, 746);
             this.Controls.Add(this.cb_tsp);
             this.Controls.Add(this.date_n);
             this.Controls.Add(this.num_sln);
@@ -270,6 +290,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_phieunhap";
             this.Text = "frm_phieunhap";
             this.Load += new System.EventHandler(this.frm_phieunhap_Load);
