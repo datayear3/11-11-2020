@@ -145,17 +145,13 @@ namespace QLBH_LinhKienPC.BLL
             frm_chucvu.dtv_chucvu.DataSource = dal_chucvu.LoadCV();
 
 
-            DataTable cb_quyen = dal_chucvu.LoadCV_cb();
+            
             frm_chucvu.cb_cv.Items.Clear();
-            if (cb_quyen != null)
-            {
-                foreach (DataRow dr in cb_quyen.Rows)
-                {
-                    
-                    frm_chucvu.cb_cv.Items.Add(dr["Quyen"].ToString());
+            
+            frm_chucvu.cb_cv.Items.Add("admin");
+            frm_chucvu.cb_cv.Items.Add("kho");
+            frm_chucvu.cb_cv.Items.Add("nhanvien");
 
-                }
-            }
             frm_chucvu.cb_cv.SelectedIndex = 0;
         }
 
