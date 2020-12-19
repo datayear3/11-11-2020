@@ -68,10 +68,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         private void bt_sua_Click(object sender, EventArgs e)
         {
             DialogResult dialog;
-            dialog = MessageBox.Show(" Thông tin sẽ bị thay đổi. Bạn có muốn tiếp tục", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            dialog = MessageBox.Show(" Thông tin sẽ bị thay đổi. Bạn có muốn tiếp tục ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
             {
-                //bllsp.SuaSP();
+                bllsp.SuaSP();
                 bllsp.loadsp();
             }
         }
@@ -81,14 +81,19 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             int numrow;
             numrow = e.RowIndex;
             txt_msp.Text = dtv_sp.Rows[numrow].Cells[0].Value.ToString();
+            cb_tn.Text = dtv_sp.Rows[numrow].Cells[1].Value.ToString();
             txt_tsp.Text = dtv_sp.Rows[numrow].Cells[2].Value.ToString();
             cb_dvt.Text = dtv_sp.Rows[numrow].Cells[3].Value.ToString();
+            txt_slt.Text = dtv_sp.Rows[numrow].Cells[4].Value.ToString();
+            txt_gb.Text = dtv_sp.Rows[numrow].Cells[5].Value.ToString();
+            txt_gn.Text = dtv_sp.Rows[numrow].Cells[6].Value.ToString();
+            cb_tncc.Text = dtv_sp.Rows[numrow].Cells[7].Value.ToString();
         }
 
         private void bt_xoa_Click(object sender, EventArgs e)
         {
             DialogResult dialog;
-            dialog = MessageBox.Show(" Bạn có muốn xóa hay không", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            dialog = MessageBox.Show(" Bạn có muốn xóa hay không ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
             {
                 bllsp.XoaSP();

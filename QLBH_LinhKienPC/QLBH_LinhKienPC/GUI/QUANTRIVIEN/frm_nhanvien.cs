@@ -60,8 +60,8 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
 
         private void dtv_nhanvien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
-                int numrow;
+
+            int numrow;
                 numrow = e.RowIndex;
                 txt_manv.Text = dtv_nhanvien.Rows[numrow].Cells[0].Value.ToString();
                 txt_tennv.Text = dtv_nhanvien.Rows[numrow].Cells[2].Value.ToString();

@@ -12,7 +12,7 @@ namespace QLBH_LinhKienPC.DAL
     {
         Lopdungchung lopchung = new Lopdungchung();
 
-        public int ThemSP(string masp, string tennhom, string tensp, string dvt, String slton, String gianhap, String giaban, String tenncc)
+        public int ThemSP(string masp, string tennhom, string tensp, string dvt, string slton, string gianhap, string giaban, string tenncc)
         {
             string manhom = "";
             ///string tncc = tenncc.ToString();
@@ -48,9 +48,37 @@ namespace QLBH_LinhKienPC.DAL
             return lopchung.ThemSuaXoa(sql);
         }
 
-        public int SuaSP(string masp, string manhom, string tensp, string dvt, String slton, String giaban, String gianhap, String mancc)
+        public int SuaSP(string masp, string tennhom, string tensp, string dvt, string slton, string gianhap, string giaban, string tenncc)
         {
-            string sql = "Update SAN_PHAM set TenSP =N'" + tensp + "',MaNhom =N'" + manhom + "',DonViTinh =N'" + dvt + "',SLTon =N'" + slton + "',GIaNhap =N'" + gianhap + "',GiaBan =N'" + giaban + "'where MaSP = '" + masp + "'";
+
+            string manhom = "";
+            ///string tncc = tenncc.ToString();
+            string select_mancc = "select DISTINCT(MaNhom) from NHOM_SAN_PHAM where TenNhom = '" + tennhom + "'";
+            DataTable dt_mncc = lopchung.LoadDuLieu(select_mancc);
+            if (dt_mncc != null)
+            {
+                foreach (DataRow dr in dt_mncc.Rows)
+                {
+
+                    manhom = dr["MaNhom"].ToString();
+
+                }
+            }
+
+            string mancc = "";
+            string tncc = tenncc.ToString();
+            string select_manccc = "select DISTINCT(MaNCC) from NHA_CUNG_CAP where TenNCC = '" + tncc + "'";
+            DataTable dt_mnccc = lopchung.LoadDuLieu(select_manccc);
+            if (dt_mnccc != null)
+            {
+                foreach (DataRow dr in dt_mnccc.Rows)
+                {
+
+                    mancc = dr["MaNCC"].ToString();
+
+                }
+            }
+            string sql = "Update SAN_PHAM set TenSP =N'" + tensp + "',MaNhom =N'" + manhom + "',DonViTinh =N'" + dvt + "',SLTon = N'" + Convert.ToInt32(slton) + "',GIaNhap =N'" + Convert.ToInt32(gianhap) + "',GiaBan =N'" + Convert.ToInt32(giaban) + "'where MaSP = '" + masp + "'";
             return lopchung.ThemSuaXoa(sql);
         }
 
@@ -62,7 +90,7 @@ namespace QLBH_LinhKienPC.DAL
         }
         public DataTable Loadsp()
         {
-            string sql = "Select * from SAN_PHAM";
+            string sql = "Select MaSP,TenNhom,TenSP,DonViTinh,SLTon,GiaNhap,GiaBan,TenNCC from SAN_PHAM,NHOM_SAN_PHAM,NHA_CUNG_CAP where SAN_PHAM.MaNhom = NHOM_SAN_PHAM.MaNhom and SAN_PHAM.MaNCC = NHA_CUNG_CAP.MaNCC";
             return lopchung.LoadDuLieu(sql);
 
         }
