@@ -32,8 +32,7 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
 
         private void bt_hoadon_Click(object sender, EventArgs e)
         {
-            frm_hoadon kh = new frm_hoadon();
-            kh.ShowDialog();
+           
         }
     }
 }

@@ -14,7 +14,7 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
     {
 
         BLL.BLL_khachhang bllkh;
-        internal object cb_makhachhang;
+      //  internal object cb_makhachhang;
 
         public frm_khachhang()
         {

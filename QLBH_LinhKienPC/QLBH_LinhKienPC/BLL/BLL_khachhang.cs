@@ -13,18 +13,14 @@ namespace QLBH_LinhKienPC.BLL
     {
         DAL.DAL_khachhang dal_khachhang = new DAL.DAL_khachhang();
         frm_khachhang frm_khachhang;
-        private frm_hoadon frm_hoadon;
+        
 
         public BLL_khachhang(frm_khachhang f)
         {
             frm_khachhang = f;
         }
 
-        public BLL_khachhang(frm_hoadon frm_hoadon)
-        {
-            this.frm_hoadon = frm_hoadon;
-        }
-
+       
         public void Luukh()
         {
             //frm_khachhang
