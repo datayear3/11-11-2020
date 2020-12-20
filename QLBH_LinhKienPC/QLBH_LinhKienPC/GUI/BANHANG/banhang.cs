@@ -43,5 +43,10 @@ namespace QLBH_LinhKienPC.GUI.BANHANG
 
             hd.ShowDialog();
         }
+
+        private void bt_xoa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

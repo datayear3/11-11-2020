@@ -84,6 +84,8 @@ namespace QLBH_LinhKienPC
                         main.bt_banhang.Visible = true;
                         main.bt_khohang.Visible = false;
                         main.bt_thongke.Location = new System.Drawing.Point(0, 252);
+                        main.us_banhang.bt_xoa.Visible = false;
+                        
                     }
                     if (loai_quyen == "kho")
                     {
@@ -92,6 +94,7 @@ namespace QLBH_LinhKienPC
                         main.bt_khohang.Visible = true;
                         main.us_banhang.bt_them_khachhang.Visible = false;
                         main.us_banhang.bt_hoadon.Visible = false;
+                        main.us_banhang.bt_xoa.Location = new System.Drawing.Point(0, 0);
 
                     }
 

@@ -30,10 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.dvt_doanhthu = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.bt_them_khachhang = new System.Windows.Forms.Button();
-            this.bt_hoadon = new System.Windows.Forms.Button();
             this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +38,11 @@
             this.SLB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTienBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bt_them_khachhang = new System.Windows.Forms.Button();
+            this.bt_hoadon = new System.Windows.Forms.Button();
+            this.bt_xoa = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvt_doanhthu)).BeginInit();
             this.panel2.SuspendLayout();
@@ -77,54 +78,6 @@
             this.dvt_doanhthu.Name = "dvt_doanhthu";
             this.dvt_doanhthu.Size = new System.Drawing.Size(1122, 900);
             this.dvt_doanhthu.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(198)))), ((int)(((byte)(108)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1122, 80);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(492, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "DOANH THU";
-            // 
-            // bt_them_khachhang
-            // 
-            this.bt_them_khachhang.BackColor = System.Drawing.Color.Green;
-            this.bt_them_khachhang.FlatAppearance.BorderSize = 0;
-            this.bt_them_khachhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_them_khachhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_them_khachhang.Location = new System.Drawing.Point(0, 0);
-            this.bt_them_khachhang.Name = "bt_them_khachhang";
-            this.bt_them_khachhang.Size = new System.Drawing.Size(243, 78);
-            this.bt_them_khachhang.TabIndex = 1;
-            this.bt_them_khachhang.Text = "THÊM KHÁCH HÀNG";
-            this.bt_them_khachhang.UseVisualStyleBackColor = false;
-            this.bt_them_khachhang.Click += new System.EventHandler(this.bt_them_khachhang_Click);
-            // 
-            // bt_hoadon
-            // 
-            this.bt_hoadon.BackColor = System.Drawing.Color.Green;
-            this.bt_hoadon.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_hoadon.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.bt_hoadon.Location = new System.Drawing.Point(249, 0);
-            this.bt_hoadon.Name = "bt_hoadon";
-            this.bt_hoadon.Size = new System.Drawing.Size(243, 80);
-            this.bt_hoadon.TabIndex = 2;
-            this.bt_hoadon.Text = "HÓA ĐƠN";
-            this.bt_hoadon.UseVisualStyleBackColor = false;
-            this.bt_hoadon.Click += new System.EventHandler(this.bt_hoadon_Click);
             // 
             // MaHD
             // 
@@ -188,12 +141,75 @@
             this.TongTienBan.Name = "TongTienBan";
             this.TongTienBan.ReadOnly = true;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(198)))), ((int)(((byte)(108)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1122, 80);
+            this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(492, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(186, 31);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "DOANH THU";
+            // 
+            // bt_them_khachhang
+            // 
+            this.bt_them_khachhang.BackColor = System.Drawing.Color.Green;
+            this.bt_them_khachhang.FlatAppearance.BorderSize = 0;
+            this.bt_them_khachhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_them_khachhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_them_khachhang.Location = new System.Drawing.Point(0, 0);
+            this.bt_them_khachhang.Name = "bt_them_khachhang";
+            this.bt_them_khachhang.Size = new System.Drawing.Size(243, 78);
+            this.bt_them_khachhang.TabIndex = 1;
+            this.bt_them_khachhang.Text = "THÊM KHÁCH HÀNG";
+            this.bt_them_khachhang.UseVisualStyleBackColor = false;
+            this.bt_them_khachhang.Click += new System.EventHandler(this.bt_them_khachhang_Click);
+            // 
+            // bt_hoadon
+            // 
+            this.bt_hoadon.BackColor = System.Drawing.Color.Green;
+            this.bt_hoadon.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_hoadon.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.bt_hoadon.Location = new System.Drawing.Point(249, 0);
+            this.bt_hoadon.Name = "bt_hoadon";
+            this.bt_hoadon.Size = new System.Drawing.Size(243, 80);
+            this.bt_hoadon.TabIndex = 2;
+            this.bt_hoadon.Text = "HÓA ĐƠN";
+            this.bt_hoadon.UseVisualStyleBackColor = false;
+            this.bt_hoadon.Click += new System.EventHandler(this.bt_hoadon_Click);
+            // 
+            // bt_xoa
+            // 
+            this.bt_xoa.BackColor = System.Drawing.Color.Green;
+            this.bt_xoa.FlatAppearance.BorderSize = 0;
+            this.bt_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_xoa.Location = new System.Drawing.Point(0, 139);
+            this.bt_xoa.Name = "bt_xoa";
+            this.bt_xoa.Size = new System.Drawing.Size(243, 78);
+            this.bt_xoa.TabIndex = 1;
+            this.bt_xoa.Text = "HỦY HÓA ĐƠN";
+            this.bt_xoa.UseVisualStyleBackColor = false;
+            this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
+            // 
             // banhang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(165)))), ((int)(((byte)(149)))));
             this.Controls.Add(this.bt_hoadon);
+            this.Controls.Add(this.bt_xoa);
             this.Controls.Add(this.bt_them_khachhang);
             this.Controls.Add(this.panel1);
             this.Name = "banhang";
@@ -223,5 +239,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SLB;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTienBan;
+        public System.Windows.Forms.Button bt_xoa;
     }
 }

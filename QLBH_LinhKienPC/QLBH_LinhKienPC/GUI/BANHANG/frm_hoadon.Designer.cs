@@ -50,8 +50,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.dt_ngayban = new System.Windows.Forms.DateTimePicker();
             this.cb_manv = new System.Windows.Forms.ComboBox();
-            this.quanLyCuaHangBanLeDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanLyCuaHangBanLeDataSet = new QLBH_LinhKienPC.QuanLyCuaHangBanLeDataSet();
             this.btn_timkiemnv = new System.Windows.Forms.Button();
             this.cb_makh = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -66,10 +64,10 @@
             this.txt_tennv = new System.Windows.Forms.TextBox();
             this.txt_dienthoai = new System.Windows.Forms.TextBox();
             this.txt_mahd = new System.Windows.Forms.TextBox();
+            this.quanLyCuaHangBanLeDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyCuaHangBanLeDataSet = new QLBH_LinhKienPC.QuanLyCuaHangBanLeDataSet();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtv_hd = new System.Windows.Forms.DataGridView();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txt_tongtien = new System.Windows.Forms.TextBox();
             this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayBAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,6 +76,8 @@
             this.SLB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DGB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTienBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txt_tongtien = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSet)).BeginInit();
@@ -98,6 +98,7 @@
             this.btn_delete.TabIndex = 101;
             this.btn_delete.Text = "Xóa";
             this.btn_delete.UseVisualStyleBackColor = false;
+            this.btn_delete.Visible = false;
             // 
             // btn_Exit
             // 
@@ -120,7 +121,7 @@
             this.btn_update.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_update.Location = new System.Drawing.Point(497, 109);
+            this.btn_update.Location = new System.Drawing.Point(438, 109);
             this.btn_update.Margin = new System.Windows.Forms.Padding(4);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(113, 35);
@@ -345,16 +346,6 @@
             this.cb_manv.TabIndex = 73;
             this.cb_manv.SelectedIndexChanged += new System.EventHandler(this.cb_manv_SelectedIndexChanged_1);
             // 
-            // quanLyCuaHangBanLeDataSetBindingSource
-            // 
-            this.quanLyCuaHangBanLeDataSetBindingSource.DataSource = this.quanLyCuaHangBanLeDataSet;
-            this.quanLyCuaHangBanLeDataSetBindingSource.Position = 0;
-            // 
-            // quanLyCuaHangBanLeDataSet
-            // 
-            this.quanLyCuaHangBanLeDataSet.DataSetName = "QuanLyCuaHangBanLeDataSet";
-            this.quanLyCuaHangBanLeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // btn_timkiemnv
             // 
             this.btn_timkiemnv.BackColor = System.Drawing.Color.White;
@@ -510,6 +501,16 @@
             this.txt_mahd.Size = new System.Drawing.Size(140, 20);
             this.txt_mahd.TabIndex = 58;
             // 
+            // quanLyCuaHangBanLeDataSetBindingSource
+            // 
+            this.quanLyCuaHangBanLeDataSetBindingSource.DataSource = this.quanLyCuaHangBanLeDataSet;
+            this.quanLyCuaHangBanLeDataSetBindingSource.Position = 0;
+            // 
+            // quanLyCuaHangBanLeDataSet
+            // 
+            this.quanLyCuaHangBanLeDataSet.DataSetName = "QuanLyCuaHangBanLeDataSet";
+            this.quanLyCuaHangBanLeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dtv_hd);
@@ -550,26 +551,6 @@
             this.dtv_hd.Name = "dtv_hd";
             this.dtv_hd.Size = new System.Drawing.Size(896, 184);
             this.dtv_hd.TabIndex = 103;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.White;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(362, 18);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(332, 36);
-            this.label17.TabIndex = 72;
-            this.label17.Text = "HÓA ĐƠN BÁN HÀNG";
-            // 
-            // txt_tongtien
-            // 
-            this.txt_tongtien.Location = new System.Drawing.Point(783, 620);
-            this.txt_tongtien.Name = "txt_tongtien";
-            this.txt_tongtien.Size = new System.Drawing.Size(129, 20);
-            this.txt_tongtien.TabIndex = 74;
             // 
             // MaHD
             // 
@@ -619,6 +600,26 @@
             this.TongTienBan.HeaderText = "Tổng Tiền Bán";
             this.TongTienBan.Name = "TongTienBan";
             this.TongTienBan.Width = 150;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.White;
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(362, 18);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(332, 36);
+            this.label17.TabIndex = 72;
+            this.label17.Text = "HÓA ĐƠN BÁN HÀNG";
+            // 
+            // txt_tongtien
+            // 
+            this.txt_tongtien.Location = new System.Drawing.Point(783, 620);
+            this.txt_tongtien.Name = "txt_tongtien";
+            this.txt_tongtien.Size = new System.Drawing.Size(129, 20);
+            this.txt_tongtien.TabIndex = 74;
             // 
             // frm_hoadon
             // 

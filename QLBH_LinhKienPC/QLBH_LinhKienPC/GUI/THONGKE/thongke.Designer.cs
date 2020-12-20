@@ -100,10 +100,13 @@
             // 
             // txt_tt
             // 
-            this.txt_tt.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tt.Location = new System.Drawing.Point(228, 242);
+            this.txt_tt.BackColor = System.Drawing.Color.Silver;
+            this.txt_tt.Enabled = false;
+            this.txt_tt.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tt.ForeColor = System.Drawing.Color.Red;
+            this.txt_tt.Location = new System.Drawing.Point(228, 233);
             this.txt_tt.Name = "txt_tt";
-            this.txt_tt.Size = new System.Drawing.Size(175, 44);
+            this.txt_tt.Size = new System.Drawing.Size(304, 53);
             this.txt_tt.TabIndex = 4;
             // 
             // dvt_tknh
