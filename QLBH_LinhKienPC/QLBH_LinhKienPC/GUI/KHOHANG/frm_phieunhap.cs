@@ -141,6 +141,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
 
         private void dvt_pn_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
             int numrow;
             numrow = e.RowIndex;
             txt_mpn.Text = dvt_pn.Rows[numrow].Cells[0].Value.ToString();
