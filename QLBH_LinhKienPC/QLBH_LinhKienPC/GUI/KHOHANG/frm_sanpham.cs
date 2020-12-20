@@ -78,16 +78,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
 
         private void dtv_sp_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int numrow;
-            numrow = e.RowIndex;
-            txt_msp.Text = dtv_sp.Rows[numrow].Cells[0].Value.ToString();
-            cb_tn.Text = dtv_sp.Rows[numrow].Cells[1].Value.ToString();
-            txt_tsp.Text = dtv_sp.Rows[numrow].Cells[2].Value.ToString();
-            cb_dvt.Text = dtv_sp.Rows[numrow].Cells[3].Value.ToString();
-            txt_slt.Text = dtv_sp.Rows[numrow].Cells[4].Value.ToString();
-            txt_gb.Text = dtv_sp.Rows[numrow].Cells[5].Value.ToString();
-            txt_gn.Text = dtv_sp.Rows[numrow].Cells[6].Value.ToString();
-            cb_tncc.Text = dtv_sp.Rows[numrow].Cells[7].Value.ToString();
+           
         }
 
         private void bt_xoa_Click(object sender, EventArgs e)
@@ -99,6 +90,20 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
                 bllsp.XoaSP();
                 bllsp.loadsp();
             }
+        }
+
+        private void dtv_sp_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            txt_msp.Text = dtv_sp.Rows[numrow].Cells[0].Value.ToString();
+            cb_tn.Text = dtv_sp.Rows[numrow].Cells[1].Value.ToString();
+            txt_tsp.Text = dtv_sp.Rows[numrow].Cells[2].Value.ToString();
+            cb_dvt.Text = dtv_sp.Rows[numrow].Cells[3].Value.ToString();
+            txt_slt.Text = dtv_sp.Rows[numrow].Cells[4].Value.ToString();
+            txt_gb.Text = dtv_sp.Rows[numrow].Cells[5].Value.ToString();
+            txt_gn.Text = dtv_sp.Rows[numrow].Cells[6].Value.ToString();
+            cb_tncc.Text = dtv_sp.Rows[numrow].Cells[7].Value.ToString();
         }
     }
 }

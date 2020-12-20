@@ -83,6 +83,16 @@ namespace QLBH_LinhKienPC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chlkmt {
+            get {
+                object obj = ResourceManager.GetObject("chlkmt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_admin_settings_male_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-admin-settings-male-50", resourceCulture);
@@ -196,6 +206,16 @@ namespace QLBH_LinhKienPC.Properties {
         internal static System.Drawing.Bitmap img_398183 {
             get {
                 object obj = ResourceManager.GetObject("img_398183", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap linh_kien {
+            get {
+                object obj = ResourceManager.GetObject("linh kien", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

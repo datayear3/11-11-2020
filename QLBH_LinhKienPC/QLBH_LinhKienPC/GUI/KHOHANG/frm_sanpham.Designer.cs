@@ -230,8 +230,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.dtv_sp.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dtv_sp.Location = new System.Drawing.Point(0, 414);
             this.dtv_sp.Name = "dtv_sp";
+            this.dtv_sp.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtv_sp.Size = new System.Drawing.Size(1128, 231);
             this.dtv_sp.TabIndex = 3;
+            this.dtv_sp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_sp_CellClick);
             this.dtv_sp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_sp_CellContentClick);
             // 
             // cb_tncc

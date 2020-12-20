@@ -78,6 +78,7 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
             numrow = e.RowIndex;
             txt_mcv.Text = dtv_chucvu.Rows[numrow].Cells[0].Value.ToString();
             txt_tencv.Text = dtv_chucvu.Rows[numrow].Cells[1].Value.ToString();
+            cb_cv.Text = dtv_chucvu.Rows[numrow].Cells[2].Value.ToString();
         }
     }
 }
