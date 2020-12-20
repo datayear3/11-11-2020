@@ -47,10 +47,25 @@ namespace QLBH_LinhKienPC.BLL
                 MessageBox.Show("Thêm thất bai");
 
         }
-        /*public void loadhd()
+
+        internal void suahd()
         {
-            frm_hoadon.dtv_hd.DataSource = dal_hoadon.Loadhd();
+            throw new NotImplementedException();
         }
-        */
+
+        internal void loadhd()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void xoahd()
+        {
+            throw new NotImplementedException();
+        }
+        /*public void loadhd()
+{
+frm_hoadon.dtv_hd.DataSource = dal_hoadon.Loadhd();
+}
+*/
     }
 }

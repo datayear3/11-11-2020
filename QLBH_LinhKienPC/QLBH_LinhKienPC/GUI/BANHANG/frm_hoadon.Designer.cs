@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_delete = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
@@ -49,6 +50,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.dt_ngayban = new System.Windows.Forms.DateTimePicker();
             this.cb_manv = new System.Windows.Forms.ComboBox();
+            this.quanLyCuaHangBanLeDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyCuaHangBanLeDataSet = new QLBH_LinhKienPC.QuanLyCuaHangBanLeDataSet();
             this.btn_timkiemnv = new System.Windows.Forms.Button();
             this.cb_makh = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -65,6 +68,8 @@
             this.txt_mahd = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtv_hd = new System.Windows.Forms.DataGridView();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txt_tongtien = new System.Windows.Forms.TextBox();
             this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayBAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,9 +78,9 @@
             this.SLB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DGB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTienBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txt_tongtien = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSet)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_hd)).BeginInit();
             this.SuspendLayout();
@@ -107,6 +112,7 @@
             this.btn_Exit.TabIndex = 100;
             this.btn_Exit.Text = "Đóng";
             this.btn_Exit.UseVisualStyleBackColor = false;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click_1);
             // 
             // btn_update
             // 
@@ -144,6 +150,7 @@
             this.cb_masp.Name = "cb_masp";
             this.cb_masp.Size = new System.Drawing.Size(140, 21);
             this.cb_masp.TabIndex = 97;
+            this.cb_masp.SelectedIndexChanged += new System.EventHandler(this.cb_masp_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -225,6 +232,7 @@
             this.txt_soluong.Name = "txt_soluong";
             this.txt_soluong.Size = new System.Drawing.Size(140, 20);
             this.txt_soluong.TabIndex = 89;
+            this.txt_soluong.TextChanged += new System.EventHandler(this.txt_soluong_TextChanged_1);
             // 
             // txt_tensp
             // 
@@ -242,6 +250,7 @@
             this.btn_tinhtong.TabIndex = 73;
             this.btn_tinhtong.Text = "Tính tổng tiền";
             this.btn_tinhtong.UseVisualStyleBackColor = true;
+            this.btn_tinhtong.Click += new System.EventHandler(this.btn_tinhtong_Click_1);
             // 
             // txt_tongtienban
             // 
@@ -301,6 +310,7 @@
             this.btn_timkiemkh.TabIndex = 90;
             this.btn_timkiemkh.Text = "Tìm kiếm";
             this.btn_timkiemkh.UseVisualStyleBackColor = false;
+            this.btn_timkiemkh.Click += new System.EventHandler(this.btn_timkiemkh_Click_1);
             // 
             // label14
             // 
@@ -333,6 +343,17 @@
             this.cb_manv.Name = "cb_manv";
             this.cb_manv.Size = new System.Drawing.Size(140, 21);
             this.cb_manv.TabIndex = 73;
+            this.cb_manv.SelectedIndexChanged += new System.EventHandler(this.cb_manv_SelectedIndexChanged_1);
+            // 
+            // quanLyCuaHangBanLeDataSetBindingSource
+            // 
+            this.quanLyCuaHangBanLeDataSetBindingSource.DataSource = this.quanLyCuaHangBanLeDataSet;
+            this.quanLyCuaHangBanLeDataSetBindingSource.Position = 0;
+            // 
+            // quanLyCuaHangBanLeDataSet
+            // 
+            this.quanLyCuaHangBanLeDataSet.DataSetName = "QuanLyCuaHangBanLeDataSet";
+            this.quanLyCuaHangBanLeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btn_timkiemnv
             // 
@@ -346,6 +367,7 @@
             this.btn_timkiemnv.TabIndex = 86;
             this.btn_timkiemnv.Text = "Tìm kiếm";
             this.btn_timkiemnv.UseVisualStyleBackColor = false;
+            this.btn_timkiemnv.Click += new System.EventHandler(this.btn_timkiemnv_Click_1);
             // 
             // cb_makh
             // 
@@ -355,6 +377,7 @@
             this.cb_makh.Name = "cb_makh";
             this.cb_makh.Size = new System.Drawing.Size(162, 21);
             this.cb_makh.TabIndex = 72;
+            this.cb_makh.SelectedIndexChanged += new System.EventHandler(this.cb_makh_SelectedIndexChanged_1);
             // 
             // label12
             // 
@@ -528,6 +551,26 @@
             this.dtv_hd.Size = new System.Drawing.Size(896, 184);
             this.dtv_hd.TabIndex = 103;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.White;
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(362, 18);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(332, 36);
+            this.label17.TabIndex = 72;
+            this.label17.Text = "HÓA ĐƠN BÁN HÀNG";
+            // 
+            // txt_tongtien
+            // 
+            this.txt_tongtien.Location = new System.Drawing.Point(783, 620);
+            this.txt_tongtien.Name = "txt_tongtien";
+            this.txt_tongtien.Size = new System.Drawing.Size(129, 20);
+            this.txt_tongtien.TabIndex = 74;
+            // 
             // MaHD
             // 
             this.MaHD.DataPropertyName = "MaHD";
@@ -554,7 +597,7 @@
             // 
             // MaSp
             // 
-            this.MaSp.DataPropertyName = "MaSp";
+            this.MaSp.DataPropertyName = "MaSP";
             this.MaSp.HeaderText = "Mã Sản Phẩm";
             this.MaSp.Name = "MaSp";
             // 
@@ -577,26 +620,6 @@
             this.TongTienBan.Name = "TongTienBan";
             this.TongTienBan.Width = 150;
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.White;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(362, 18);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(332, 36);
-            this.label17.TabIndex = 72;
-            this.label17.Text = "HÓA ĐƠN BÁN HÀNG";
-            // 
-            // txt_tongtien
-            // 
-            this.txt_tongtien.Location = new System.Drawing.Point(783, 620);
-            this.txt_tongtien.Name = "txt_tongtien";
-            this.txt_tongtien.Size = new System.Drawing.Size(129, 20);
-            this.txt_tongtien.TabIndex = 74;
-            // 
             // frm_hoadon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -612,6 +635,8 @@
             this.Text = "frm_hoadon";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyCuaHangBanLeDataSet)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_hd)).EndInit();
@@ -659,15 +684,17 @@
         public System.Windows.Forms.TextBox txt_mahd;
         private System.Windows.Forms.GroupBox groupBox2;
         public System.Windows.Forms.DataGridView dtv_hd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaHD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayBAN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaSp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SLB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DGB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TongTienBan;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txt_tongtien;
+        private System.Windows.Forms.BindingSource quanLyCuaHangBanLeDataSetBindingSource;
+        private QuanLyCuaHangBanLeDataSet quanLyCuaHangBanLeDataSet;
+        public System.Windows.Forms.DataGridViewTextBoxColumn MaHD;
+        public System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
+        public System.Windows.Forms.DataGridViewTextBoxColumn NgayBAN;
+        public System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
+        public System.Windows.Forms.DataGridViewTextBoxColumn MaSp;
+        public System.Windows.Forms.DataGridViewTextBoxColumn SLB;
+        public System.Windows.Forms.DataGridViewTextBoxColumn DGB;
+        public System.Windows.Forms.DataGridViewTextBoxColumn TongTienBan;
     }
 }
