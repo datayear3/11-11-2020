@@ -68,6 +68,7 @@ namespace QLBH_LinhKienPC.GUI.THONGKE
             this.Controls.Add(this.cr_phieunhap);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_baocao_phieunhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_baocao_phieunhap";
             this.Load += new System.EventHandler(this.frm_baocao_phieunhap_Load);
             this.ResumeLayout(false);

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bt_thongke = new System.Windows.Forms.Button();
@@ -40,10 +39,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.us_thongke = new QLBH_LinhKienPC.GUI.THONGKE.thongke();
-            this.us_quantrivien = new QLBH_LinhKienPC.GUI.QUANTRIVIEN.quantrivien();
             this.us_khohang = new QLBH_LinhKienPC.GUI.KHOHANG.khohang();
-            this.us_trangchu = new QLBH_LinhKienPC.GUI.TRANGCHU.trangchu();
             this.us_banhang = new QLBH_LinhKienPC.GUI.BANHANG.banhang();
+            this.us_quantrivien = new QLBH_LinhKienPC.GUI.QUANTRIVIEN.quantrivien();
+            this.us_trangchu = new QLBH_LinhKienPC.GUI.TRANGCHU.trangchu();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -199,16 +198,6 @@
             this.us_thongke.Size = new System.Drawing.Size(1620, 980);
             this.us_thongke.TabIndex = 6;
             // 
-            // us_quantrivien
-            // 
-            this.us_quantrivien.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.us_quantrivien.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("us_quantrivien.BackgroundImage")));
-            this.us_quantrivien.Location = new System.Drawing.Point(300, 100);
-            this.us_quantrivien.Name = "us_quantrivien";
-            this.us_quantrivien.Size = new System.Drawing.Size(1620, 980);
-            this.us_quantrivien.TabIndex = 5;
-            this.us_quantrivien.Load += new System.EventHandler(this.us_quantrivien_Load);
-            // 
             // us_khohang
             // 
             this.us_khohang.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -218,14 +207,6 @@
             this.us_khohang.Size = new System.Drawing.Size(1620, 980);
             this.us_khohang.TabIndex = 4;
             // 
-            // us_trangchu
-            // 
-            this.us_trangchu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(240)))), ((int)(((byte)(225)))));
-            this.us_trangchu.Location = new System.Drawing.Point(300, 100);
-            this.us_trangchu.Name = "us_trangchu";
-            this.us_trangchu.Size = new System.Drawing.Size(1620, 980);
-            this.us_trangchu.TabIndex = 3;
-            // 
             // us_banhang
             // 
             this.us_banhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(165)))), ((int)(((byte)(149)))));
@@ -234,15 +215,31 @@
             this.us_banhang.Size = new System.Drawing.Size(1620, 980);
             this.us_banhang.TabIndex = 2;
             // 
+            // us_quantrivien
+            // 
+            this.us_quantrivien.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.us_quantrivien.Location = new System.Drawing.Point(300, 100);
+            this.us_quantrivien.Name = "us_quantrivien";
+            this.us_quantrivien.Size = new System.Drawing.Size(1620, 980);
+            this.us_quantrivien.TabIndex = 7;
+            // 
+            // us_trangchu
+            // 
+            this.us_trangchu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(240)))), ((int)(((byte)(225)))));
+            this.us_trangchu.Location = new System.Drawing.Point(300, 100);
+            this.us_trangchu.Name = "us_trangchu";
+            this.us_trangchu.Size = new System.Drawing.Size(1620, 980);
+            this.us_trangchu.TabIndex = 8;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1455, 894);
-            this.Controls.Add(this.us_thongke);
-            this.Controls.Add(this.us_quantrivien);
-            this.Controls.Add(this.us_khohang);
             this.Controls.Add(this.us_trangchu);
+            this.Controls.Add(this.us_quantrivien);
+            this.Controls.Add(this.us_thongke);
+            this.Controls.Add(this.us_khohang);
             this.Controls.Add(this.us_banhang);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -273,10 +270,10 @@
         //private TRANGCHU.trangchu trangchu1;
         private System.Windows.Forms.PictureBox pictureBox1;
         public BANHANG.banhang us_banhang;
-        private TRANGCHU.trangchu us_trangchu;
         private KHOHANG.khohang us_khohang;
-        private QUANTRIVIEN.quantrivien us_quantrivien;
         private System.Windows.Forms.Label label1;
         private THONGKE.thongke us_thongke;
+        private QUANTRIVIEN.quantrivien us_quantrivien;
+        private TRANGCHU.trangchu us_trangchu;
     }
 }

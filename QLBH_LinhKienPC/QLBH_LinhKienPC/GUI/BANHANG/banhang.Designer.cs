@@ -77,6 +77,7 @@
             this.dvt_doanhthu.Location = new System.Drawing.Point(0, 80);
             this.dvt_doanhthu.Name = "dvt_doanhthu";
             this.dvt_doanhthu.ReadOnly = true;
+            this.dvt_doanhthu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvt_doanhthu.Size = new System.Drawing.Size(1122, 900);
             this.dvt_doanhthu.TabIndex = 1;
             // 
