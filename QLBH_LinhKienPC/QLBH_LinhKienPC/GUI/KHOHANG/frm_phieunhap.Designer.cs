@@ -49,6 +49,13 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.date_n = new System.Windows.Forms.DateTimePicker();
             this.cb_tsp = new System.Windows.Forms.ComboBox();
             this.bt_thoat = new System.Windows.Forms.Button();
+            this.MaPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SLN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DONGIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongTienNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dvt_pn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_sln)).BeginInit();
             this.SuspendLayout();
@@ -140,12 +147,20 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // dvt_pn
             // 
             this.dvt_pn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvt_pn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaPN,
+            this.TenSP,
+            this.SLN,
+            this.DONGIA,
+            this.TenNCC,
+            this.NgayNhap,
+            this.TongTienNhap});
             this.dvt_pn.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dvt_pn.Location = new System.Drawing.Point(0, 384);
             this.dvt_pn.Name = "dvt_pn";
-            this.dvt_pn.RowHeadersWidth = 51;
+            this.dvt_pn.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.dvt_pn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dvt_pn.Size = new System.Drawing.Size(1028, 222);
+            this.dvt_pn.Size = new System.Drawing.Size(1016, 222);
             this.dvt_pn.TabIndex = 2;
             this.dvt_pn.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvt_pn_CellClick);
             this.dvt_pn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvt_pn_CellContentClick);
@@ -182,7 +197,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.bt_xoa.Name = "bt_xoa";
             this.bt_xoa.Size = new System.Drawing.Size(126, 55);
             this.bt_xoa.TabIndex = 3;
-            this.bt_xoa.Text = "XÓA";
+            this.bt_xoa.Text = "HỦY";
             this.bt_xoa.UseVisualStyleBackColor = false;
             this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
@@ -275,12 +290,68 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.bt_thoat.UseVisualStyleBackColor = false;
             this.bt_thoat.Click += new System.EventHandler(this.bt_thoat_Click);
             // 
+            // MaPN
+            // 
+            this.MaPN.DataPropertyName = "MaPN";
+            this.MaPN.HeaderText = "MÃ PHIẾU NHẬP";
+            this.MaPN.Name = "MaPN";
+            this.MaPN.ReadOnly = true;
+            this.MaPN.Width = 130;
+            // 
+            // TenSP
+            // 
+            this.TenSP.DataPropertyName = "TenSP";
+            this.TenSP.HeaderText = "TÊN SẢN PHẨM";
+            this.TenSP.Name = "TenSP";
+            this.TenSP.ReadOnly = true;
+            this.TenSP.Width = 150;
+            // 
+            // SLN
+            // 
+            this.SLN.DataPropertyName = "SLN";
+            this.SLN.HeaderText = "SỐ LƯỢNG NHẬP";
+            this.SLN.Name = "SLN";
+            this.SLN.ReadOnly = true;
+            this.SLN.Width = 130;
+            // 
+            // DONGIA
+            // 
+            this.DONGIA.DataPropertyName = "DONGIA";
+            this.DONGIA.HeaderText = "ĐƠN GIÁ";
+            this.DONGIA.Name = "DONGIA";
+            this.DONGIA.ReadOnly = true;
+            this.DONGIA.Width = 130;
+            // 
+            // TenNCC
+            // 
+            this.TenNCC.DataPropertyName = "TenNCC";
+            this.TenNCC.HeaderText = "TÊN NHÀ CUNG CẤP";
+            this.TenNCC.Name = "TenNCC";
+            this.TenNCC.ReadOnly = true;
+            this.TenNCC.Width = 150;
+            // 
+            // NgayNhap
+            // 
+            this.NgayNhap.DataPropertyName = "NgayNhap";
+            this.NgayNhap.HeaderText = "NGÀY NHẬP";
+            this.NgayNhap.Name = "NgayNhap";
+            this.NgayNhap.ReadOnly = true;
+            this.NgayNhap.Width = 150;
+            // 
+            // TongTienNhap
+            // 
+            this.TongTienNhap.DataPropertyName = "TongTienNhap";
+            this.TongTienNhap.HeaderText = "TỔNG TIỀN NHẬP";
+            this.TongTienNhap.Name = "TongTienNhap";
+            this.TongTienNhap.ReadOnly = true;
+            this.TongTienNhap.Width = 130;
+            // 
             // frm_phieunhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1028, 606);
+            this.ClientSize = new System.Drawing.Size(1016, 606);
             this.Controls.Add(this.cb_tsp);
             this.Controls.Add(this.date_n);
             this.Controls.Add(this.num_sln);
@@ -335,5 +406,12 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         public System.Windows.Forms.DateTimePicker date_n;
         public System.Windows.Forms.ComboBox cb_tsp;
         private System.Windows.Forms.Button bt_thoat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaPN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SLN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DONGIA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TongTienNhap;
     }
 }

@@ -76,6 +76,7 @@
             this.dvt_doanhthu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvt_doanhthu.Location = new System.Drawing.Point(0, 80);
             this.dvt_doanhthu.Name = "dvt_doanhthu";
+            this.dvt_doanhthu.ReadOnly = true;
             this.dvt_doanhthu.Size = new System.Drawing.Size(1122, 900);
             this.dvt_doanhthu.TabIndex = 1;
             // 
@@ -172,18 +173,20 @@
             this.bt_them_khachhang.Name = "bt_them_khachhang";
             this.bt_them_khachhang.Size = new System.Drawing.Size(243, 78);
             this.bt_them_khachhang.TabIndex = 1;
-            this.bt_them_khachhang.Text = "THÊM KHÁCH HÀNG";
+            this.bt_them_khachhang.Text = "KHÁCH HÀNG";
             this.bt_them_khachhang.UseVisualStyleBackColor = false;
             this.bt_them_khachhang.Click += new System.EventHandler(this.bt_them_khachhang_Click);
             // 
             // bt_hoadon
             // 
             this.bt_hoadon.BackColor = System.Drawing.Color.Green;
+            this.bt_hoadon.FlatAppearance.BorderSize = 0;
+            this.bt_hoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_hoadon.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_hoadon.ForeColor = System.Drawing.SystemColors.ControlText;
             this.bt_hoadon.Location = new System.Drawing.Point(249, 0);
             this.bt_hoadon.Name = "bt_hoadon";
-            this.bt_hoadon.Size = new System.Drawing.Size(243, 80);
+            this.bt_hoadon.Size = new System.Drawing.Size(243, 78);
             this.bt_hoadon.TabIndex = 2;
             this.bt_hoadon.Text = "HÓA ĐƠN";
             this.bt_hoadon.UseVisualStyleBackColor = false;
