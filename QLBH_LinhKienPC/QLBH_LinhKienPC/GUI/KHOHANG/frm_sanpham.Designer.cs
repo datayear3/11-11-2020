@@ -167,10 +167,12 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             // txt_slt
             // 
+            this.txt_slt.Enabled = false;
             this.txt_slt.Location = new System.Drawing.Point(740, 181);
             this.txt_slt.Name = "txt_slt";
             this.txt_slt.Size = new System.Drawing.Size(174, 20);
             this.txt_slt.TabIndex = 1;
+            this.txt_slt.Text = "0";
             // 
             // label9
             // 

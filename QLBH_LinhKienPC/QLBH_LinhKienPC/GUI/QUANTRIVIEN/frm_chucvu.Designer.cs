@@ -167,8 +167,11 @@
             this.dtv_chucvu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtv_chucvu.Location = new System.Drawing.Point(0, 0);
             this.dtv_chucvu.Name = "dtv_chucvu";
+            this.dtv_chucvu.ReadOnly = true;
+            this.dtv_chucvu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtv_chucvu.Size = new System.Drawing.Size(463, 504);
             this.dtv_chucvu.TabIndex = 0;
+            this.dtv_chucvu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_chucvu_CellClick);
             this.dtv_chucvu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_chucvu_CellContentClick);
             // 
             // MaCV
@@ -176,6 +179,7 @@
             this.MaCV.DataPropertyName = "MaCV";
             this.MaCV.HeaderText = "MÃ CHỨC VỤ";
             this.MaCV.Name = "MaCV";
+            this.MaCV.ReadOnly = true;
             this.MaCV.Width = 150;
             // 
             // Quyen
@@ -183,6 +187,7 @@
             this.Quyen.DataPropertyName = "Quyen";
             this.Quyen.HeaderText = "QUYỀN";
             this.Quyen.Name = "Quyen";
+            this.Quyen.ReadOnly = true;
             // 
             // TenCV
             // 
@@ -190,6 +195,7 @@
             this.TenCV.FillWeight = 300F;
             this.TenCV.HeaderText = "TÊN CHỨC VỤ";
             this.TenCV.Name = "TenCV";
+            this.TenCV.ReadOnly = true;
             this.TenCV.Width = 170;
             // 
             // label3

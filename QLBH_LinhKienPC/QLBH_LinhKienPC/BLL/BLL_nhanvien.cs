@@ -67,6 +67,10 @@ namespace QLBH_LinhKienPC.BLL
                 {
                     MessageBox.Show("Mật khẩu " + "phải lớn hơn 6 kí tự !!! ");
                 }
+                else if (frm_nv.txt_sdt.Text.Length != 10)
+                {
+                    MessageBox.Show("Số điện thoại không đúng " + ", phải 10 chữ số !!! ");
+                }
                 else
                 {
                     
@@ -120,6 +124,10 @@ namespace QLBH_LinhKienPC.BLL
                 else if (frm_nv.txt_mk.Text.Length < 6)
                 {
                     MessageBox.Show("Mật khẩu " + "phải lớn hơn 6 kí tự !!! ");
+                }
+                else if (frm_nv.txt_sdt.Text.Length != 10)
+                {
+                    MessageBox.Show("Số điện thoại không đúng " + ", phải 10 chữ số !!! ");
                 }
                 else
                 {

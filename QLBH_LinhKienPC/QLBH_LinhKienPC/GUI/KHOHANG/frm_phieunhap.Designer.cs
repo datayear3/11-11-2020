@@ -144,8 +144,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.dvt_pn.Location = new System.Drawing.Point(0, 384);
             this.dvt_pn.Name = "dvt_pn";
             this.dvt_pn.RowHeadersWidth = 51;
+            this.dvt_pn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dvt_pn.Size = new System.Drawing.Size(1028, 222);
             this.dvt_pn.TabIndex = 2;
+            this.dvt_pn.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvt_pn_CellClick);
             this.dvt_pn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvt_pn_CellContentClick);
             // 
             // bt_them

@@ -16,7 +16,7 @@ namespace QLBH_LinhKienPC.BLL
     {
         DAL.DAL_hoadon dal_hoadon = new DAL.DAL_hoadon();
         frm_khachhang frm_kh;
-        frm_nhavien frm_nv;
+       // frm_nhavien frm_nv;
         frm_hoadon frm_hoadon;
         frm_nhomsanpham frm_nsp;
         private GUI.BANHANG.frm_hoadon frm_hoadon1;
@@ -31,7 +31,7 @@ namespace QLBH_LinhKienPC.BLL
         }
         public BLL_hoadon(frm_nhanvien f)
         {
-            frm_nv = f;
+           // frm_nv = f;
         }
 
         public BLL_hoadon(GUI.BANHANG.frm_hoadon frm_hoadon1)

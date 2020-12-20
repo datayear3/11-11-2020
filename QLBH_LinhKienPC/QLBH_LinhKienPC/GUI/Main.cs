@@ -1,7 +1,9 @@
-﻿using System;
+﻿using QLBH_LinhKienPC.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -54,7 +56,7 @@ namespace QLBH_LinhKienPC.GUI
 
         private void Main_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void bt_khohang_Click(object sender, EventArgs e)

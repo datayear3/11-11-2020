@@ -61,25 +61,7 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
         private void dtv_nhanvien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            int numrow;
-                numrow = e.RowIndex;
-                txt_manv.Text = dtv_nhanvien.Rows[numrow].Cells[0].Value.ToString();
-                txt_tennv.Text = dtv_nhanvien.Rows[numrow].Cells[2].Value.ToString();
-                txt_diachi.Text = dtv_nhanvien.Rows[numrow].Cells[3].Value.ToString();
-                txt_sdt.Text = dtv_nhanvien.Rows[numrow].Cells[4].Value.ToString();
-                cb_chucvu.Text = dtv_nhanvien.CurrentRow.Cells["TenCV"].Value.ToString();
-                txt_mk.Text = dtv_nhanvien.CurrentRow.Cells["MatKhau"].Value.ToString();
-                cb_ns.Text = dtv_nhanvien.Rows[numrow].Cells[6].Value.ToString();
-            if (dtv_nhanvien.Rows[numrow].Cells[5].Value.ToString() == "Nam")
-                {
-                    rbt_nam.Checked = true;
-                    rbt_nu.Checked = false;
-                }
-                else
-                {
-                    rbt_nam.Checked = false;
-                    rbt_nu.Checked = true;
-                }
+            
             
             
 
@@ -105,6 +87,29 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
         private void txt_tk_TextChanged(object sender, EventArgs e)
         {
             bllnv.loadNV_Search();
+        }
+
+        private void dtv_nhanvien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            txt_manv.Text = dtv_nhanvien.Rows[numrow].Cells[0].Value.ToString();
+            txt_tennv.Text = dtv_nhanvien.Rows[numrow].Cells[2].Value.ToString();
+            txt_diachi.Text = dtv_nhanvien.Rows[numrow].Cells[3].Value.ToString();
+            txt_sdt.Text = dtv_nhanvien.Rows[numrow].Cells[4].Value.ToString();
+            cb_chucvu.Text = dtv_nhanvien.CurrentRow.Cells["TenCV"].Value.ToString();
+            txt_mk.Text = dtv_nhanvien.CurrentRow.Cells["MatKhau"].Value.ToString();
+            cb_ns.Text = dtv_nhanvien.Rows[numrow].Cells[6].Value.ToString();
+            if (dtv_nhanvien.Rows[numrow].Cells[5].Value.ToString() == "Nam")
+            {
+                rbt_nam.Checked = true;
+                rbt_nu.Checked = false;
+            }
+            else
+            {
+                rbt_nam.Checked = false;
+                rbt_nu.Checked = true;
+            }
         }
     }
 }

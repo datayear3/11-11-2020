@@ -284,8 +284,11 @@
             this.dtv_nhanvien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtv_nhanvien.Location = new System.Drawing.Point(0, 0);
             this.dtv_nhanvien.Name = "dtv_nhanvien";
+            this.dtv_nhanvien.ReadOnly = true;
+            this.dtv_nhanvien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtv_nhanvien.Size = new System.Drawing.Size(884, 340);
             this.dtv_nhanvien.TabIndex = 0;
+            this.dtv_nhanvien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_nhanvien_CellClick);
             this.dtv_nhanvien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtv_nhanvien_CellContentClick);
             // 
             // MaNV

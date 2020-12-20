@@ -53,10 +53,7 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
 
         private void dtv_chucvu_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int numrow;
-            numrow = e.RowIndex;
-            txt_mcv.Text = dtv_chucvu.Rows[numrow].Cells[0].Value.ToString();
-            txt_tencv.Text = dtv_chucvu.Rows[numrow].Cells[1].Value.ToString();
+            
         }
 
         private void bt_xoa_Click(object sender, EventArgs e)
@@ -73,6 +70,14 @@ namespace QLBH_LinhKienPC.GUI.QUANTRIVIEN
         private void cb_cv_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dtv_chucvu_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            txt_mcv.Text = dtv_chucvu.Rows[numrow].Cells[0].Value.ToString();
+            txt_tencv.Text = dtv_chucvu.Rows[numrow].Cells[1].Value.ToString();
         }
     }
 }

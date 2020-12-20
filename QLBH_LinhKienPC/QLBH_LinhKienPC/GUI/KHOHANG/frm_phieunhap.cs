@@ -95,15 +95,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
 
         private void dvt_pn_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int numrow;
-            numrow = e.RowIndex;
-            txt_mpn.Text = dvt_pn.Rows[numrow].Cells[0].Value.ToString();
-            txt_tncc.Text = dvt_pn.Rows[numrow].Cells[1].Value.ToString();
-            cb_tsp.Text = dvt_pn.Rows[numrow].Cells[2].Value.ToString();
-            date_n.Text = dvt_pn.Rows[numrow].Cells[3].Value.ToString();
-            num_sln.Value = Convert.ToInt32(dvt_pn.Rows[numrow].Cells[4].Value.ToString());
-            txt_gn.Text = dvt_pn.Rows[numrow].Cells[5].Value.ToString();
-            txt_ttn.Text = dvt_pn.Rows[numrow].Cells[6].Value.ToString();
+            
         }
 
         private void bt_sua_Click(object sender, EventArgs e)
@@ -145,6 +137,19 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         private void bt_thoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dvt_pn_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int numrow;
+            numrow = e.RowIndex;
+            txt_mpn.Text = dvt_pn.Rows[numrow].Cells[0].Value.ToString();
+            txt_tncc.Text = dvt_pn.Rows[numrow].Cells[1].Value.ToString();
+            cb_tsp.Text = dvt_pn.Rows[numrow].Cells[2].Value.ToString();
+            date_n.Text = dvt_pn.Rows[numrow].Cells[3].Value.ToString();
+            num_sln.Value = Convert.ToInt32(dvt_pn.Rows[numrow].Cells[4].Value.ToString());
+            txt_gn.Text = dvt_pn.Rows[numrow].Cells[5].Value.ToString();
+            txt_ttn.Text = dvt_pn.Rows[numrow].Cells[6].Value.ToString();
         }
     }
 }
