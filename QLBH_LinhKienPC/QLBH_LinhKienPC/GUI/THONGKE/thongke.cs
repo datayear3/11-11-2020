@@ -23,7 +23,7 @@ namespace QLBH_LinhKienPC.GUI.THONGKE
         {
             Lopdungchung lopchung = new Lopdungchung();
             lopchung.connection().Open();
-            string sql = "SELECT * FROM PHIEU_NHAP WHERE 1=1";
+            string sql = "SELECT dbo.PHIEU_NHAP.MaPN, dbo.SAN_PHAM.TenSP, dbo.PHIEU_NHAP.NgayNhap, dbo.PHIEU_NHAP.SLN, dbo.PHIEU_NHAP.DONGIA, dbo.NHA_CUNG_CAP.TenNCC, dbo.PHIEU_NHAP.TongTienNhap FROM dbo.NHA_CUNG_CAP INNER JOIN dbo.PHIEU_NHAP ON dbo.NHA_CUNG_CAP.MaNCC = dbo.PHIEU_NHAP.MaNCC INNER JOIN dbo.SAN_PHAM ON dbo.NHA_CUNG_CAP.MaNCC = dbo.SAN_PHAM.MaNCC AND dbo.PHIEU_NHAP.MaSP = dbo.SAN_PHAM.MaSP WHERE 1 =1";
             if ((dt_timetruoc.Text != "") && (dt_timesau.Text != ""))
             {
                 sql = sql + " AND NgayNhap >= '" + dt_timetruoc.Text + "' AND NgayNhap <= '" + dt_timesau.Text + "'";
@@ -75,7 +75,7 @@ namespace QLBH_LinhKienPC.GUI.THONGKE
         {
             Lopdungchung lopchung = new Lopdungchung();
             lopchung.connection().Open();
-            string sql = "SELECT * FROM PHIEU_NHAP";
+            string sql = "SELECT dbo.PHIEU_NHAP.MaPN, dbo.SAN_PHAM.TenSP, dbo.PHIEU_NHAP.NgayNhap, dbo.PHIEU_NHAP.SLN , dbo.PHIEU_NHAP.DONGIA, dbo.NHA_CUNG_CAP.TenNCC, dbo.PHIEU_NHAP.TongTienNhap FROM dbo.NHA_CUNG_CAP INNER JOIN dbo.PHIEU_NHAP ON dbo.NHA_CUNG_CAP.MaNCC = dbo.PHIEU_NHAP.MaNCC INNER JOIN dbo.SAN_PHAM ON dbo.NHA_CUNG_CAP.MaNCC = dbo.SAN_PHAM.MaNCC AND dbo.PHIEU_NHAP.MaSP = dbo.SAN_PHAM.MaSP ";
 
             DataSet ds = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter(sql, lopchung.connection());

@@ -45,6 +45,13 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.MaPN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SLN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DONGIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongTienNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvt_tknh)).BeginInit();
             this.panel6.SuspendLayout();
@@ -112,6 +119,14 @@
             // dvt_tknh
             // 
             this.dvt_tknh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvt_tknh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaPN,
+            this.TenSP,
+            this.NgayNhap,
+            this.SLN,
+            this.DONGIA,
+            this.TenNCC,
+            this.TongTienNhap});
             this.dvt_tknh.Dock = System.Windows.Forms.DockStyle.Right;
             this.dvt_tknh.Location = new System.Drawing.Point(623, 53);
             this.dvt_tknh.Name = "dvt_tknh";
@@ -151,6 +166,7 @@
             // 
             // dt_timesau
             // 
+            this.dt_timesau.Checked = false;
             this.dt_timesau.CustomFormat = "dd/mm/yyyy";
             this.dt_timesau.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_timesau.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -161,6 +177,7 @@
             // 
             // dt_timetruoc
             // 
+            this.dt_timetruoc.Checked = false;
             this.dt_timetruoc.CustomFormat = "dd/MM/yyyy";
             this.dt_timetruoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_timetruoc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -252,6 +269,62 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "THỐNG KÊ HÀNG HÓA TRONG KHO";
             // 
+            // MaPN
+            // 
+            this.MaPN.DataPropertyName = "MaPN";
+            this.MaPN.HeaderText = "MÃ PHIẾU NHẬP";
+            this.MaPN.Name = "MaPN";
+            this.MaPN.ReadOnly = true;
+            this.MaPN.Width = 120;
+            // 
+            // TenSP
+            // 
+            this.TenSP.DataPropertyName = "TenSP";
+            this.TenSP.HeaderText = "TÊN SẢN PHẨM";
+            this.TenSP.Name = "TenSP";
+            this.TenSP.ReadOnly = true;
+            this.TenSP.Width = 150;
+            // 
+            // NgayNhap
+            // 
+            this.NgayNhap.DataPropertyName = "NgayNhap";
+            this.NgayNhap.HeaderText = "NGÀY NHẬP";
+            this.NgayNhap.Name = "NgayNhap";
+            this.NgayNhap.ReadOnly = true;
+            this.NgayNhap.Width = 150;
+            // 
+            // SLN
+            // 
+            this.SLN.DataPropertyName = "SLN";
+            this.SLN.HeaderText = "SỐ LƯỢNG NHẬP";
+            this.SLN.Name = "SLN";
+            this.SLN.ReadOnly = true;
+            this.SLN.Width = 120;
+            // 
+            // DONGIA
+            // 
+            this.DONGIA.DataPropertyName = "DONGIA";
+            this.DONGIA.HeaderText = "ĐƠN GIÁ";
+            this.DONGIA.Name = "DONGIA";
+            this.DONGIA.ReadOnly = true;
+            this.DONGIA.Width = 130;
+            // 
+            // TenNCC
+            // 
+            this.TenNCC.DataPropertyName = "TenNCC";
+            this.TenNCC.HeaderText = "TÊN NHÀ CUNG CẤP";
+            this.TenNCC.Name = "TenNCC";
+            this.TenNCC.ReadOnly = true;
+            this.TenNCC.Width = 130;
+            // 
+            // TongTienNhap
+            // 
+            this.TongTienNhap.DataPropertyName = "TongTienNhap";
+            this.TongTienNhap.HeaderText = "TỔNG TIỀN NHẬP";
+            this.TongTienNhap.Name = "TongTienNhap";
+            this.TongTienNhap.ReadOnly = true;
+            this.TongTienNhap.Width = 150;
+            // 
             // thongke
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,5 +370,12 @@
         private System.Windows.Forms.Button bt_tongtien;
         private System.Windows.Forms.Button cr_phieunhap;
         private System.Windows.Forms.Button bt_cttpn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaPN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SLN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DONGIA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TongTienNhap;
     }
 }
