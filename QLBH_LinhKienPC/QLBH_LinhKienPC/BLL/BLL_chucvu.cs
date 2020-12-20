@@ -31,6 +31,7 @@ namespace QLBH_LinhKienPC.BLL
 
         public void LuuCV()
         {
+            /*
             string q = "";
             int tamp = frm_chucvu.cb_cv.SelectedIndex;
             if(tamp == 0)
@@ -45,12 +46,12 @@ namespace QLBH_LinhKienPC.BLL
             {
                 q = "NV";
             }
-
+            */
             try
             {
                 if (frm_chucvu.txt_mcv.Text.ToString() != "")
                 {
-                    int ketqua = dal_chucvu.ThemCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(), q);
+                    int ketqua = dal_chucvu.ThemCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(), frm_chucvu.cb_cv.Text);
                     if (ketqua >= 1)
                         MessageBox.Show("Thêm thành công");
                     else
@@ -74,6 +75,7 @@ namespace QLBH_LinhKienPC.BLL
 
         public void suaCV()
         {
+            /*
             string q = "";
             int tamp = frm_chucvu.cb_cv.SelectedIndex;
             if (tamp == 0)
@@ -88,14 +90,14 @@ namespace QLBH_LinhKienPC.BLL
             {
                 q = "nv";
             }
-
+            */
 
             try
             {
                 
                 if (frm_chucvu.txt_mcv.Text.ToString() != "")
                 {
-                    int ketqua = dal_chucvu.SuaCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(), q);
+                    int ketqua = dal_chucvu.SuaCV(frm_chucvu.txt_mcv.Text.ToString(), frm_chucvu.txt_tencv.Text.ToString(), frm_chucvu.cb_cv.Text);
                     if (ketqua >= 1)
                         MessageBox.Show("Sửa thành công");
                     else

@@ -34,7 +34,7 @@ namespace QLBH_LinhKienPC
             {
                 string sql = "select count(*) from NHAN_VIEN where MaNV = '" + dn_tk.Text.ToUpper() + "'and MatKhau = '" + dn_mk.Text.ToUpper() + "'";
 
-                string mcv = "select * from NHAN_VIEN where MaNV = '" + dn_tk.Text.ToUpper() + "'";
+                string mcv = "select * from NHAN_VIEN where MaNV = '" + dn_tk.Text + "'";
 
 
                 DataTable data_tb_nv = lopchung.LoadDuLieu(mcv);
@@ -83,6 +83,7 @@ namespace QLBH_LinhKienPC
                         main.bt_quantrivien.Visible = false;
                         main.bt_banhang.Visible = true;
                         main.bt_khohang.Visible = false;
+                        main.bt_quantrivien.Visible = false;
                         main.bt_thongke.Location = new System.Drawing.Point(0, 252);
                         main.us_banhang.bt_xoa.Visible = false;
                         
@@ -92,6 +93,7 @@ namespace QLBH_LinhKienPC
                         main.bt_quantrivien.Visible = false;
                         main.bt_banhang.Visible = true;
                         main.bt_khohang.Visible = true;
+                        main.bt_quantrivien.Visible = false;
                         main.us_banhang.bt_them_khachhang.Visible = false;
                         main.us_banhang.bt_hoadon.Visible = false;
                         main.us_banhang.bt_xoa.Location = new System.Drawing.Point(0, 0);
