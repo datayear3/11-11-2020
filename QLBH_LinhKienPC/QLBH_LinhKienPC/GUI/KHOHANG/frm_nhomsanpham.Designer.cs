@@ -38,15 +38,17 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.button1 = new System.Windows.Forms.Button();
             this.bt_sua = new System.Windows.Forms.Button();
             this.bt_xoa = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_nsp)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(249, 18);
+            this.label1.Location = new System.Drawing.Point(383, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(251, 31);
             this.label1.TabIndex = 0;
@@ -56,7 +58,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(138, 110);
+            this.label2.Location = new System.Drawing.Point(294, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 19);
             this.label2.TabIndex = 0;
@@ -66,7 +68,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(138, 174);
+            this.label3.Location = new System.Drawing.Point(294, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(142, 19);
             this.label3.TabIndex = 0;
@@ -75,7 +77,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // txt_mn
             // 
             this.txt_mn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mn.Location = new System.Drawing.Point(324, 110);
+            this.txt_mn.Location = new System.Drawing.Point(480, 91);
             this.txt_mn.Name = "txt_mn";
             this.txt_mn.Size = new System.Drawing.Size(100, 26);
             this.txt_mn.TabIndex = 1;
@@ -83,7 +85,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // txt_tn
             // 
             this.txt_tn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tn.Location = new System.Drawing.Point(324, 171);
+            this.txt_tn.Location = new System.Drawing.Point(480, 152);
             this.txt_tn.Name = "txt_tn";
             this.txt_tn.Size = new System.Drawing.Size(100, 26);
             this.txt_tn.TabIndex = 1;
@@ -91,7 +93,7 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // dtv_nsp
             // 
             this.dtv_nsp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtv_nsp.Location = new System.Drawing.Point(59, 268);
+            this.dtv_nsp.Location = new System.Drawing.Point(210, 250);
             this.dtv_nsp.Name = "dtv_nsp";
             this.dtv_nsp.Size = new System.Drawing.Size(651, 190);
             this.dtv_nsp.TabIndex = 3;
@@ -99,7 +101,8 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(525, 106);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(693, 87);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -109,7 +112,8 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             // bt_sua
             // 
-            this.bt_sua.Location = new System.Drawing.Point(525, 148);
+            this.bt_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_sua.Location = new System.Drawing.Point(693, 128);
             this.bt_sua.Name = "bt_sua";
             this.bt_sua.Size = new System.Drawing.Size(75, 23);
             this.bt_sua.TabIndex = 2;
@@ -119,7 +123,8 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             // 
             // bt_xoa
             // 
-            this.bt_xoa.Location = new System.Drawing.Point(525, 202);
+            this.bt_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_xoa.Location = new System.Drawing.Point(693, 167);
             this.bt_xoa.Name = "bt_xoa";
             this.bt_xoa.Size = new System.Drawing.Size(75, 23);
             this.bt_xoa.TabIndex = 2;
@@ -127,10 +132,24 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.bt_xoa.UseVisualStyleBackColor = true;
             this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
-
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1071, 31);
+            this.panel1.TabIndex = 4;
+            // 
+            // frm_nhomsanpham
+            // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 533);
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.DarkKhaki;
+            this.ClientSize = new System.Drawing.Size(1065, 513);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dtv_nsp);
             this.Controls.Add(this.bt_xoa);
             this.Controls.Add(this.bt_sua);
@@ -139,23 +158,14 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
             this.Controls.Add(this.txt_mn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "frm_nhomsanpham";
             this.Text = "frm_nhomsanpham";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtv_nsp)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
-
-            // frm_nhomsanpham
-            // 
-            this.ClientSize = new System.Drawing.Size(1115, 513);
-            this.Name = "frm_nhomsanpham";
             this.Load += new System.EventHandler(this.frm_nhomsanpham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtv_nsp)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-
+            this.PerformLayout();
 
         }
 
@@ -170,5 +180,6 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button bt_sua;
         private System.Windows.Forms.Button bt_xoa;
+        private System.Windows.Forms.Panel panel1;
     }
 }
