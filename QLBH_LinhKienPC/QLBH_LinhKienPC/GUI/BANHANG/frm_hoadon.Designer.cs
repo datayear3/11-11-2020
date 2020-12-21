@@ -128,6 +128,7 @@
             this.btn_update.TabIndex = 99;
             this.btn_update.Text = "Sửa";
             this.btn_update.UseVisualStyleBackColor = false;
+            this.btn_update.Visible = false;
             // 
             // btn_add
             // 

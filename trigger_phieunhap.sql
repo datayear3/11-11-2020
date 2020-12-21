@@ -4,7 +4,6 @@ BEGIN
 	SET SLTon = SLTon + (
 		SELECT inserted.SLN
 		FROM inserted
-		
 	)where MaSP = ( select inserted.MaSP from inserted)
 end
 
@@ -15,6 +14,7 @@ BEGIN
 	FROM SAN_PHAM 
 	JOIN deleted ON SAN_PHAM.MaSP = deleted.MaSP
 END
+
 
 CREATE TRIGGER Cap_Nhat_Dat_Hang on PHIEU_NHAP after update AS
 BEGIN

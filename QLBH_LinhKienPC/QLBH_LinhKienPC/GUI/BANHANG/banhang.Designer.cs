@@ -43,6 +43,7 @@
             this.bt_them_khachhang = new System.Windows.Forms.Button();
             this.bt_hoadon = new System.Windows.Forms.Button();
             this.bt_xoa = new System.Windows.Forms.Button();
+            this.bt_sua = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvt_doanhthu)).BeginInit();
             this.panel2.SuspendLayout();
@@ -207,12 +208,27 @@
             this.bt_xoa.UseVisualStyleBackColor = false;
             this.bt_xoa.Click += new System.EventHandler(this.bt_xoa_Click);
             // 
+            // bt_sua
+            // 
+            this.bt_sua.BackColor = System.Drawing.Color.Green;
+            this.bt_sua.FlatAppearance.BorderSize = 0;
+            this.bt_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_sua.Location = new System.Drawing.Point(249, 139);
+            this.bt_sua.Name = "bt_sua";
+            this.bt_sua.Size = new System.Drawing.Size(243, 78);
+            this.bt_sua.TabIndex = 1;
+            this.bt_sua.Text = "SỬA HÓA ĐƠN";
+            this.bt_sua.UseVisualStyleBackColor = false;
+            this.bt_sua.Click += new System.EventHandler(this.bt_xoa_Click);
+            // 
             // banhang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(165)))), ((int)(((byte)(149)))));
             this.Controls.Add(this.bt_hoadon);
+            this.Controls.Add(this.bt_sua);
             this.Controls.Add(this.bt_xoa);
             this.Controls.Add(this.bt_them_khachhang);
             this.Controls.Add(this.panel1);
@@ -244,5 +260,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTienBan;
         public System.Windows.Forms.Button bt_xoa;
+        public System.Windows.Forms.Button bt_sua;
     }
 }

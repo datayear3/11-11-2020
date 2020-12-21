@@ -182,6 +182,18 @@
     <Compile Include="GUI\THONGKE\thongke.Designer.cs">
       <DependentUpon>thongke.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\THONGKE\thongke_hh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\THONGKE\thongke_hh.Designer.cs">
+      <DependentUpon>thongke_hh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\THONGKE\tk_hh.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tk_hh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="GUI\TRANGCHU\trangchu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -250,6 +262,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\THONGKE\thongke.resx">
       <DependentUpon>thongke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\THONGKE\thongke_hh.resx">
+      <DependentUpon>thongke_hh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\THONGKE\tk_hh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>tk_hh.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\TRANGCHU\trangchu.resx">
       <DependentUpon>trangchu.cs</DependentUpon>

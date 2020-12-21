@@ -83,11 +83,32 @@ namespace QLBH_LinhKienPC.GUI.THONGKE
             lopchung.connection().Close();
             dvt_tknh.DataSource = ds.Tables[0];
             dvt_tknh.Refresh();
+
+
+            Lopdungchung lopchung2 = new Lopdungchung();
+            lopchung2.connection().Open();
+            string sql_hh = "select MaSP as 'MÃ SP',TenNhom as 'TÊN NHÓM',TenSP AS 'TÊN SẢN PHẨM',DonViTinh AS 'DVT',SLTon AS 'SLT',GiaBan AS 'GIÁ BÁN',GiaNhap AS 'GIÁ NHẬP',TenNCC AS 'NHÀ CUNG CẤP' from SAN_PHAM,NHA_CUNG_CAP,NHOM_SAN_PHAM where SAN_PHAM.MaNhom = NHOM_SAN_PHAM.MaNhom and SAN_PHAM.MaNCC = NHA_CUNG_CAP.MaNCC";
+
+
+            DataSet ds_hh = new DataSet();
+            SqlDataAdapter da_hh = new SqlDataAdapter(sql_hh, lopchung2.connection());
+            da_hh.Fill(ds_hh);
+            lopchung2.connection().Close();
+            dvt_tkkho.DataSource = ds_hh.Tables[0];
+            dvt_tkkho.Refresh();
+
+
         }
 
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void bt_ct_hh_Click(object sender, EventArgs e)
+        {
+            thongke_hh hh = new thongke_hh();
+            hh.ShowDialog();
         }
     }
 }
