@@ -31,12 +31,28 @@ namespace QLBH_LinhKienPC.BLL
         public void LuuPN()
         {
             // [MaPN],[TenNCC],[TenSP],[NgayNhap],[SLN],[DONGIA],[TongTienNhap]
-            int ketqua = dal_phieunhap.ThemPN(frm_pn.txt_mpn.Text, frm_pn.txt_tncc.Text, frm_pn.cb_tsp.SelectedValue.ToString(), frm_pn.date_n.Value.ToString(), frm_pn.num_sln.Value.ToString(), frm_pn.txt_gn.Text, frm_pn.txt_ttn.Text);
 
-            if (ketqua >= 1)
-                MessageBox.Show("Thêm thành công");
-            else
-                MessageBox.Show("Thêm thất bai");
+           
+
+
+            try
+            {
+
+                int ketqua = dal_phieunhap.ThemPN(frm_pn.txt_mpn.Text, frm_pn.txt_tncc.Text, frm_pn.cb_tsp.SelectedValue.ToString(), frm_pn.date_n.Value.ToString(), frm_pn.num_sln.Value.ToString(), frm_pn.txt_gn.Text, frm_pn.txt_ttn.Text);
+
+                if (ketqua >= 1)
+                    MessageBox.Show("Thêm thành công");
+                else
+                    MessageBox.Show("Thêm thất bai");
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Thêm dữ liệu không thành công !!!");
+            }
+
+
 
 
         }

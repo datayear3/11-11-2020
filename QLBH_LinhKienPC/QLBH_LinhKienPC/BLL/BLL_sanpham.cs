@@ -45,15 +45,28 @@ namespace QLBH_LinhKienPC.BLL
 
 
             // SAN PHAM ( MASP,MANHOM,TENSP,DVT,SLTON,GB,GN,MANCC,...,....)
-            int ketqua = dal_sanpham.ThemSP(frm_sp.txt_msp.Text, frm_sp.cb_tn.SelectedValue.ToString(), frm_sp.txt_tsp.Text.ToString(), frm_sp.cb_dvt.Text, frm_sp.txt_slt.Text, frm_sp.txt_gb.Text,frm_sp.txt_gn.Text,frm_sp.cb_tncc.SelectedValue.ToString());
-
-            if (ketqua >= 1)
-                MessageBox.Show("Thêm thành công");
-            else
-                MessageBox.Show("Thêm thất bai");
-
             
-         }
+
+
+            try
+            {
+
+                int ketqua = dal_sanpham.ThemSP(frm_sp.txt_msp.Text, frm_sp.cb_tn.SelectedValue.ToString(), frm_sp.txt_tsp.Text.ToString(), frm_sp.cb_dvt.Text, frm_sp.txt_slt.Text, frm_sp.txt_gb.Text, frm_sp.txt_gn.Text, frm_sp.cb_tncc.SelectedValue.ToString());
+
+                if (ketqua >= 1)
+                    MessageBox.Show("Thêm thành công");
+                else
+                    MessageBox.Show("Thêm thất bai");
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Thêm dữ liệu không thành công !!!");
+            }
+
+
+        }
         
         public void SuaSP()
         {

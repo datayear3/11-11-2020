@@ -40,11 +40,22 @@ namespace QLBH_LinhKienPC.BLL
         }
         public void themhd()
         {
-            int ketqua = dal_hoadon.ThemHD(frm_hoadon.txt_mahd.ToString(), frm_hoadon.cb_manv.ToString(), frm_hoadon.cb_makh.ToString(), frm_hoadon.dt_ngayban.ToString(), frm_hoadon.txt_tongtienban.ToString(), frm_hoadon.txt_dongia.ToString(), frm_hoadon.cb_masp.ToString(), frm_hoadon.txt_soluong.ToString());
-            if (ketqua >= 1)
-                MessageBox.Show("Thêm thành công");
-            else
-                MessageBox.Show("Thêm thất bai");
+            
+            try
+            {
+
+                int ketqua = dal_hoadon.ThemHD(frm_hoadon.txt_mahd.ToString(), frm_hoadon.cb_manv.ToString(), frm_hoadon.cb_makh.ToString(), frm_hoadon.dt_ngayban.ToString(), frm_hoadon.txt_tongtienban.ToString(), frm_hoadon.txt_dongia.ToString(), frm_hoadon.cb_masp.ToString(), frm_hoadon.txt_soluong.ToString());
+                if (ketqua >= 1)
+                    MessageBox.Show("Thêm thành công");
+                else
+                    MessageBox.Show("Thêm thất bai");
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Thêm dữ liệu không thành công !!!");
+            }
 
         }
 

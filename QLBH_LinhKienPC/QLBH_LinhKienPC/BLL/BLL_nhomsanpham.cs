@@ -26,11 +26,23 @@ namespace QLBH_LinhKienPC.BLL
         public void LuuSP()
         {
             
-            int ketqua = dal_nhomsanpham.ThemSP(frm_nsp.txt_mn.Text,frm_nsp.txt_tn.Text);
-            if (ketqua >= 1)
-                MessageBox.Show("Thêm thành công");
-            else
-                MessageBox.Show("Thêm thất bai");
+            
+
+            try
+            {
+
+                int ketqua = dal_nhomsanpham.ThemSP(frm_nsp.txt_mn.Text, frm_nsp.txt_tn.Text);
+                if (ketqua >= 1)
+                    MessageBox.Show("Thêm thành công");
+                else
+                    MessageBox.Show("Thêm thất bai");
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Thêm dữ liệu không thành công !!!");
+            }
         }
 
         public void loadSP()
