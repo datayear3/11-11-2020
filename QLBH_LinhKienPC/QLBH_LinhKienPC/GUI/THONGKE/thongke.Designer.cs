@@ -61,7 +61,6 @@
             this.dt_timekhotruoc = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -70,7 +69,7 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dvt_tkkho = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvt_tknh)).BeginInit();
             this.panel6.SuspendLayout();
@@ -81,7 +80,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvt_tkkho)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -451,8 +450,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel2.Controls.Add(this.dataGridView2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.dvt_tkkho);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.button5);
@@ -466,28 +464,16 @@
             this.panel2.Size = new System.Drawing.Size(1620, 326);
             this.panel2.TabIndex = 14;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(228, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(304, 53);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "CHI TIẾT TỪNG PHIẾU NHẬP";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.Location = new System.Drawing.Point(228, 152);
+            this.button2.Location = new System.Drawing.Point(237, 78);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(304, 53);
+            this.button2.Size = new System.Drawing.Size(333, 53);
             this.button2.TabIndex = 5;
-            this.button2.Text = "CHI TIẾT PHIẾU NHẬP";
+            this.button2.Text = "CHI TIẾT HÀNG TRONG KHO";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // textBox1
@@ -496,9 +482,9 @@
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Red;
-            this.textBox1.Location = new System.Drawing.Point(228, 233);
+            this.textBox1.Location = new System.Drawing.Point(237, 174);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(304, 53);
+            this.textBox1.Size = new System.Drawing.Size(333, 53);
             this.textBox1.TabIndex = 4;
             // 
             // button5
@@ -507,7 +493,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Blue;
-            this.button5.Location = new System.Drawing.Point(25, 233);
+            this.button5.Location = new System.Drawing.Point(25, 219);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(173, 53);
             this.button5.TabIndex = 2;
@@ -520,7 +506,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Blue;
-            this.button6.Location = new System.Drawing.Point(25, 152);
+            this.button6.Location = new System.Drawing.Point(25, 138);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(173, 53);
             this.button6.TabIndex = 2;
@@ -533,7 +519,7 @@
             this.dateTimePicker1.CustomFormat = "dd/mm/yyyy";
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(25, 103);
+            this.dateTimePicker1.Location = new System.Drawing.Point(25, 89);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(173, 29);
             this.dateTimePicker1.TabIndex = 1;
@@ -544,7 +530,7 @@
             this.dateTimePicker2.CustomFormat = "dd/MM/yyyy";
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(25, 68);
+            this.dateTimePicker2.Location = new System.Drawing.Point(25, 54);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(173, 29);
             this.dateTimePicker2.TabIndex = 1;
@@ -558,6 +544,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1620, 53);
             this.panel7.TabIndex = 0;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // label4
             // 
@@ -570,13 +557,14 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "THỐNG KÊ NHẬP HÀNG";
             // 
-            // dataGridView2
+            // dvt_tkkho
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(623, 56);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1016, 213);
-            this.dataGridView2.TabIndex = 6;
+            this.dvt_tkkho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvt_tkkho.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dvt_tkkho.Location = new System.Drawing.Point(623, 53);
+            this.dvt_tkkho.Name = "dvt_tkkho";
+            this.dvt_tkkho.Size = new System.Drawing.Size(997, 273);
+            this.dvt_tkkho.TabIndex = 6;
             // 
             // thongke
             // 
@@ -606,7 +594,7 @@
             this.panel2.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvt_tkkho)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -638,8 +626,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNCC;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTienNhap;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button5;
@@ -656,5 +642,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DateTimePicker dt_timekhosau;
         private System.Windows.Forms.DateTimePicker dt_timekhotruoc;
+        private System.Windows.Forms.DataGridView dvt_tkkho;
     }
 }

@@ -84,5 +84,10 @@ namespace QLBH_LinhKienPC.GUI.THONGKE
             dvt_tknh.DataSource = ds.Tables[0];
             dvt_tknh.Refresh();
         }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
