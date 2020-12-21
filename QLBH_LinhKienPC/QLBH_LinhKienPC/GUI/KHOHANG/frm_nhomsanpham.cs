@@ -73,5 +73,10 @@ namespace QLBH_LinhKienPC.GUI.KHOHANG
         {
             bllnsp.loadSP();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
